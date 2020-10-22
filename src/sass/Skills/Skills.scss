@@ -1,0 +1,195 @@
+
+
+.skills {
+    background-color: var(--container);
+    width: 100%;
+    height: 100%;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0 auto;
+ 
+    h2 {
+        font-size: 26px;
+        padding: 15px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .container {
+        width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 1440px;
+        
+    }
+    .skills-portfolio {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding-left: 10px;
+    }
+
+
+    .technologies {
+        font-weight: 700;
+        font-size: 26px;
+        width: 100%;
+        padding: 20px 0 0;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    .advanced-skills {
+        font-weight: 700;
+        font-size: 24px;
+        width: 100%;
+        border-bottom: 1px dotted black;
+        margin: 10px 30px 20px;
+    }
+    .good-skills {
+        font-weight: 700;
+        font-size: 30px;
+        width: 100%;
+        border-bottom: 1px dotted black;
+         margin: 10px 30px 20px;
+    }
+    .basic-skills {
+        font-weight: 700;
+        font-size: 30px;
+        width: 100%;
+        border-bottom: 1px dotted black;
+        margin: 0px 30px;
+    }
+
+    @media(min-width: 600px) {
+        .skills-portfolio {
+            padding-left: 15%;
+        }
+    }
+    @media(min-width: 1000px) {
+        h2 {
+            font-size: 30px;
+        }
+        .technologies {
+            font-size: 32px;
+        }
+        .advanced-skills, .good-skills, .basic-skills  {
+            font-size: 28px;
+        }
+    }
+    @media(min-width: 1300px) {
+        .skills-portfolio {
+            padding-left: 180px
+        }
+    }
+
+    .article-advanced-skills, .article-good-skills, .acticle-basic-skills {
+        div {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            img {
+                width: 40px;
+                display: block;
+                margin: 10px auto;
+                transition-duration: .4s;
+            }
+            img:hover {
+                transition: .4s ease-in-out;
+                animation-duration: 3s;
+                transition-duration: .6s;
+                filter: invert(15%);
+                border-radius: 100%;
+                transform: rotate(360deg);
+            }
+            span {
+                display: block;
+                width: 100px;
+                text-align: center;
+                transition: .7s ease-in-out;
+                font-size: 18px;
+                
+            }
+
+            p {
+                text-align: center;
+                transition: .7s ease-in-out;
+                opacity: 0;
+                
+            }
+            span:hover ~ span {
+                z-index: -1;
+                transform: translate(0,300%);
+                transition: 1s ease-in-out;
+                transition-duration: 1s;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+                opacity: 0;
+                transition-duration: .4s;
+                transition: 2s;
+            }
+            span:nth-child(2):hover {
+                z-index: -1;
+                transition: 1s ease-in-out;
+                transition-duration: 1s;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+                opacity: 0;
+           
+            }
+            span:hover ~ p {
+                z-index: -1;
+                transform: translate(0,-50%);
+                transition: 1s ease-in-out;
+                transition-duration: 1s;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transition-duration: .4s;
+                transition: 2s;
+            }
+
+            @media(min-width: 600px) {
+                height: 120px;
+                width: 120px;
+                margin-left: 4px;
+                img {
+                    width: 50px;
+                }
+                span {
+                    width: 120px;
+                }
+            }
+            @media(min-width: 1100px) {
+                height: 130px;
+                width: 130px;
+                margin-left: 10px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                span {
+                    width: 130px;
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+            @media(min-width: 1300px) {
+                margin-left: 25px;
+                margin-top: 30px;
+            }
+
+        }
+
+       
+       
+    }
+
+
+
+
+    img {
+        width: 40px
+    }
+}

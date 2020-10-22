@@ -1,0 +1,19 @@
+$bg-main-color: red;
+$main-color1: #C4E3F7;
+$main-color2: #AFD5ED;
+$main-color3: #7F9FB3;
+$main-color4: #7F9FB3;
+$main-color5: #9DC4DE;
+$main-color6: #8CB2CB;
+$main-color7: #9DC4DE;
+
+
+@import "globalStyles/GlobalStyle.scss";
+@import "NavBar/NavBar.scss";
+@import "Nav/Nav.scss";
+@import "About/About.scss";
+@import "Skills/Skills.scss";
+@import "Projects/Projects.scss";
+@import "Projects/Details.scss";
+@import "Footer/Footer.scss";
+// propTypes

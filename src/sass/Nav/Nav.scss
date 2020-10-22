@@ -1,0 +1,253 @@
+.nav {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 77, 101, 0.918);
+    width: 100%;
+    height: 40px;
+    z-index: 9999;
+    font-family: 'Roboto', sans-serif;
+    @media(min-width: 1500px) {
+        height: 50px;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        height: 30px;
+        width:30px;
+        margin-left: 25px;
+        outline: transparent;
+    }
+
+    .nav-img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        @media(min-width: 1500px) {
+            width: 50px;
+            height: 40px;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    width: 30px;
+    top: 5px;
+    right: 20px;
+    filter: invert(100%);
+    cursor: pointer;
+    @media(min-width: 1500px) {
+        width:40px;
+    }
+}
+.menu-s {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 70px;
+    color: white;
+    @media(min-width: 1500px){
+        right: 80px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+}
+.box {
+    position: fixed;
+    top:40px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(41, 77, 101, 0.918);
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+
+    @media(min-width: 1500px) {
+        top: 50px;
+    }
+}
+.box.trans {
+    transform: translateX(0%);
+}
+
+.navbar {
+    display: none;
+    float: right;
+    list-style-type: none;
+    margin: 10px 80px 10px 30px;
+    flex-wrap: wrap;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+    li {
+        font-size: 14px;
+        margin-left: 15px;
+        a {
+            text-decoration: none;
+            color: white;
+            transition-duration: 1s;
+        }
+        a:hover {
+            color: cyan;
+            font-size: 16px;
+            border-bottom: 1px solid cyan;
+          }
+    }
+    @media(min-width: 700px){
+        display: flex;
+    }
+    @media(min-width: 1500px) {
+        margin: 10px 120px 10px 30px;
+    }
+}
+.navbar-box {
+    text-align: center;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding: 20px 15px 30px;
+    color:rgb(206, 206, 206);
+    letter-spacing: 2px;
+    li {
+        list-style-type: none;
+        margin-top: 20px;
+        padding-bottom: 2px;
+        a {
+            text-decoration: none;
+            color: rgb(206, 206, 206);
+            text-transform: uppercase;
+        }
+        :hover {
+            transition: 0.3s ease-in-out;
+            border-bottom: 1px solid white;
+            color:white;
+        }
+    }
+  
+}
+.box-description {
+    padding: 20px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 12px;
+    color:rgb(206, 206, 206);
+    line-height: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+    
+}
+.box-description :hover{
+    color:white;
+}
+
+.box-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    a {
+        color:rgb(206, 206, 206);
+        margin: 0 5px;
+        .fa-resolving {
+            font-size: 25px;
+            margin: 0 10px;
+            color: rgb(206, 206, 206);
+            transition: 0.5s ease-in-out;
+           
+
+        
+        }
+        :hover{
+            color:white;
+        }
+    }
+   
+}
+.box-contact {
+    padding-top: 30px;
+    text-align: center;
+    a {
+        display: block;
+        color: rgb(206, 206, 206);
+        font-size: 14px;
+        margin-bottom: 20px;
+        transition: .3s ease-in-out;
+    }
+    :hover {
+        color: white;
+    }
+}
+.homes {
+    padding-top: 5px;
+    font-size: 30px;
+    width: 50px;
+    height: 0px;
+    padding-left: 10px;
+    color: white;
+    display: inline-block;
+}
+
+
+@media(min-width: 900px) {
+    .box {
+        width: 400px;
+    }
+    .navbar-box {
+        font-size: 18px;
+    }
+    .box-description {
+        font-size: 16px;
+        width: 300px;
+        margin: 20px auto;
+        line-height: 30px;
+    }
+    .box-link a .fab {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    .box-contact {
+        padding-top: 40px;
+        a {
+           
+            font-size: 18px;
+        }
+    }
+ 
+}
+
+
+    
+@media(min-width: 850px) {
+    .navbar {
+      letter-spacing: 2px;
+      li {
+          font-size: 16px;
+          margin-left: 25px;
+          a:hover {
+              font-size: 20px;
+            }
+      }
+    }
+}
+
+    @media(min-width:1500px) {
+        .navbar {
+          letter-spacing: 3px;
+          li {
+              font-size: 20px;
+              margin-left: 25px;
+              a:hover {
+                  font-size: 22px;
+                }
+          }
+        }
+        .fa-resolving {
+            font-size: 35px;
+      }
+    }
+      
+      
