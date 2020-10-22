@@ -10,6 +10,7 @@ import {
   Switch,
   BrowserRouter,
   HashRouter,
+  BrowserRouter as Router,
 } from "react-router-dom";
 
 const App = () => {
@@ -19,14 +20,14 @@ const App = () => {
 
   return (
     <CreateProvider>
-        <BrowserRouter>
+        <Router basename={process.env.PUBLIC_URL} >
             <Nav/>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/project/:id"  component={Details} />
               <Route component={Default} />
             </Switch>
-        </BrowserRouter>
+        </Router>
     </CreateProvider>
   );
 }
