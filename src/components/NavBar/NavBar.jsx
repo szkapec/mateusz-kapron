@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import fb from '../../assets/facebook.svg'
 import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg';
@@ -7,12 +7,17 @@ import telephone from '../../assets/phone-call.svg';
 
 const NavBar = () => {
 
+    const [astronomy, setAstronomy] = useState(null)
+
+    useEffect(() => {
+        setTimeout(setAstronomy(true), 4000)
+    })
     return (
         <section id="home">
             <nav>
                 <div className="pictures"></div>
             </nav>
-            <div className="astronomy"></div>
+            {astronomy&&<div className="astronomy"></div>}
             <section className="community">
                 <h1>Mateusz Kaproń</h1>
                 <h2 data-aos="flip-up">Front-end developer</h2>

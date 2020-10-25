@@ -135,7 +135,7 @@
   }
   .about {
     h2 {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 }
@@ -144,15 +144,15 @@
 @media(min-width:1350px) {
   .about-my {
     &__hello {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
   .about {
     h2 {
-      font-size: 28px;
+      font-size: 26px;
     }
     div {
-      font-size: 24px;
+      font-size: 22px;
     }
     .about__img {
       width: 70px;

@@ -7,6 +7,8 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
+
+
   .astronomy {
     z-index: -1;
     background-image: url('../../assets/astronomy.jpg');
@@ -26,36 +28,29 @@
     padding-bottom: 20px;
   }
 
-
-  
-
-  .pictures {
-    z-index: 10;
-    display: block;
-    background-image: url("../../assets/mountains-mobile-small.jpg");
-    background-size: 100%  100vh;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+  #home {
+    padding-top: 30px;
   }
-  @media(min-width: 600px) {
-    .pictures {
-      background-image: url("../../assets/mountains-mobile.jpg");
-    }
-  }
-
-  @media(min-width: 1000px) {
     .pictures { 
+   
+      background-image: url("../../assets/mountains-mobile.jpg");
+      height: 100vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    @media(min-width: 800px) {
+      .pictures { 
       background-image: url("../../assets/mountains-desktop.jpg");
     }
-  
   }
-
-
+  
 
   .community {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 30%;
     transform: translate(-50%, -50%);
 
@@ -79,6 +74,10 @@
         animation-fill-mode: forwards;
         animation-timing-function: ease-out;
         margin-left: 18px;
+    }
+    @media(min-height: 500px) {
+      top: 50%;
+      left: 30%;
     }
   }
 
@@ -110,7 +109,8 @@
   
   .imagetwo-image {
     height: 30px;
-    margin: 30px;
+    margin: 30px auto;
+    padding-left: 20px;
     text-align: center;
     animation-name: szerokosc;
     font-size: 30px;

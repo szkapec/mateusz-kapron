@@ -19,6 +19,8 @@ const StyledError = styled.div`
         position: absolute;
         top: 45%;
         left: 50%;
+        width: 100%;
+        margin: 0 auto;
         transform: translate(-50%,50%);
         color: red;
         font-size: 30px;
@@ -26,6 +28,7 @@ const StyledError = styled.div`
         line-height: 20px;
         letter-spacing: 3px;
         padding-bottom: 40px;
+        text-align: center;
     }
     div:last-child {
         position: absolute;
@@ -34,6 +37,9 @@ const StyledError = styled.div`
         transform: translate(-50%,50%);
         font-size: 26px;
         text-transform: uppercase;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     
