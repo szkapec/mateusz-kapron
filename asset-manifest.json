@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mateusz-kapron/static/css/main.2a7d4cbd.chunk.css",
-    "main.js": "/mateusz-kapron/static/js/main.ea1d2f2d.chunk.js",
-    "main.js.map": "/mateusz-kapron/static/js/main.ea1d2f2d.chunk.js.map",
+    "main.css": "/mateusz-kapron/static/css/main.2c01ef5c.chunk.css",
+    "main.js": "/mateusz-kapron/static/js/main.8aa578de.chunk.js",
+    "main.js.map": "/mateusz-kapron/static/js/main.8aa578de.chunk.js.map",
     "runtime-main.js": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js",
     "runtime-main.js.map": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js.map",
     "static/js/2.c927ed4f.chunk.js": "/mateusz-kapron/static/js/2.c927ed4f.chunk.js",
     "static/js/2.c927ed4f.chunk.js.map": "/mateusz-kapron/static/js/2.c927ed4f.chunk.js.map",
     "index.html": "/mateusz-kapron/index.html",
-    "precache-manifest.9f8984d13219091644b7e141b27d7726.js": "/mateusz-kapron/precache-manifest.9f8984d13219091644b7e141b27d7726.js",
+    "precache-manifest.3cf6a30a3480f5b5b0cb7286bff130f9.js": "/mateusz-kapron/precache-manifest.3cf6a30a3480f5b5b0cb7286bff130f9.js",
     "service-worker.js": "/mateusz-kapron/service-worker.js",
-    "static/css/main.2a7d4cbd.chunk.css.map": "/mateusz-kapron/static/css/main.2a7d4cbd.chunk.css.map",
+    "static/css/main.2c01ef5c.chunk.css.map": "/mateusz-kapron/static/css/main.2c01ef5c.chunk.css.map",
     "static/js/2.c927ed4f.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.c927ed4f.chunk.js.LICENSE.txt",
     "static/media/Git_icon.svg": "/mateusz-kapron/static/media/Git_icon.1acf1264.svg",
     "static/media/React-node-express2.PNG": "/mateusz-kapron/static/media/React-node-express2.cffb3a52.PNG",
@@ -18,7 +18,7 @@
     "static/media/ajax-icon-7.jpg": "/mateusz-kapron/static/media/ajax-icon-7.bd187668.jpg",
     "static/media/analytics.png": "/mateusz-kapron/static/media/analytics.7cb3310c.png",
     "static/media/animate.svg": "/mateusz-kapron/static/media/animate.c5ee926c.svg",
-    "static/media/style.scss": "/mateusz-kapron/static/media/mountains-mobile.957f2dc9.jpg",
+    "static/media/style.scss": "/mateusz-kapron/static/media/mountains-mobile.03dc844d.jpg",
     "static/media/baflix.png": "/mateusz-kapron/static/media/baflix.b7cc8163.png",
     "static/media/bootstrap-4.svg": "/mateusz-kapron/static/media/bootstrap-4.ffded238.svg",
     "static/media/bowling.PNG": "/mateusz-kapron/static/media/bowling.7c06579e.PNG",
@@ -64,7 +64,7 @@
   "entrypoints": [
     "static/js/runtime-main.ae3f294a.js",
     "static/js/2.c927ed4f.chunk.js",
-    "static/css/main.2a7d4cbd.chunk.css",
-    "static/js/main.ea1d2f2d.chunk.js"
+    "static/css/main.2c01ef5c.chunk.css",
+    "static/js/main.8aa578de.chunk.js"
   ]
 }
