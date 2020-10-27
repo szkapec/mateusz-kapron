@@ -27,8 +27,8 @@
     "project": [
       {
         "id": 1, "name": "Online courses", "desc": "Test application for selling courses via the Internet, extended with the option of paying by credit card",
-        "description": "Test application for selling courses over the Internet",
-        "technologies": "React,React-hook,React Context,Stripe,Styled-Components,HTML,JSX",
+        "description": "An application for selling courses via the Internet, extended with the possibility of paying by credit card (stripe)",
+        "technologies": "React,React-hook,React Context,Stripe,LocalStorage,Styled-Components,HTML,JSX",
         "github": "https://github.com/szkapec/kurs-online",
         "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase"
       },
@@ -49,8 +49,8 @@
       {
         "id": 3, "name": "Full-stack application", "desc": "Full-Stack application. Adding notes, twitters and private messages.",
         "description": "Full-Stack application. Adding notes, twitters, private notes. Read and write everything from mongoDB database. Premium option - watching movies",
-        "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,Styled-Components",
-      "github": "https://github.com/szkapec/express-react-node-mongo",
+        "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,LocalStorage,Styled-Components",
+      "github": "https://github.com/szkapec/express-react-node-mongodb",
       "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix"
       },
       {

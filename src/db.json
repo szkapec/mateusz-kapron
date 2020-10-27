@@ -28,8 +28,8 @@
   "project": [
     {
       "id": 1, "name": "Kursy internetowe",  "desc": "Aplikacja testowa do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia karta płatniczą",
-      "description": "Aplikacja testowa do sprzedawania kursów przez internet",
-      "technologies": "React,React-hook,React Context,Stripe,Styled-Components,HTML,JSX",
+      "description": "Aplikacja do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia kartą płatniczą (stripe) ",
+      "technologies": "React,React-hook,React Context,Stripe,LocalStorage,Styled-Components,HTML,JSX",
       "github": "https://github.com/szkapec/kurs-online",
       "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase"
     },
@@ -51,8 +51,8 @@
     {
       "id": 3, "name": "Aplikacja full-stack", "desc": "Aplikacja Full-Stack. Dodawanie notatek, twitterów i prywatnych wiadomości.",
       "description": "Aplikacja Full-Stack. Dodawanie notatek, twitterów, prywatnych notatek. Odczyt i zapis wszystkiego z bazy danych mongoDB. Możliwość premium - ogladanie filmów",
-      "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,Styled-Components",
-      "github": "https://github.com/szkapec/express-react-node-mongo",
+      "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,LocalStorage,Styled-Components",
+      "github": "https://github.com/szkapec/express-react-node-mongodb",
       "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix"
     },
     {
