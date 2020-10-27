@@ -52,7 +52,7 @@ const Skills = ({db}) => {
             <h3 className="good-skills">{good}</h3>
             <article className="article-good-skills">
                 {db.skills.map((item) => {
-                    if(item.id<7 || item.id>=11) return;
+                    if(item.id<7 || item.id>=13) return;
                     return (
                     <div key={item.id} data-aos="fade-right">
                         <span><img src={tab[item.id]} alt={item.src}/></span>
@@ -67,7 +67,7 @@ const Skills = ({db}) => {
             <h3 className="basic-skills">{basic}</h3>
             <article className="acticle-basic-skills">
                 {db.skills.map((item) => {
-                        if(item.id<11) return;
+                        if(item.id<13) return;
                         return (
                         <div key={item.id} data-aos="fade-right">
                             <span><img src={tab[item.id]} alt={item.src}/></span>

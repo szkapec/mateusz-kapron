@@ -7,7 +7,7 @@
     "hello": "Witam na moim portfolio!", "home": "O mnie", 
     "description": "Nazywam się Mateusz Kaproń, pochodzę z okolic Lublina i jestem Front-End Developerem.",
     "experience": "Posiadam wyższe wykształcenie informatyczne i ponad 3-letnie doświadczenie w pracy jako programista JavaScript.",
-    "programing": "Jestem programistą Front End specjalizującym się w tworzeniu aplikacji internetowych. Aktualnie skupiam się na nauce TypeScript oraz Node.js",
+    "programing": "Jestem programistą specjalizującym się w tworzeniu aplikacji internetowych. Szukam pracy jako front-end Developer. Aktualnie skupiam się na nauce TypeScript oraz Node.js",
     "ignite": "Zapraszam do obejrzenia moich projektów oraz na Github :)", "cv": "Pobierz CV", "info": "Wiecej informacji o mnie"
   },
   "stos": {
@@ -27,13 +27,6 @@
 
   "project": [
     {
-      "id": 0, "name": "Aplikacja do dodawania artykułów", "desc": "Aplikacja do dodawania artykułów zapisywana w bazie firebase.",
-      "description": "Aplikacja do dodawania artykułów zapisywana w bazie firebase. Możliwość dodawania własnych notatek które zapisują się w bazie danych. Aby dodać prosze się zarejestrować. ",
-      "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,HTML,JSX, CSS",
-      "github": "https://github.com/szkapec/firebase",
-      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
-    },
-    {
       "id": 1, "name": "Kursy internetowe",  "desc": "Aplikacja testowa do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia karta płatniczą",
       "description": "Aplikacja testowa do sprzedawania kursów przez internet",
       "technologies": "React,React-hook,React Context,Stripe,Styled-Components,HTML,JSX",
@@ -48,6 +41,14 @@
       "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
     },
     {
+      "id": 0, "name": "Aplikacja do dodawania artykułów", "desc": "Aplikacja do dodawania artykułów zapisywana w bazie firebase.",
+      "description": "Aplikacja do dodawania artykułów zapisywana w bazie firebase. Możliwość dodawania własnych notatek które zapisują się w bazie danych. Aby dodać prosze się zarejestrować. ",
+      "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,HTML,JSX, CSS",
+      "github": "https://github.com/szkapec/firebase",
+      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
+    },
+   
+    {
       "id": 3, "name": "Aplikacja full-stack", "desc": "Aplikacja Full-Stack. Dodawanie notatek, twitterów i prywatnych wiadomości.",
       "description": "Aplikacja Full-Stack. Dodawanie notatek, twitterów, prywatnych notatek. Odczyt i zapis wszystkiego z bazy danych mongoDB. Możliwość premium - ogladanie filmów",
       "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,Styled-Components",
@@ -56,42 +57,42 @@
     },
     {
       "id": 4, "name": "Aplikacja E-Commerce", "desc": "Aplikacja E-Commerce, sklep internetowy",
-      "description": "Aplikacja E-Commerce. Sklep internetowy napisany w React. Możliwość dodawania nowcych artykułów takich jak Telefony komputery i gadzety. Zaimplementoway koszyk zliczający wszystkie produkty i całkowity koszt zapłaty za zakupy.",
+      "description": "Aplikacja E-Commerce. Sklep internetowy napisany w React. Aplikacja pozwala na dodawanie nowych przedmiotów na sprzedaż takich jak telefony, komputery i gadzety. Zaimplementowany został również koszyk zliczający wszystkie produkty i całkowity koszt zapłaty za zakupy.",
       "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API,CreateContext,PropTypes",
       "github": "https://github.com/szkapec/ecommerse",
       "live": "https://szkapec.github.io/ecommerse/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
     },
     {
       "id": 5, "name": "Aplikacja Covid-19", "desc": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie",
-      "description": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie.",
+      "description": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie. Zaimplementowana została możliwość przejrzenia wszystkich państw i ich przyrost dzienny - nowych, wszystkich lub aktywnych przypadków covid-19. Zaimplementowana została możliwość przejrzenia szczegółowych informacji o covid-19 we wszystkich województwach w Polsce i wyświetlone zostały wszystkie przypadki covid-19 na całym świecie oraz wykresy zależności pomiędzy tymi danymi." ,
       "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
       "github": "https://github.com/szkapec/covid",
       "live": "https://szkapec.github.io/covid/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
     },
     {
-      "id": 18, "name": "Aplikacja do przeglądania filmów", "desc": "Aplikacja do przeglądania filmów",
-      "description": "Aplikacja do przeglądania filmów",
+      "id": 18, "name": "Aplikacja do wyszukiwania filmów", "desc": "Aplikacja do przeglądania i wyszukiwania wybranych filmów.",
+      "description": "Aplikacja do przeglądania i wyszukiwania wybranych filmów. Zaimplementowana została możliwość przejrzenia opisu filmu oraz jego średniej opini. Baza filmów pobierana jest z zewnętrznego API.",
       "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
       "github": "https://github.com/szkapec/movie-search",
       "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
     },
     {
-      "id": 6, "name": "Aplikacja do dodawania Notatek", "desc": "Aplikacja do dodawania notatek, artykułów i twitterów",
-      "description": "Aplikacja do dodawania notatek twitterów oraz artykułów",
+      "id": 6, "name": "Aplikacja do dodawania Notatek cz.1", "desc": "Aplikacja do dodawania notatek, artykułów i twitterów",
+      "description": "Aplikacja (z kursu react nr.1) do dodawania notatek twitterów oraz artykułów. cz.1",
       "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Styled-Components",
       "github": "https://github.com/szkapec/React-router-articles",
       "live": "https://szkapec.github.io/React-router-articles/#/", "route": "app-note", "next": "app-notes", "previous": "app-covid"
     },
     {
-      "id": 7, "name": "Aplikacja do dodawania Artykułów", "desc": "Aplikacja do dodawania notatek, artykułów i twitterów cz.2",
-      "description": "Aplikacja do dodawania notatek twitterów oraz artykułów cz.2 ",
+      "id": 7, "name": "Aplikacja do dodawania Notatek cz.2", "desc": "Aplikacja do dodawania notatek, artykułów i twitterów cz.2",
+      "description": "Aplikacja (z kursu react nr.2) do dodawania notatek twitterów oraz artykułów. Dzięki temu kursowi poszerzyłem swoją wiedzę na temat React oraz nauczyłem się w nim paru ciekawych narzędzi takich jak PageContext, Styled-Components, Storybook oraz Axios",
       "technologies": "HTML,JavaScript,React,React Router,JSX,PageContext,Storybook,Styled-Components",
       "github": "https://github.com/szkapec/react",
       "live": "https://szkapec.github.io/react/", "route": "app-notes", "next": "app-weatcher", "previous": "app-note"
     },
     {
       "id": 8, "name": "Projekt aplikacji pogodowej", "desc": "Aplikacja pogodowa cz.2, rozbudowana o nowe funkcjonalności",
-      "description": "Projekt aplikacji pogodowej napisanej w react. Pobiera dane z kazdego większego miasta. Możliwość sprawdzenie pogody godzinowej i 5 dniowej. Wstawione wykresy pokazujące średnią temperature w danym miejscu. Dodane zanieczyszczenia dla poszczegolnych miast.",
+      "description": "Aplikacja do przeglądania aktualnej pogody (temperatury, ciśnienia, siły wiatru, możliwości opadów) w Polsce jak i również na całym świecie. Aplikacja pobiera dane z każdego większego miasta. Zaimplementowana została również możliwość sprawdzenia pogody godzinnej lub 5 dniowej. Zaimplementowane zostały wykresy(liniowy i słupkowy), które pokazują średnią temperaturę w danej miejscowości.",
       "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
       "github": "https://github.com/szkapec/react-router-weather",
       "live": "https://szkapec.github.io/react-router-weather/", "route": "app-weatcher", "next": "app-weatcher-cz1", "previous": "app-notes"
@@ -105,14 +106,14 @@
     },
     {
       "id": 10, "name": "Aplikacja hotelowa", "desc": "Aplikacja dla hotelu dane pobierane z Contentfull",
-      "description": "Aplikacja dla hoteli. Dane o pokojach pobierane z Contentfull. Zaawansowana wyszukiwarka",
+      "description": "Aplikacja dla hoteli. Dane o pokojach pobierane z Contentfull. Zaimplementowana zaawansowana wyszukiwarka pokoi. Możliwość wyszukiwania wolnego pokoju po: cenie, rodzaju pokoju, ilości osób, czy ze śniadaniem i czy ze zwierzętami. Zaimplementowane zostały również opisy i zdjęcia wszystkich pokoi oraz dodatki, jakie się w nim znajdują.",
       "technologies": "HTML,Styled-Components,Contentfull,JavaScript,React,JSX,Context Api",
       "github": "https://github.com/szkapec/React-hotel",
       "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-generate", "previous": "app-weatcher-cz1"
     },
     {
-      "id": 11, "name": "Generowanie użytkowników", "desc": "Aplikacja do generowania danych",
-      "description": "Generowanie losowego użytkownika, wyświetlenie aktualnego kursu walut i pogody na podstawie jego pochodzenia oraz wyświetlenie danych historycznych na podstawie daty urodzenia.",
+      "id": 11, "name": "Generowanie użytkowników", "desc": "Aplikacja do generowania losowego użytkownika, kursu walut i pogody",
+      "description": "Aplikacja do generowania losowego użytkownika, wyświetlenia aktualnego kursu walut i pogody na podstawie jego pochodzenia oraz wyświetlenie danych historycznych na podstawie daty jego urodzenia. Aplikacja korzysta z 4 różnych zewnętrznych API. Stworzyłem ją, w celach edukacyjnych, aby poszerzyć swoją wiedzę z API oraz z Fetch",
       "technologies": "HTML,SASS,JavaScript,React,JSX,API",
       "github": "https://github.com/szkapec/pobieranieDanychzAPI",
       "live": "https://szkapec.github.io/pobieranieDanychzAPI/", "route": "app-generate", "next": "app-todo", "previous": "app-hotel"
@@ -125,22 +126,22 @@
       "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
     },
     {
-      "id": 16, "name": "Generator memów", "desc": "Generator memów",
-      "description": "Generator memów",
+      "id": 16, "name": "Generator memów", "desc": "Aplikacja pobiera dane z zewnętrznego API oraz generuje około 100 zdjęć.",
+      "description": "Aplikacja pobiera dane z zewnętrznego API oraz generuje około 100 zdjęć, które można przerobić dodając własny tekst. ",
       "technologies": "HTML,CSS,JavaScript, API,React,JSX",
       "github": "https://github.com/szkapec/meme-generator",
-      "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
+      "live": "https://szkapec.github.io/meme-generator/", "route": "app-meme", "next": "app-firebase", "previous": "app-robot"
     },
     {
       "id": 13, "name": "Gra w Snake", "desc": "Gra w Snake",
-      "description": "Gra Snake napisana w Reac",
+      "description": "Gra Snake napisana w React",
       "technologies": "HTML,CSS,JavaScript,React",
       "github": "https://github.com/szkapec/Snake",
       "live": "https://szkapec.github.io/Snake/", "route": "app-snake", "next": "app-robot", "previous": "app-todo"
     },
     {
       "id": 17, "name": "Aplikacja szyfrująca", "desc": "Aplikacja do szyfrowania i odszyfrowywania wiadomości",
-      "description": "Aplikacja do szyfrowania i odszyfrowywania wiadomości",
+      "description": "Aplikacja do szyfrowania i odszyfrowywania wiadomości oraz do generowania losowego hasła o określonym kryterium. ",
       "technologies": "HTML,CSS,JavaScript,React",
       "github": "https://github.com/szkapec/generating",
       "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
@@ -197,13 +198,13 @@
     "id":9, "fade": "fade-right", "description": "GIT", "experience": "2 lata doświadczenia"
   },
   {
-    "id":10, "fade": "fade-right", "description": "NPM", "experience": "2 lata doświadczenia"
+    "id":10, "fade": "fade-right", "description": "MONGO", "experience": "Rok doświadczenia"
   },
   {
-    "id":11, "fade": "fade-right", "description": "MONGO", "experience": "Rok doświadczenia"
+    "id":11, "fade": "fade-right", "description": "MYSQL", "experience": "Rok doświadczenia"
   },
   {
-    "id":12, "fade": "fade-right", "description": "MYSQL", "experience": "Rok doświadczenia"
+    "id":12, "fade": "fade-right", "description": "NPM", "experience": "2 lata doświadczenia"
   },
   {
     "id":13, "fade": "fade-right", "description": "EXPRESS", "experience": "Pół roku doświadczenia"

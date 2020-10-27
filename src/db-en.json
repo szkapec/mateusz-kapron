@@ -7,7 +7,7 @@
     "hello": "Welcome to my portfolio!", "home": "About me",
     "description": "My name is Mateusz Kaproń, I come from the Lublin area and I am a Front-End Developer.",
     "experience": "I have a higher IT education and over 3 years of experience in working as a JavaScript programmer.",
-    "programming": "I am a Front End developer specializing in creating web applications. Currently I am focusing on learning TypeScript and Node.js",
+    "programming": "I am a Front End developer specializing in creating web applications. I'm looking for a job as a front-end developer. Currently I am focusing on learning TypeScript and Node.js",
     "ignite": "Please see my projects and on Github :)", "cv": "Download CV", "info": "More info about me"
   },
   "stos": {
@@ -26,13 +26,6 @@
   },
     "project": [
       {
-        "id": 0, "name": "Firebase application", "desc": "Application for adding articles saved in the firebase database.",
-        "description": "Application for adding articles saved in the firebase database. Ability to add your own notes that are saved in the database. To add, please register.",
-        "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,HTML,JSX, CSS",
-        "github": "https://github.com/szkapec/firebase",
-        "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
-      },
-      {
         "id": 1, "name": "Online courses", "desc": "Test application for selling courses via the Internet, extended with the option of paying by credit card",
         "description": "Test application for selling courses over the Internet",
         "technologies": "React,React-hook,React Context,Stripe,Styled-Components,HTML,JSX",
@@ -47,6 +40,13 @@
         "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
       },
       {
+        "id": 0, "name": "Firebase application", "desc": "Application for adding articles saved in the firebase database.",
+        "description": "Application for adding articles saved in the firebase database. Ability to add your own notes that are saved in the database. To add, please register.",
+        "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,HTML,JSX, CSS",
+        "github": "https://github.com/szkapec/firebase",
+        "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
+      },
+      {
         "id": 3, "name": "Full-stack application", "desc": "Full-Stack application. Adding notes, twitters and private messages.",
         "description": "Full-Stack application. Adding notes, twitters, private notes. Read and write everything from mongoDB database. Premium option - watching movies",
         "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Express,Node,Passport,Axios,Styled-Components",
@@ -55,21 +55,21 @@
       },
       {
         "id": 4, "name": "E-Commerce Application", "desc": "E-Commerce Application, online store",
-        "description": "E-Commerce application. Online store written in React. Ability to add new articles such as Phones, computers and gadgets. Implemented a basket that counts all products and the total cost of payment for purchases.",
+        "description": "E-Commerce Application. Online store written in React. The application allows you to add new items for sale such as phones, computers and gadgets. A basket has also been implemented that lists all products and the total cost of payment for purchases.",
         "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API,CreateContext,PropTypes",
         "github": "https://github.com/szkapec/ecommerse",
         "live": "https://szkapec.github.io/ecommerse/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
       },
       {
         "id": 5, "name": "Covid-19 application", "desc": "Application with the latest information about corona virus infections in the world",
-        "description": "Application with the latest information about corona virus infections in the world.",
+        "description": "Application with the latest information about corona virus infections in the world. The ability to view all countries and their daily increment - new, all or active covid-19 cases has been implemented. The possibility of viewing detailed information on covid-19 in all voivodships in Poland has been implemented and all cases of covid-19 around the world and graphs of relationships between these data have been displayed.",
         "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
         "github": "https://github.com/szkapec/CoronavirusApi",
         "live": "https://koronavirus-19.netlify.app/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
       },
       {
-        "id": 18, "name": "Movie viewer application", "desc": "Movie viewer application",
-        "description": "Application for viewing movies",
+        "id": 18, "name": "Movie search application", "desc": "Application for browsing and searching for selected movies.",
+        "description": "Application for browsing and searching for selected movies. The possibility of viewing the description of the film and its average opinion has been implemented. The movie database is downloaded from an external API.",
         "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
         "github": "https://github.com/szkapec/movie-search",
         "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
@@ -83,15 +83,15 @@
       },
       {
 
-        "id": 7, "name": "Application for adding Articles", "desc": "Application for adding notes, articles and twitters part 2",
-        "description": "Application for adding twitter notes and articles, part 2",
+        "id": 7, "name": "Application for adding Notes", "desc": "Application for adding notes, articles and twitters part 2",
+        "description": "Application (from React course 2) for adding twitter notes and articles. Thanks to this course, I expanded my knowledge of React and learned some interesting tools in it, such as PageContext, Styled-Components, Storybook and Axios",
         "technologies": "HTML,JavaScript,React,React Router,JSX,PageContext,Storybook,Styled-Components",
         "github": "https://github.com/szkapec/react",
         "live": "https://szkapec.github.io/react/", "route": "app-notes", "next": "app-weatcher", "previous": "app-note"
       },
       {
         "id": 8, "name": "Weather application project", "desc": "Weather application part 2, extended with new functionalities",
-        "description": "Project of a weather application written in react. Download data from every major city. Possibility to check hourly and 5-day weather. Inserted graphs showing the average temperature in a given place. Added pollutants for individual cities.",
+        "description": "An application for viewing the current weather (temperature, pressure, wind strength, precipitation possibilities) in Poland and around the world. The application gets data from every major city. The possibility of checking hourly or 5-day weather has also been implemented. Charts (line and bar) have been implemented to show the average temperature in a given locality.",
         "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
         "github": "https://github.com/szkapec/react-router-weather",
         "live": "https://szkapec.github.io/react-router-weather/", "route": "app-weatcher", "next": "app-weatcher-cz1", "previous": "app-notes"
@@ -105,14 +105,14 @@
       },
       {
         "id": 10, "name": "Hotel application", "desc": "Hotel application data downloaded from Contentfull",
-        "description": "Application for hotels. Room data retrieved from Contentfull. Advanced search engine",
+        "description": "Application for hotels. Room data retrieved from Contentfull. Advanced room search engine implemented. Possibility to search for a free room at: price, type of room, number of people, whether with breakfast or with pets. Descriptions and photos of all rooms as well as additions that are in it have also been implemented.",
         "technologies": "HTML,Styled-Components,Contentfull,JavaScript,React,JSX,Context Api",
         "github": "https://github.com/szkapec/React-hotel",
         "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-generate", "previous": "app-weatcher-cz1"
       },
       {
-        "id": 11, "name": "Generating users", "desc": "Application for generating data",
-        "description": "Generate a random user, display the current exchange rate and weather based on his origin, and display historical data based on his date of birth.",
+        "id": 11, "name": "Generating users", "desc": "Application to generate random user, exchange rate and weather",
+        "description": "Application to generate a random user, display the current exchange rate and weather based on his origin, and display historical data based on his date of birth. The application uses 4 different external APIs. I created it for educational purposes, to expand my knowledge of API and Fetch.",
         "technologies": "HTML,SASS,JavaScript,React,JSX,API",
         "github": "https://github.com/szkapec/pobieranieDanychzAPI",
         "live": "https://szkapec.github.io/pobieranieDanychzAPI/", "route": "app-generate", "next": "app-todo", "previous": "app-hotel"
@@ -125,22 +125,22 @@
         "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
       },
       {
-        "id": 16, "name": "Meme Generator", "desc": "Meme Generator",
-        "description": "Meme Generator",
+        "id": 16, "name": "Meme Generator", "desc": "The application downloads data from an external API and generates about 100 photos.",
+        "description": "The application downloads data from an external API and generates about 100 photos that can be modified by adding your own text.",
         "technologies": "HTML,CSS,JavaScript, API,React,JSX",
         "github": "https://github.com/szkapec/meme-generator",
         "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
       },
       {
         "id": 13, "name": "Playing Snake", "desc": "Playing Snake",
-        "description": "Snake game written in Reac",
+        "description": "Snake game written in React",
         "technologies": "HTML,CSS,JavaScript,React",
         "github": "https://github.com/szkapec/Snake",
         "live": "https://szkapec.github.io/Snake/", "route": "app-snake", "next": "app-robot", "previous": "app-todo"
       },
       {
         "id": 17, "name": "Encryption application", "desc": "Message encryption and decryption application",
-        "description": "Message encryption and decryption application",
+        "description": "An application for encrypting and decrypting messages, and for generating a random password with a certain criteria.",
         "technologies": "HTML,CSS,JavaScript,React",
         "github": "https://github.com/szkapec/generating",
         "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
@@ -195,13 +195,13 @@
         "id": 9, "fade": "fade-right", "description": "GIT", "experience": "2 years of experience"
       },
       {
-        "id": 10, "fade": "fade-right", "description": "NPM", "experience": "2 years of experience"
+        "id": 10, "fade": "fade-right", "description": "MONGO", "experience": "One year of experience"
       },
       {
-        "id": 11, "fade": "fade-right", "description": "MONGO", "experience": "One year of experience"
+        "id": 11, "fade": "fade-right", "description": "MYSQL", "experience": "One year of experience"
       },
       {
-        "id": 12, "fade": "fade-right", "description": "MYSQL", "experience": "One year of experience"
+        "id": 12, "fade": "fade-right", "description": "NPM", "experience": "2 years of experience"
       },
       {
         "id": 13, "fade": "fade-right", "description": "EXPRESS", "experience": "Half a year of experience"
