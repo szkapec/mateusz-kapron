@@ -1,0 +1,220 @@
+#contact {
+  position: relative;
+  background-color: #152f4f;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+#contact .footer-contact {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#contact .footer-contact div {
+  padding: 20px 0;
+}
+
+#contact .footer-contact div:first-child {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#contact .footer-contact div:last-child {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  padding: 10px;
+}
+
+#contact .footer-container a {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  padding-top: 10px;
+}
+
+#contact .footer-link {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .footer-link div {
+  position: relative;
+  background-color: rgba(132, 129, 129, 0.53);
+  width: 45px;
+  border-radius: 50%;
+  height: 45px;
+  border-top: 3px solid rgba(132, 129, 129, 0.53);
+  border-bottom: 3px solid rgba(132, 129, 129, 0.53);
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  margin: 20px 10px;
+}
+
+#contact .footer-link div:hover {
+  animation: footer 2s infinite linear;
+}
+
+#contact .footer-link div:hover a {
+  animation: footer2 2s infinite linear;
+}
+
+#contact .footer-link a {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  border-radius: 100%;
+  color: white;
+  font-size: 20px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#contact .arrow {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0px -15px 0 white, 0 -30px 0 white, 0 -45px 0 white, 0 -60px 0 white;
+  overflow: hidden;
+  border-left: 3px solid rgba(132, 129, 129, 0.53);
+  border-right: 3px solid rgba(132, 129, 129, 0.53);
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  transition: 1s ease-in-out;
+}
+
+#contact .arrow:hover {
+  border-top: 3px solid rgba(132, 129, 129, 0.53);
+  border-bottom: 3px solid rgba(132, 129, 129, 0.53);
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+#contact .fa-angle-down {
+  animation: arrow 2s infinite linear;
+}
+
+#contact .copy {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  padding: 4px 25px;
+  background-color: #152f4f;
+  width: 100%;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#contact .copy p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+  padding-bottom: 4px;
+}
+
+@media (min-width: 400px) {
+  #contact .copy {
+    padding: 4px 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  #contact .copy {
+    padding: 4px 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #contact .copy {
+    padding: 4px 11%;
+  }
+}
+
+@media (min-width: 900px) {
+  #contact {
+    outline: none;
+  }
+  #contact .footer-contact {
+    padding-top: 20px;
+  }
+  #contact .footer-contact div:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  #contact .footer-contact div:last-child {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  #contact .footer-container {
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+  #contact .footer-link div {
+    margin: 30px 20px;
+    width: 60px;
+    height: 60px;
+    border-top: 4px solid rgba(132, 129, 129, 0.53);
+    border-bottom: 4px solid rgba(132, 129, 129, 0.53);
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+  }
+  #contact .footer-link div a {
+    font-size: 30px;
+  }
+}
+
+@keyframes footer {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes footer2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-80px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
