@@ -77,7 +77,7 @@ export default function Projects({db}) {
                                                 <div className="slide">
                                                 <div className="info-text">{item.desc}</div>
                                                 <div className="info-button">
-                                                    <NavLink to={`${process.env.PUBLIC_URL}/project/${item.route}`}> <button className="button-left" type="button">{details}</button></NavLink>
+                                                    <NavLink to={`/project/${item.route}`}> <button className="button-left" type="button">{details}</button></NavLink>
                                                     <a href={item.live}> <button className="button-right" type="button">{live}</button></a>
                                                 </div>
                                                 </div>

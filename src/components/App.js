@@ -8,9 +8,7 @@ import Default from './Default/Default';
 import {
   Route,
   Switch,
-  BrowserRouter,
   HashRouter,
-  BrowserRouter as Router,
 } from "react-router-dom";
 
 const App = () => {
@@ -20,14 +18,14 @@ const App = () => {
 
   return (
     <CreateProvider>
-        <Router basename={process.env.PUBLIC_URL} >
+        <HashRouter basename='/'>
             <Nav/>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/project/:id"  component={Details} />
               <Route component={Default} />
             </Switch>
-        </Router>
+        </HashRouter>
     </CreateProvider>
   );
 }
