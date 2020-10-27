@@ -27,7 +27,7 @@
 
   "project": [
     {
-      "id": 0, "name": "Aplikacja Firebase", "desc": "Aplikacja do dodawania artykułów zapisywana w bazie firebase.",
+      "id": 0, "name": "Aplikacja do dodawania artykułów", "desc": "Aplikacja do dodawania artykułów zapisywana w bazie firebase.",
       "description": "Aplikacja do dodawania artykułów zapisywana w bazie firebase. Możliwość dodawania własnych notatek które zapisują się w bazie danych. Aby dodać prosze się zarejestrować. ",
       "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,HTML,JSX, CSS",
       "github": "https://github.com/szkapec/firebase",
@@ -44,7 +44,7 @@
       "id": 2, "name": "Aplikacja Baflix",  "desc": "Aplikacja Baflix jest serwisem do przeglądania filmów jest on wzorowany z popularnego serwisu.",
       "description": "Aplikacja Baflix jest serwisem do oglądania filmów, jest on wzorowany z popularnego serwisu. Zdjęcia jak i filmy są zapisane w bazie danych Mongodb. Jest to aplikacja testowa. Nie ma filmów ze względu na prawa autorskie. ",
       "technologies": "React,React-Hook,React-Tabs,Context API,Swiper Slide,Axios,Node,Express,MongoDB,Styled-Components,HTML,JSX",
-      "github": "https://github.com/szkapec/Baflix",
+      "github": "https://github.com/szkapec/appbaflix",
       "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
     },
     {
@@ -65,8 +65,15 @@
       "id": 5, "name": "Aplikacja Covid-19", "desc": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie",
       "description": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie.",
       "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
-      "github": "https://github.com/szkapec/CoronavirusApi",
-      "live": "https://koronavirus-19.netlify.app/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
+      "github": "https://github.com/szkapec/covid",
+      "live": "https://szkapec.github.io/covid/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
+    },
+    {
+      "id": 18, "name": "Aplikacja do przeglądania filmów", "desc": "Aplikacja do przeglądania filmów",
+      "description": "Aplikacja do przeglądania filmów",
+      "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
+      "github": "https://github.com/szkapec/movie-search",
+      "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
     },
     {
       "id": 6, "name": "Aplikacja do dodawania Notatek", "desc": "Aplikacja do dodawania notatek, artykułów i twitterów",
@@ -118,11 +125,25 @@
       "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
     },
     {
+      "id": 16, "name": "Generator memów", "desc": "Generator memów",
+      "description": "Generator memów",
+      "technologies": "HTML,CSS,JavaScript, API,React,JSX",
+      "github": "https://github.com/szkapec/meme-generator",
+      "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
+    },
+    {
       "id": 13, "name": "Gra w Snake", "desc": "Gra w Snake",
       "description": "Gra Snake napisana w Reac",
       "technologies": "HTML,CSS,JavaScript,React",
       "github": "https://github.com/szkapec/Snake",
       "live": "https://szkapec.github.io/Snake/", "route": "app-snake", "next": "app-robot", "previous": "app-todo"
+    },
+    {
+      "id": 17, "name": "Aplikacja szyfrująca", "desc": "Aplikacja do szyfrowania i odszyfrowywania wiadomości",
+      "description": "Aplikacja do szyfrowania i odszyfrowywania wiadomości",
+      "technologies": "HTML,CSS,JavaScript,React",
+      "github": "https://github.com/szkapec/generating",
+      "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
     },
     {
       "id": 14, "name": "Projekt Roboto", "desc": "Animacje Robota",
@@ -138,6 +159,9 @@
       "github": "https://github.com/szkapec/bowling",
       "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
     }
+    
+
+  
     
   ],
 

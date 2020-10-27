@@ -25,6 +25,9 @@ import generates from './projects/generate.PNG';
 import robotos from './projects/Roboto.png';
 import teniss from './projects/tenis.PNG';
 import snakes from './projects/snake2.PNG';
+import moviess from './projects/movies.png';
+import memes from './projects/memegenerator.PNG';
+import encripts from './projects/encrypt-decrypt.PNG';
 
 
 export const github = githubs;
@@ -46,4 +49,6 @@ export const generate = generates;
 export const roboto = robotos;
 export const tenis = teniss;
 export const snake = snakes;
-
+export const movies = moviess;
+export const meme = memes;
+export const encript = encripts;

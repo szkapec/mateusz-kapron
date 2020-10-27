@@ -68,6 +68,13 @@
         "live": "https://koronavirus-19.netlify.app/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
       },
       {
+        "id": 18, "name": "Movie viewer application", "desc": "Movie viewer application",
+        "description": "Application for viewing movies",
+        "technologies": "HTML,Styled-Components,JavaScript,React,React Router,JSX,API",
+        "github": "https://github.com/szkapec/movie-search",
+        "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
+      },
+      {
         "id": 6, "name": "Application for adding Notes", "desc": "Application for adding notes, articles and twitter",
         "description": "Application for adding twitter notes and articles",
         "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Styled-Components",
@@ -118,11 +125,25 @@
         "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
       },
       {
+        "id": 16, "name": "Meme Generator", "desc": "Meme Generator",
+        "description": "Meme Generator",
+        "technologies": "HTML,CSS,JavaScript, API,React,JSX",
+        "github": "https://github.com/szkapec/meme-generator",
+        "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
+      },
+      {
         "id": 13, "name": "Playing Snake", "desc": "Playing Snake",
         "description": "Snake game written in Reac",
         "technologies": "HTML,CSS,JavaScript,React",
         "github": "https://github.com/szkapec/Snake",
         "live": "https://szkapec.github.io/Snake/", "route": "app-snake", "next": "app-robot", "previous": "app-todo"
+      },
+      {
+        "id": 17, "name": "Encryption application", "desc": "Message encryption and decryption application",
+        "description": "Message encryption and decryption application",
+        "technologies": "HTML,CSS,JavaScript,React",
+        "github": "https://github.com/szkapec/generating",
+        "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
       },
       {
         "id": 14, "name": "Roboto Project", "desc": "Robot Animations",
@@ -138,6 +159,7 @@
         "github": "https://github.com/szkapec/bowling",
         "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
       }
+    
       
      
     ],

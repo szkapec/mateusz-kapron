@@ -16,11 +16,15 @@ import ecommers from '../../assets/projects/ecommers2.PNG';
 import generate from '../../assets/projects/generate.PNG';
 import roboto from '../../assets/projects/Roboto.png';
 import snake from '../../assets/projects/snake2.PNG';
+import movies from '../../assets/projects/movies.png';
+import meme from '../../assets/projects/memegenerator.PNG';
+import encript from '../../assets/projects/encrypt-decrypt.PNG';
 import {NavLink} from 'react-router-dom';
 import Main from './Main';
 
 export default function Projects({db}) {
-    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling]
+    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact,
+         weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies]
     
     const [categorie, setCategories] = useState('')
     const [projects, setProjects] = useState([]);
@@ -35,7 +39,7 @@ export default function Projects({db}) {
         setProjects([]);
         db.project.map(item => {
             if(categorie==="Games"){
-               if(item.id>11) {
+               if(item.id>=12 && item.id<18 ) {
                 setProjects(prevState => [...prevState, item])
                }
             }
@@ -73,7 +77,7 @@ export default function Projects({db}) {
                                                 <div className="slide">
                                                 <div className="info-text">{item.desc}</div>
                                                 <div className="info-button">
-                                                    <NavLink to={`/project/${item.route}`}> <button className="button-left" type="button">{details}</button></NavLink>
+                                                    <NavLink to={`${process.env.PUBLIC_URL}/project/${item.route}`}> <button className="button-left" type="button">{details}</button></NavLink>
                                                     <a href={item.live}> <button className="button-right" type="button">{live}</button></a>
                                                 </div>
                                                 </div>
