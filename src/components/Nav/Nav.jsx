@@ -60,11 +60,11 @@ export default function Nav() {
             </nav>
             <div className={`box ${!ctx.menu&&"trans"}`}>
                 <ul className="navbar-box">
-                        <li onClick={handleOff}> <a href={'/#home'}> {home} </a></li>
-                        <li onClick={handleOff}> <a className="polishDwa" href={'/#about'}> {about} </a></li>
-                        <li onClick={handleOff}> <a className="umiejetnosciA2" href={'/#skills'}> {skills} </a></li>
-                        <li onClick={handleOff}> <a className="projektyA2" href={'/#projects'}> {project} </a></li>
-                        <li onClick={handleOff}> <a className="kontaktA2" href={'/#contact'}> {contact} </a></li>
+                        <li onClick={handleOff}> <a href={process.env.PUBLIC_URL+'/#home'}> {home} </a></li>
+                        <li onClick={handleOff}> <a className="polishDwa" href={process.env.PUBLIC_URL+'/#about'}> {about} </a></li>
+                        <li onClick={handleOff}> <a className="umiejetnosciA2" href={process.env.PUBLIC_URL+'/#skills'}> {skills} </a></li>
+                        <li onClick={handleOff}> <a className="projektyA2" href={process.env.PUBLIC_URL+'/#projects'}> {project} </a></li>
+                        <li onClick={handleOff}> <a className="kontaktA2" href={process.env.PUBLIC_URL+'/#contact'}> {contact} </a></li>
                     </ul>
                     <div className="box-description">
                         {info}
