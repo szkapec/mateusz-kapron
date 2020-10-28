@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/mateusz-kapron/static/css/main.559935d8.chunk.css",
-    "main.js": "/mateusz-kapron/static/js/main.11e2044c.chunk.js",
-    "main.js.map": "/mateusz-kapron/static/js/main.11e2044c.chunk.js.map",
+    "main.css": "/mateusz-kapron/static/css/main.751476db.chunk.css",
+    "main.js": "/mateusz-kapron/static/js/main.9acffee0.chunk.js",
+    "main.js.map": "/mateusz-kapron/static/js/main.9acffee0.chunk.js.map",
     "runtime-main.js": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js",
     "runtime-main.js.map": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js.map",
-    "static/js/2.8841b192.chunk.js": "/mateusz-kapron/static/js/2.8841b192.chunk.js",
-    "static/js/2.8841b192.chunk.js.map": "/mateusz-kapron/static/js/2.8841b192.chunk.js.map",
+    "static/js/2.602c15de.chunk.js": "/mateusz-kapron/static/js/2.602c15de.chunk.js",
+    "static/js/2.602c15de.chunk.js.map": "/mateusz-kapron/static/js/2.602c15de.chunk.js.map",
     "index.html": "/mateusz-kapron/index.html",
-    "precache-manifest.6a7c9cf9592b38e04e4999347386f05c.js": "/mateusz-kapron/precache-manifest.6a7c9cf9592b38e04e4999347386f05c.js",
+    "precache-manifest.d4215163726a626e5409207a10b47271.js": "/mateusz-kapron/precache-manifest.d4215163726a626e5409207a10b47271.js",
     "service-worker.js": "/mateusz-kapron/service-worker.js",
-    "static/css/main.559935d8.chunk.css.map": "/mateusz-kapron/static/css/main.559935d8.chunk.css.map",
-    "static/js/2.8841b192.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.8841b192.chunk.js.LICENSE.txt",
+    "static/css/main.751476db.chunk.css.map": "/mateusz-kapron/static/css/main.751476db.chunk.css.map",
+    "static/js/2.602c15de.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.602c15de.chunk.js.LICENSE.txt",
     "static/media/Git_icon.svg": "/mateusz-kapron/static/media/Git_icon.1acf1264.svg",
+    "static/media/Mateusz Kaproń-CV.pdf": "/mateusz-kapron/static/media/Mateusz Kaproń-CV.a434edfc.pdf",
     "static/media/React-node-express2.PNG": "/mateusz-kapron/static/media/React-node-express2.cffb3a52.PNG",
     "static/media/Roboto.png": "/mateusz-kapron/static/media/Roboto.6f65452a.png",
     "static/media/ajax-icon-7.jpg": "/mateusz-kapron/static/media/ajax-icon-7.bd187668.jpg",
@@ -66,8 +67,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ae3f294a.js",
-    "static/js/2.8841b192.chunk.js",
-    "static/css/main.559935d8.chunk.css",
-    "static/js/main.11e2044c.chunk.js"
+    "static/js/2.602c15de.chunk.js",
+    "static/css/main.751476db.chunk.css",
+    "static/js/main.9acffee0.chunk.js"
   ]
 }

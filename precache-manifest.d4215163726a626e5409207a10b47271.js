@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96d5a77028ca5ab87737fbf1d319ee65",
+    "revision": "cd16d19ba11a4706b7aeeb36f3a3ebfe",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "3b9da627c09464d72361",
-    "url": "/mateusz-kapron/static/css/main.559935d8.chunk.css"
+    "revision": "50abb6c752d89e3f1391",
+    "url": "/mateusz-kapron/static/css/main.751476db.chunk.css"
   },
   {
-    "revision": "616be8c7fb483366c023",
-    "url": "/mateusz-kapron/static/js/2.8841b192.chunk.js"
+    "revision": "49fd276bc03c218961d9",
+    "url": "/mateusz-kapron/static/js/2.602c15de.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/mateusz-kapron/static/js/2.8841b192.chunk.js.LICENSE.txt"
+    "url": "/mateusz-kapron/static/js/2.602c15de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b9da627c09464d72361",
-    "url": "/mateusz-kapron/static/js/main.11e2044c.chunk.js"
+    "revision": "50abb6c752d89e3f1391",
+    "url": "/mateusz-kapron/static/js/main.9acffee0.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1acf12649c0fc70b4441430701fc1587",
     "url": "/mateusz-kapron/static/media/Git_icon.1acf1264.svg"
+  },
+  {
+    "revision": "a434edfc66371dc7b76bad8eb9942fa8",
+    "url": "/mateusz-kapron/static/media/Mateusz Kaproń-CV.a434edfc.pdf"
   },
   {
     "revision": "cffb3a523b38e9b9f42a40d8a2a89fdb",
