@@ -1,6 +1,6 @@
 
 .details {
-	background-color:  var(--container);
+	background-color: #9dc4de;
 	min-height: 100vh;
 	overflow: hidden;
 }
@@ -32,9 +32,13 @@
 		letter-spacing: 2px;
 		line-height: 30px;
 		max-width: 900px;
-		margin: 0px auto;
+		margin: 0px auto 15px;
 		@media(min-width: 700px) {
 			margin: 0px auto 20px;
+		}
+		@media(min-width: 1500px) {
+			font-size: 22px;
+			line-height: 35px;
 		}
 	}
 	&__technologies {
@@ -43,6 +47,7 @@
 	}
 
 	&__img {
+		border-radius: 20px;
 		display: block;
 		margin: 0 auto;
 		width: 90%;
@@ -52,12 +57,14 @@
 		padding: 5px;
 	}
 	&__button {
+	
 		display: flex;
 		justify-content: center;
 		width: 70%;
 		margin: 20px auto 15px;
 	
 		button {
+			border-radius: 10px;
 			color: white;
 			font-family: bold;
 			background-color: #AFD5ED;
@@ -67,6 +74,7 @@
 			padding: 5px 10px;
 			transition: .4s ease-in-out;
 			margin: 5px 25px;
+			outline: none;
 		  }
 	  
 		  button:hover {
@@ -89,12 +97,17 @@
 
 
 .description-technologies {
-	margin: 20px auto;
+	max-width: 1000px;
+	width: 90%;
+	margin: 30px auto;
 	background:  var(--container);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+	border-radius: 20px;
 	padding: 10px 0;
+	text-align: center;
 	
 	div:nth-child(1) {
-		
+	
 		color:rgb(5, 90, 150);
 		display: inline;
 		font-size: 18px;
@@ -114,8 +127,17 @@
 		}
 	}
 	div:nth-child(2) {
-		margin: 20px;
+		margin: 10px;
 		line-height: 50px;
+		outline: none;
+		button {
+		outline: none;
+		color: black;
+		border-radius: 15px;
+		}
+		@media(min-width: 600px) {
+			margin: 20px;
+		}
 		@media(min-width:1100px){
 			margin-left: 30px;
 			text-align: center;

@@ -172,7 +172,11 @@
        
     }
 }
-
+@media(min-width: 1500px) {
+    #contact .footer-contact div:last-child {
+                font-size: 20px;
+            }
+        }
 
 
 @keyframes footer {

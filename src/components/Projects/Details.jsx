@@ -13,7 +13,7 @@ const Details = (props) => {
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
 
-
+    console.log('wykonaj')
     useEffect(() => {
         window.scrollTo(0, 0);
         setTimeout(() => setLoading(), 1500);

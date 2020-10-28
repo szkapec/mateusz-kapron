@@ -6,21 +6,33 @@ import menuImg from '../../assets/menu.png';
 import menuImgClick from '../../assets/menuimg.png';
 import poland from '../../assets/poland.svg';
 import english from '../../assets/english.svg';
-import {NavLink} from 'react-router-dom'
+import {NavLink, useHistory} from 'react-router-dom'
 import styled from 'styled-components'
-export default function Nav() {
+export default function Nav(props) {
     const ctx = useContext(CartContext);
     const [data, setData] = useState(db)
     const {home, about, skills, project, contact, info} = data.navigate;
     const [menu,setMenu] = useState(true)
     const [navbar, setNavbar] = useState(false)
     const [box, setBox] = useState(false)
+    const history = useHistory();
+
     const scrolling = (instance) => {
-		let node = document.getElementById(instance);
-		window.scrollTo({
-			top: node.offsetTop,
-			behavior: "smooth"
-		});
+        
+        let node = document.getElementById(instance);
+        let details = document.querySelector('.details')
+        console.log(node, 'node')
+        console.log(details,'details')
+		if(node) {
+            window.scrollTo({
+                top: node.offsetTop,
+                behavior: "smooth"
+            });
+        }
+        if(details){
+            history.goBack();
+        }
+        console.log(node)
     }
   
     useEffect(() => {
@@ -29,9 +41,11 @@ export default function Nav() {
 
     const handleClick = () => {
         setMenu(!menu)
+     
     }
     const handleOff = () => {
         setMenu(true)
+        setBox(!box)
         ctx.changeMenu(true)
     }
 
@@ -61,6 +75,7 @@ export default function Nav() {
                 setData(dbeng)
                 ctx.changeLeanguage(dbeng)
             }}>
+           
             <img className="nav-img" src={english} alt="english"/>
             </button>
                <span className="menu-s">
@@ -79,17 +94,18 @@ export default function Nav() {
                 <ul className="navbar-box">
                         <li onClick={()=> {
                             handleOff()
-                            window.scrollTo({
-                                top: 0,
-                                behavior: "smooth"
-                            });
-                        }}>  {home} </li>
+                            scrolling('home');
+                        }}> 
+                            {home}
+                        </li>
                         <li onClick={() => {
+                                        console.log(props)
                                         handleOff()
 										scrolling('about');
 									}}>{about}</li>
 
                         <li onClick={() => {
+                             console.log(props)
                                         handleOff()
 										scrolling('skills');
 									}}> {skills} </li>
@@ -129,6 +145,9 @@ export default function Nav() {
     width: 30px;
     height: 30px;
     outline: none;
+    @media(min-width: 1500px) {
+        margin-top: 5px;
+    }
   .clickafbef::after {
     content: '';
     position: absolute;

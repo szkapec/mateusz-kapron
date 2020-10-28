@@ -142,7 +142,7 @@
       button {
         margin: 10px 15px;
         padding: 7px 20px;
-        font-size: 18px;
+        font-size: 20px;
         width: 115px;
       }
     }
@@ -223,6 +223,14 @@
       color: #AFD5ED;
       background-color: white;
       border: 2px solid #9DC4DE
+    }
+    @media(min-width: 1500px) {
+      .button-left {
+        font-size: 20px;
+      }
+      .button-right {
+        font-size: 20px;
+      }
     }
   }
 
