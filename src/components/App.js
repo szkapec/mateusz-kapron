@@ -9,14 +9,9 @@ import {
   Route,
   Switch,
   HashRouter,
-  BrowserRouter
 } from "react-router-dom";
 
 const App = () => {
-
-  
- 
-
   return (
     <CreateProvider>
         <HashRouter basename='/'>

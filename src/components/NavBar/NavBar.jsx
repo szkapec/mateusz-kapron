@@ -11,7 +11,7 @@ const NavBar = () => {
 
     useEffect(() => {
         setTimeout(setAstronomy(true), 4000)
-    })
+    }, [])
     return (
         <section id="home">
             <nav>

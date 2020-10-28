@@ -29,12 +29,8 @@ export default function Projects({db}) {
     const [categorie, setCategories] = useState('')
     const [projects, setProjects] = useState([]);
     
-    
-
-
-
-
    const {ignite, github, all, allproject, game, details, live, category} = db.projectDesc;
+   
     useEffect(() => {
         setProjects([]);
         db.project.map(item => {

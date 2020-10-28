@@ -29,14 +29,13 @@
   }
 
   #home {
-    padding-top: 30px;
     background-color: #fff;
   }
     .pictures { 
    
       background-image: url("../../assets/mountains-mobile.jpg");
       height: 100vh;
-      width: 100vw;
+      width: 100%;
       background-size: cover;
       background-position: center;
       overflow: hidden;

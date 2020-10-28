@@ -1,16 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav.active {
+    background: transparent;
+}
+
+.box.active {
+    border-top-left-radius: 100px;
+    
+}
 .nav {
     position: fixed;
     top: 0px;
     left: 0;
     right: 0;
-    background-color: rgba(41, 77, 101, 10);
+    background:  rgba(41, 77, 101, 10);
     width: 100%;
     height: 40px;
     z-index: 9999;
     font-family: 'Roboto', sans-serif;
+    transition: .5s ease-in-out;
     @media(min-width: 1500px) {
         height: 50px;
     }
+
 
     button {
         border: none;
@@ -35,10 +49,10 @@
 .menu {
     position: absolute;
     width: 30px;
-    top: 5px;
+    top: 7px;
     right: 20px;
-    filter: invert(100%);
     cursor: pointer;
+
     @media(min-width: 1500px) {
         width:40px;
     }
@@ -64,6 +78,7 @@
     width: 200px;
     height: 100%;
     background-color: rgba(41, 77, 101, 0.918);
+    background: linear-gradient(rgba(41, 77, 101, 10), rgba(41, 77, 101, 0.877) );
     transform: translateX(100%);
     transition: 1s ease-in-out;
     z-index: auto;
@@ -121,16 +136,15 @@
         list-style-type: none;
         margin-top: 20px;
         padding-bottom: 2px;
-        a {
-            text-decoration: none;
-            color: rgb(206, 206, 206);
-            text-transform: uppercase;
-        }
-        :hover {
-            transition: 0.3s ease-in-out;
-            border-bottom: 1px solid white;
-            color:white;
-        }
+        text-decoration: none;
+        color: rgb(206, 206, 206);
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    :hover {
+        transition: 0.3s ease-in-out;
+        color:white;
+        text-decoration: underline;
     }
   
 }
@@ -143,7 +157,6 @@
     line-height: 20px;
     letter-spacing: 2px;
     transition: 0.5s ease-in-out;
-    
 }
 .box-description :hover{
     color:white;

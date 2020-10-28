@@ -6,17 +6,25 @@ import menuImg from '../../assets/menu.png';
 import menuImgClick from '../../assets/menuimg.png';
 import poland from '../../assets/poland.svg';
 import english from '../../assets/english.svg';
-import homes from '../../assets/home.png'
 import {NavLink} from 'react-router-dom'
+import styled from 'styled-components'
 export default function Nav() {
     const ctx = useContext(CartContext);
     const [data, setData] = useState(db)
-    const {home, about, skills, features, project, contact, info} = data.navigate;
+    const {home, about, skills, project, contact, info} = data.navigate;
     const [menu,setMenu] = useState(true)
-
+    const [navbar, setNavbar] = useState(false)
+    const [box, setBox] = useState(false)
+    const scrolling = (instance) => {
+		let node = document.getElementById(instance);
+		window.scrollTo({
+			top: node.offsetTop,
+			behavior: "smooth"
+		});
+    }
+  
     useEffect(() => {
         ctx.changeMenu(menu)
-      
     }, [menu])
 
     const handleClick = () => {
@@ -26,11 +34,22 @@ export default function Nav() {
         setMenu(true)
         ctx.changeMenu(true)
     }
-    return (
-        <section className="nav">
-            <nav>
-                <NavLink to={"/#home"} ><i className="fab fa-resolving homes"></i></NavLink>
 
+    const changeBackground = () => {
+        if(window.scrollY >= 80) {
+            setNavbar(true);
+        }
+        else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+    
+    return (
+        <section className={`${!navbar ? "nav active" : "nav"}`}>
+            <nav>
+                <NavLink  to={"/#home"} ><i className="fab fa-resolving homes"></i></NavLink>
                 <button onClick={()=> {
                 setData(db);
                 ctx.changeLeanguage(db)
@@ -44,27 +63,46 @@ export default function Nav() {
             }}>
             <img className="nav-img" src={english} alt="english"/>
             </button>
-                {/* <ul className="navbar" data-aos="fade-left"  data-aos-delay="1000">
-                    <li> <a href="#jeden"> {home} </a></li>
-                    <li> <a className="polishDwa" href="#dwa"> {about} </a></li>
-                    <li> <a className="umiejetnosciA2" href="#trzy"> {skills} </a></li>
-                    <li> <a className="cechyA2" href="#cztery"> {features} </a> </li>
-                    <li> <a className="projektyA2" href="#piec"> {project} </a></li>
-                    <li> <a className="kontaktA2" href="#szesc"> {contact} </a></li>
-                </ul> */}
                <span className="menu-s">
                MENU
                </span>
-                <img onClick={handleClick} className={`menu`} src={ctx.menu?menuImg:menuImgClick} alt="menu"/>
-                
+                <div className={`menu`} src={ctx.menu?menuImg:menuImgClick} alt="menu"> 
+                <StyledBox box={box} onClick={() => {
+                   setBox(!box)
+                   handleClick()
+               }}>
+                        <div className="clickafbef"></div>
+                </StyledBox>
+                </div>
             </nav>
-            <div className={`box ${!ctx.menu&&"trans"}`}>
+            <div className={`box ${!ctx.menu&&"trans"} ${!navbar&&" active"}`}>
                 <ul className="navbar-box">
-                        <li onClick={handleOff}> <a href={process.env.PUBLIC_URL+'/#home'}> {home} </a></li>
-                        <li onClick={handleOff}> <a className="polishDwa" href={process.env.PUBLIC_URL+'/#about'}> {about} </a></li>
-                        <li onClick={handleOff}> <a className="umiejetnosciA2" href={process.env.PUBLIC_URL+'/#skills'}> {skills} </a></li>
-                        <li onClick={handleOff}> <a className="projektyA2" href={process.env.PUBLIC_URL+'/#projects'}> {project} </a></li>
-                        <li onClick={handleOff}> <a className="kontaktA2" href={process.env.PUBLIC_URL+'/#contact'}> {contact} </a></li>
+                        <li onClick={()=> {
+                            handleOff()
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth"
+                            });
+                        }}>  {home} </li>
+                        <li onClick={() => {
+                                        handleOff()
+										scrolling('about');
+									}}>{about}</li>
+
+                        <li onClick={() => {
+                                        handleOff()
+										scrolling('skills');
+									}}> {skills} </li>
+
+                        <li onClick={() => {
+                                        handleOff()
+										scrolling('projects');
+									}}>  {project} </li>
+
+                        <li onClick={() => {
+                                        handleOff()
+										scrolling('contact');
+									}}> {contact}</li>
                     </ul>
                     <div className="box-description">
                         {info}
@@ -80,7 +118,52 @@ export default function Nav() {
                         <a href="tel:+48661360889">661-360-889</a>
                     </div>
                 </div>
-       
         </section>
     )
   }
+
+
+  const StyledBox = styled.span`
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    outline: none;
+  .clickafbef::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: ${({box})=> box ? '0px':'-10px'};
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    transform: ${({box})=> box ? 'rotate(45deg)':'rotate(0)'};
+    transition: .7s ease-in-out;
+}
+.clickafbef {
+    position: absolute;
+    content: '';
+    top: 10px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: ${({box})=> box ? 'transparent':'white'};
+    transition: .7s ease-in-out;
+}
+.clickafbef::before {
+    position: absolute;
+    content: '';
+    top: ${({box})=> box ? '0px':'10px'};
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: white;
+    transform: ${({box})=> box ? 'rotate(-45deg)':'rotate(0)'};
+    transition: .7s ease-in-out;
+}
+
+  `
+
+  

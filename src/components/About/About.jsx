@@ -3,7 +3,7 @@ import cvs from '../../assets/icon/resume.svg'
 import analitics from '../../assets/icon/analytics.png';
 import poeplecoding from '../../assets/icon/poeplecoding.png';
 import people from '../../assets/icon/people.svg';
-
+import cvp from '../../assets/pdf/Mateusz Kaproń-CV.pdf';
 const About = ({db}) => {
     const {hello, description, home, experience, programing, cv, ignite, info} = db.sectionOne;
     return (
@@ -32,7 +32,7 @@ const About = ({db}) => {
                         {programing}
                     </div>
                     <div >
-                    {info}<a className="cv" href={cv}><button>{cv}</button></a>
+                    {info}<a className="cv" href={cvp}><button>{cv}</button></a>
                     </div>
                     <div>{ignite}</div>
                     <a className="about__link" href="https://github.com/"> 

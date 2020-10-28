@@ -75,8 +75,8 @@
         "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
       },
       {
-        "id": 6, "name": "Application for adding Notes", "desc": "Application for adding notes, articles and twitter",
-        "description": "Application for adding twitter notes and articles",
+        "id": 6, "name": "Application for adding Notes cz.1", "desc": "Application for adding notes, articles and twitters",
+        "description": "Application (from React course 1) for adding twitter notes and articles, part 1",
         "technologies": "HTML,SASS,JavaScript,React,React Router,JSX,Styled-Components",
         "github": "https://github.com/szkapec/React-router-articles",
         "live": "https://szkapec.github.io/React-router-articles/#/", "route": "app-note", "next": "app-notes", "previous": "app-covid"
