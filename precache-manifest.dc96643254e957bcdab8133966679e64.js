@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70cd5f8db541ee3a99b3791ec4fda2e0",
+    "revision": "901f9e1f65b3b8e6c4d6f130437dcb70",
     "url": "/mateusz-kapron/index.html"
   },
   {
