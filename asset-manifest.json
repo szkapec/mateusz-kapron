@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mateusz-kapron/static/css/main.c07ccc0c.chunk.css",
-    "main.js": "/mateusz-kapron/static/js/main.83b6e303.chunk.js",
-    "main.js.map": "/mateusz-kapron/static/js/main.83b6e303.chunk.js.map",
+    "main.js": "/mateusz-kapron/static/js/main.f5ca4065.chunk.js",
+    "main.js.map": "/mateusz-kapron/static/js/main.f5ca4065.chunk.js.map",
     "runtime-main.js": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js",
     "runtime-main.js.map": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js.map",
     "static/js/2.38acbb70.chunk.js": "/mateusz-kapron/static/js/2.38acbb70.chunk.js",
     "static/js/2.38acbb70.chunk.js.map": "/mateusz-kapron/static/js/2.38acbb70.chunk.js.map",
     "index.html": "/mateusz-kapron/index.html",
-    "precache-manifest.1961a6891b8392d0cfabd33cd04853b3.js": "/mateusz-kapron/precache-manifest.1961a6891b8392d0cfabd33cd04853b3.js",
+    "precache-manifest.d4f8635686656102baa56bab8a29553f.js": "/mateusz-kapron/precache-manifest.d4f8635686656102baa56bab8a29553f.js",
     "service-worker.js": "/mateusz-kapron/service-worker.js",
     "static/css/main.c07ccc0c.chunk.css.map": "/mateusz-kapron/static/css/main.c07ccc0c.chunk.css.map",
     "static/js/2.38acbb70.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.38acbb70.chunk.js.LICENSE.txt",
@@ -69,6 +69,6 @@
     "static/js/runtime-main.ae3f294a.js",
     "static/js/2.38acbb70.chunk.js",
     "static/css/main.c07ccc0c.chunk.css",
-    "static/js/main.83b6e303.chunk.js"
+    "static/js/main.f5ca4065.chunk.js"
   ]
 }
