@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Details from './Projects/Details';
 import Home from './Root/Home'
@@ -10,8 +10,18 @@ import {
   Switch,
   HashRouter,
 } from "react-router-dom";
+import ReactGA from 'react-ga';
+
+
+
 
 const App = () => {
+
+  useEffect(() => {
+    ReactGA.initialize('G-VXS8ZKE889');
+    ReactGA.pageview('/');
+  }, [])
+
   return (
     <CreateProvider>
         <HashRouter basename='/'>
