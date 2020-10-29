@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ffd2499d105aa223b13a0bf80e49fcb",
+    "revision": "9ecb96ac0b626c3e5ed2e1cdfc0950a9",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "e53914de609b4d833b01",
+    "revision": "16178739962088e82547",
     "url": "/mateusz-kapron/static/css/main.c07ccc0c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.38acbb70.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e53914de609b4d833b01",
-    "url": "/mateusz-kapron/static/js/main.f5ca4065.chunk.js"
+    "revision": "16178739962088e82547",
+    "url": "/mateusz-kapron/static/js/main.569b78bf.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
