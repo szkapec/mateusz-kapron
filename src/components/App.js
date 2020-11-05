@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import Details from './Projects/Details';
-import Home from './Root/Home'
+import Root from './Root/Root'
 import CreateProvider from './Context/Context';
 import Nav from './Nav/Nav';
 import Default from './Default/Default';
@@ -28,7 +28,7 @@ const App = () => {
         <HashRouter basename='/'>
             <Nav/>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Root} />
               <Route exact path="/project/:id"  component={Details} />
               <Route component={Default} />
             </Switch>

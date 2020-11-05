@@ -6,7 +6,7 @@
 // export default react;
 
 
-import githubs from './github.svg'
+import githubs from './home/github.svg'
 import courses from './projects/course.PNG';
 import firebases from './projects/firebase.png';
 import weathers from './projects/weather-aplication.PNG';

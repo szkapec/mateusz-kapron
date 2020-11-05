@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import github from '../../assets/github.svg';
+import github from '../../assets/home/github.svg';
 
 export default function Main({ignite,git}) {
     return (
@@ -14,20 +14,6 @@ export default function Main({ignite,git}) {
     )
 }
 
-// <div>
-// <div>
-//     Wykonuję strony internetowe od początku (designe) do końca (pozycjonowanie w internecie).
-//     Na co dzień pisze w React, uczę się jego dodatkowych narzędzi, aktualnie skupiam się na nauce TypeScript oraz Node.js. 
-// </div>
-// <div>Studiowałem Informatyke na Politechnice Lubelskiej i szukam pracy jako Front-End Developer. Więcej informacji o mnie 
-// <a href={cv}><button>Pobierz CV</button></a>
-//  {/* znam React-Redux, Context API, React-Redux, MobX, React-tabs, React-Router
-// rozwijamswoje umiejętności w pisaniu kodu ... 
-// , studjuje inzynerie programowania. Gram na basie, czytam literaturę klasyczną jak równiez techniczna, 
-// ponieważ chce stale poszerzać swoją wiedzę odnośnie Web.
-// Na wszelki wypadek dołączam również swoje CV.  */}
-// </div>
-// </div>
 
 const StyledDiv = styled.div`
 	font-family: 'Hind Siliguri', sans-serif;

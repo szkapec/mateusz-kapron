@@ -1,5 +1,5 @@
 import React, {useState,useEffect,useContext} from 'react'
-import animations from '../../assets/animate.svg';
+import animations from '../../assets/home/animate.svg';
 import styled from 'styled-components';
 import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies
     ,meme, encript} from '../../assets/export';
