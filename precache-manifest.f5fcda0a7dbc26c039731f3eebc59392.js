@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25b38d12de9e7454f5084ce17dc15301",
+    "revision": "dbbf7796a02a218ab170c18d28321cec",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "69227b553e625910e2b3",
+    "revision": "f102c29358c8d51a244b",
     "url": "/mateusz-kapron/static/css/main.f576ef43.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.c58afb12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69227b553e625910e2b3",
-    "url": "/mateusz-kapron/static/js/main.beaf2cd2.chunk.js"
+    "revision": "f102c29358c8d51a244b",
+    "url": "/mateusz-kapron/static/js/main.1f35036e.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -172,8 +172,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/react-articles.ca104dd7.PNG"
   },
   {
-    "revision": "3090aedfb4ae98961ddf18de5f678783",
-    "url": "/mateusz-kapron/static/media/react-corona.3090aedf.PNG"
+    "revision": "715df3634ffce06f4559f490f1064718",
+    "url": "/mateusz-kapron/static/media/react-corona.715df363.PNG"
   },
   {
     "revision": "cc006c6acbe00c68c40de516bc9ea7d4",
