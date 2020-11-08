@@ -59,8 +59,8 @@
       "id": 4, "name": "Aplikacja E-Commerce", "desc": "Aplikacja E-Commerce, sklep internetowy",
       "description": "Aplikacja E-Commerce. Sklep internetowy napisany w React. Aplikacja pozwala na dodawanie nowych przedmiotów na sprzedaż takich jak telefony, komputery i gadzety. Zaimplementowany został również koszyk zliczający wszystkie produkty i całkowity koszt zapłaty za zakupy.",
       "technologies": "React,JavaScript,CreateContext,PropTypes,Styled-Components,API,JSX,HTML",
-      "github": "https://github.com/szkapec/ecommerse",
-      "live": "https://szkapec.github.io/ecommerse/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
+      "github": "https://github.com/szkapec/ecommerce",
+      "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
     },
     {
       "id": 5, "name": "Aplikacja Covid-19", "desc": "Aplikacja z aktualymi informacjami o zakażeniach korona wirusa na świecie",
@@ -142,7 +142,7 @@
     {
       "id": 17, "name": "Aplikacja szyfrująca", "desc": "Aplikacja do szyfrowania i odszyfrowywania wiadomości",
       "description": "Aplikacja do szyfrowania i odszyfrowywania wiadomości oraz do generowania losowego hasła o określonym kryterium. ",
-      "technologies": "JavaScript,React,CSS,HTML",
+      "technologies": "React,JavaScript,CSS,HTML",
       "github": "https://github.com/szkapec/generating",
       "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
     },

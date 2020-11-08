@@ -57,8 +57,8 @@
         "id": 4, "name": "E-Commerce Application", "desc": "E-Commerce Application, online store",
         "description": "E-Commerce Application. Online store written in React. The application allows you to add new items for sale such as phones, computers and gadgets. A basket has also been implemented that lists all products and the total cost of payment for purchases.",
         "technologies": "React,JavaScript,CreateContext,PropTypes,Styled-Components,API,JSX,HTML",
-        "github": "https://github.com/szkapec/ecommerse",
-        "live": "https://szkapec.github.io/ecommerse/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
+        "github": "https://github.com/szkapec/ecommerce",
+        "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
       },
       {
         "id": 5, "name": "Covid-19 application", "desc": "Application with the latest information about corona virus infections in the world",
