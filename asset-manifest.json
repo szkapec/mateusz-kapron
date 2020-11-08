@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mateusz-kapron/static/css/main.f576ef43.chunk.css",
-    "main.js": "/mateusz-kapron/static/js/main.4d6187ef.chunk.js",
-    "main.js.map": "/mateusz-kapron/static/js/main.4d6187ef.chunk.js.map",
+    "main.js": "/mateusz-kapron/static/js/main.2157b499.chunk.js",
+    "main.js.map": "/mateusz-kapron/static/js/main.2157b499.chunk.js.map",
     "runtime-main.js": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js",
     "runtime-main.js.map": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js.map",
     "static/js/2.c58afb12.chunk.js": "/mateusz-kapron/static/js/2.c58afb12.chunk.js",
     "static/js/2.c58afb12.chunk.js.map": "/mateusz-kapron/static/js/2.c58afb12.chunk.js.map",
     "index.html": "/mateusz-kapron/index.html",
-    "precache-manifest.11653f1a94c258a0fd70c8c9433d1185.js": "/mateusz-kapron/precache-manifest.11653f1a94c258a0fd70c8c9433d1185.js",
+    "precache-manifest.c04f2b9f530637a21d7a739dd6c776b3.js": "/mateusz-kapron/precache-manifest.c04f2b9f530637a21d7a739dd6c776b3.js",
     "service-worker.js": "/mateusz-kapron/service-worker.js",
     "static/css/main.f576ef43.chunk.css.map": "/mateusz-kapron/static/css/main.f576ef43.chunk.css.map",
     "static/js/2.c58afb12.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.c58afb12.chunk.js.LICENSE.txt",
@@ -26,7 +26,7 @@
     "static/media/course.PNG": "/mateusz-kapron/static/media/course.1583c2ef.PNG",
     "static/media/cpp.svg": "/mateusz-kapron/static/media/cpp.1ca58dac.svg",
     "static/media/css-3.svg": "/mateusz-kapron/static/media/css-3.2db97d69.svg",
-    "static/media/ecommers2.PNG": "/mateusz-kapron/static/media/ecommers2.941ac392.PNG",
+    "static/media/ecommers2.PNG": "/mateusz-kapron/static/media/ecommers2.59aea571.PNG",
     "static/media/encrypt-decrypt.PNG": "/mateusz-kapron/static/media/encrypt-decrypt.e73d222f.PNG",
     "static/media/english.svg": "/mateusz-kapron/static/media/english.386cc387.svg",
     "static/media/express.png": "/mateusz-kapron/static/media/express.d5f66342.png",
@@ -65,6 +65,6 @@
     "static/js/runtime-main.ae3f294a.js",
     "static/js/2.c58afb12.chunk.js",
     "static/css/main.f576ef43.chunk.css",
-    "static/js/main.4d6187ef.chunk.js"
+    "static/js/main.2157b499.chunk.js"
   ]
 }

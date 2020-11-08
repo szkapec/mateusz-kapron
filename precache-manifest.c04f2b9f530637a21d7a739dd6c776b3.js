@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa7295cd071d18084d312245ea496f99",
+    "revision": "05a87e7691938ae06b898e8e283ce5bb",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "2629768fc41927872e23",
+    "revision": "8ebf74e44fc2c28f220e",
     "url": "/mateusz-kapron/static/css/main.f576ef43.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.c58afb12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2629768fc41927872e23",
-    "url": "/mateusz-kapron/static/js/main.4d6187ef.chunk.js"
+    "revision": "8ebf74e44fc2c28f220e",
+    "url": "/mateusz-kapron/static/js/main.2157b499.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/css-3.2db97d69.svg"
   },
   {
-    "revision": "941ac3924ddf5bdc88935de64d460552",
-    "url": "/mateusz-kapron/static/media/ecommers2.941ac392.PNG"
+    "revision": "59aea5714060873f64c5b6f3ebd28b41",
+    "url": "/mateusz-kapron/static/media/ecommers2.59aea571.PNG"
   },
   {
     "revision": "e73d222f62d45c72a4971b26aded5302",
