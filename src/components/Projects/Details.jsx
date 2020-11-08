@@ -83,7 +83,7 @@ export default Details;
 const Button = styled.button`
     background-color: ${({item}) => item === "Redux" || item==="React" || item === "React-Redux" || item === "SASS" || item === "Node" || item ==="Stripe" || item === "Express"
     ? 'rgb(130, 6, 6)' : item === "Moment" || item === "Swiper Slide" || item === "MongoDB" || item === "Passport" || item==="Storybook"
-     ? "red" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" ||
+     ? "red" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" || item === "React-Hook" || item === "React-Tabs" || item==="React-Hook" ||
       item ==="JSX" || item === "JavaScript" || item === "LocalStorage" || item === "CreateContext" || item === "PropTypes" || item === "PageContext" || item === "Contentfull"
      ? "orange" : "green"};
 	border: none;
@@ -93,7 +93,7 @@ const Button = styled.button`
     :hover {
         background-color: ${({item}) => item === "Redux" || item==="React" || item === "React-Redux" || item === "SASS" || item === "Node" || item ==="Stripe" || item === "Express"
     ? 'rgb(101, 0, 0)' : item === "Moment" || item === "Swiper Slide" || item === "MongoDB" || item === "Passport" || item==="Storybook"
-     ? "rgb(150, 7, 7)" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" ||
+     ? "rgb(150, 7, 7)" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" || item === "React-Hook" || item === "React-Tabs" || item==="React-Hook" ||
       item ==="JSX" || item === "JavaScript" || item === "LocalStorage" || item === "CreateContext" || item === "PropTypes" || item === "PageContext" || item === "Contentfull"
      ? "rgb(148, 98, 4)" : "rgb(1, 84, 1)"};
     }
