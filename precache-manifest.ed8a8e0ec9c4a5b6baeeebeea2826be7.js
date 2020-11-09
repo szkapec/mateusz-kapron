@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05a87e7691938ae06b898e8e283ce5bb",
+    "revision": "d738ead8e4e7b460a20921f6e7773e3e",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "8ebf74e44fc2c28f220e",
+    "revision": "984cf904000099667d6a",
     "url": "/mateusz-kapron/static/css/main.f576ef43.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.c58afb12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ebf74e44fc2c28f220e",
-    "url": "/mateusz-kapron/static/js/main.2157b499.chunk.js"
+    "revision": "984cf904000099667d6a",
+    "url": "/mateusz-kapron/static/js/main.6db47211.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -220,7 +220,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/weather-aplication-react.588fb228.PNG"
   },
   {
-    "revision": "71125c5a20ef345b73a013606d0ee425",
-    "url": "/mateusz-kapron/static/media/weather-aplication.71125c5a.PNG"
+    "revision": "b4ce60fad005ffa6a6ec9492536278ed",
+    "url": "/mateusz-kapron/static/media/weather-aplication.b4ce60fa.PNG"
   }
 ]);
