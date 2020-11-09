@@ -3,12 +3,14 @@ import React, { useEffect, useState } from 'react'
 
 const Home = () => {
 
-    const [astronomy, setAstronomy] = useState(null)
+    const [astronomy, setAstronomy] = useState(false)
 
     useEffect(() => {
-        setTimeout(setAstronomy(true), 4000)
-    }, [])
-
+        const timer = setTimeout(() => {
+          setAstronomy(true)
+        }, 5000);
+        return () => clearTimeout(timer);
+      }, []);
 
     const scrolling = (instance) => {
         let node = document.getElementById(instance);
@@ -20,10 +22,12 @@ const Home = () => {
         }
     }
 
+
+
     return (
         <section id="home">
             <nav>
-                <div className="pictures"></div>
+            <div className="pictures"></div>
             </nav>
             {astronomy && <div className="astronomy"></div>}
             <div className="scrolldown" onClick={() => scrolling('about')}>
@@ -35,17 +39,17 @@ const Home = () => {
                 <div className="image">
                     <a rel="noreferrer" href="https://www.facebook.com/mateusz.kapron.50">
                         <div className="image__container" data-aos="fade-right" data-aos-delay="500">
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                         </div>
                     </a>
                     <a rel="noreferrer" href="https://github.com/szkapec">
                         <div className="image__container" data-aos="flip-left" data-aos-delay="500">
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </div>
                     </a>
                     <a rel="noreferrer" href="https://www.linkedin.com/in/mateusz-kapro%C5%84-664b92197/">
                         <div className="image__container" data-aos="fade-left" data-aos-delay="500">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </div>
                     </a>
                 </div>

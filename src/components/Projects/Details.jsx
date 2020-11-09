@@ -9,11 +9,9 @@ const Details = (props) => {
     const context = useContext(CartContext);
     const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies]
     
-    console.log(context)
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
 
-    console.log('wykonaj')
     useEffect(() => {
         window.scrollTo(0, 0);
         setTimeout(() => setLoading(), 1500);
@@ -39,14 +37,10 @@ const Details = (props) => {
                 <div className="description-technologies">
                 <div>{context.data.stos.technology}</div>
                 <div>{technologies&&technologies.split(',').map(item=> (
-                    <Button item={item}>{item}</Button>
+                    <Button key={item} item={item}>{item}</Button>
                 ))}</div>
             </div>
         </div>
-           {/* <StyledNav>
-                <Link to={`/${previous}`}><button> poprzedni</button></Link>
-                <Link to={`/${next}`}><button>następny </button></Link>
-           </StyledNav> */}
        </div>
     )
    

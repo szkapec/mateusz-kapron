@@ -20,8 +20,6 @@ export default function Nav(props) {
     const scrolling = (instance) => {
         let node = document.getElementById(instance);
         let details = document.querySelector('.details')
-        console.log(node, 'node')
-        console.log(details, 'details')
         if (node) {
             window.scrollTo({
                 top: node.offsetTop,
@@ -31,7 +29,6 @@ export default function Nav(props) {
         if (details) {
             history.goBack();
         }
-        console.log(node)
     }
 
     useEffect(() => {
@@ -98,13 +95,11 @@ export default function Nav(props) {
                         {home}
                     </li>
                     <li onClick={() => {
-                        console.log(props)
                         handleOff()
                         scrolling('about');
                     }}>{about}</li>
 
                     <li onClick={() => {
-                        console.log(props)
                         handleOff()
                         scrolling('skills');
                     }}> {skills} </li>

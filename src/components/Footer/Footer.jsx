@@ -3,7 +3,6 @@ export default function Footer({db}) {
 
     const {ignite,find} = db.contact
     const scrollToTop = (duration) => {
-        console.log(document.scrollingElement)
     if (document.scrollingElement.scrollTop === 0) return;
     const cosParameter = document.scrollingElement.scrollTop / 2;
     let scrollCount = 0;
