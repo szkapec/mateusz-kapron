@@ -29,7 +29,9 @@ const Details = (props) => {
             <div className="loaded">
                 <div className="loaded__name">{name}</div>
                 <div className="loaded__description">{description}</div>
-                <img className="loaded__img" src={application[id]} alt={name}/>
+                <figure>
+                    <img className="loaded__img" src={application[id]} alt={name}/>
+                </figure>
                 <div className="loaded__button">
                     <a href={github}><button className="loaded__button__left " >GitHub</button></a>
                     <a href={live}><button className="loaded__button__right">Demo</button></a>
@@ -46,7 +48,9 @@ const Details = (props) => {
    
     const details = (
         <div className="loader">
-        <img className="animations" src={animations} alt="animations"/>
+        <figure>
+            <img className="animations" src={animations} alt="animations"/>
+        </figure>
 		<div className="cover">
 			<div className="cover-line">
 				<div className="line">

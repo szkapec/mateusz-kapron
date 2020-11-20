@@ -57,27 +57,32 @@ export default function Nav(props) {
     window.addEventListener('scroll', changeBackground)
 
     return (
-        <section className={`${!navbar ? "nav active" : "nav"}`}>
-            <nav>
+        <nav className={`${!navbar ? "nav active" : "nav"}`}>
+            <>
                 <NavLink to={"/#home"} ><i className="fab fa-resolving homes"></i></NavLink>
                 <button onClick={() => {
                     setData(db);
                     ctx.changeLeanguage(db)
                 }}>
-                    <img className="nav-img" src={poland} alt="poland" />
+                    <figure>
+                        <img className="nav-img" src={poland} alt="język Polski" />
+                    </figure>
+                    
                 </button>
 
                 <button onClick={() => {
                     setData(dbeng)
                     ctx.changeLeanguage(dbeng)
                 }}>
-
-                    <img className="nav-img" src={english} alt="english" />
+                <figure>
+                    <img className="nav-img" src={english} alt="język Angielski" />
+                </figure>
+                
                 </button>
-                <span className="menu-s">
+                <h3 className="menu-s">
                     MENU
-               </span>
-                <div className={`menu`} src={ctx.menu ? menuImg : menuImgClick} alt="menu">
+               </h3>
+                <div className={`menu`} src={ctx.menu ? menuImg : menuImgClick} alt="główne menu">
                     <StyledBox box={box} onClick={() => {
                         setBox(!box)
                         handleClick()
@@ -85,8 +90,8 @@ export default function Nav(props) {
                         <div className="clickafbef"></div>
                     </StyledBox>
                 </div>
-            </nav>
-            <div className={`box ${!ctx.menu && "trans"} ${!navbar && " active"}`}>
+            </>
+            <section className={`box ${!ctx.menu && "trans"} ${!navbar && " active"}`}>
                 <ul className="navbar-box">
                     <li onClick={() => {
                         handleOff()
@@ -118,17 +123,17 @@ export default function Nav(props) {
                     {info}
                 </div>
                 <div className="box-link">
-                    <a href="https://github.com/szkapec"><i className="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mateusz-kapro%C5%84-664b92197/"><i className="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/mateusz.kapron.50/"><i className="fab fa-facebook"></i></a>
-                    <a href="https://www.youtube.com/channel/UCfDIy_8Ig3F_B1-CsNi2lQw?view_as=subscriber"><i className="fab fa-youtube"></i></a>
+                    <a rel="noreferrer" href="https://github.com/szkapec"><i className="fab fa-github"></i></a>
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/mateusz-kapro%C5%84-664b92197/"><i className="fab fa-linkedin"></i></a>
+                    <a rel="noreferrer" href="https://www.facebook.com/mateusz.kapron.50/"><i className="fab fa-facebook"></i></a>
+                    <a rel="noreferrer" href="https://www.youtube.com/channel/UCfDIy_8Ig3F_B1-CsNi2lQw?view_as=subscriber"><i className="fab fa-youtube"></i></a>
                 </div>
                 <div className="box-contact">
                     <a href="mailto:mateusz.kapron24@gmail.com">mateusz.kapron24@gmai.com</a>
                     <a href="tel:+48661360889">661-360-889</a>
                 </div>
-            </div>
-        </section>
+            </section>
+        </nav>
     )
 }
 

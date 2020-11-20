@@ -17,6 +17,7 @@
     "react-ga": "^3.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "sass-loader": "^8.0.2",
     "styled-components": "^5.2.0"
   },
   "scripts": {

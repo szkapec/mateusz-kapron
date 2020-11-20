@@ -64,11 +64,14 @@
     transform: translate(0%, -50%);
     right: 70px;
     color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
     @media(min-width: 1500px){
         right: 80px;
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 3px;
+        
     }
 }
 .box {
