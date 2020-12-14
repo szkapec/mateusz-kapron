@@ -1,6 +1,6 @@
 {
   "navigate": {
-    "home": "Home", "about": "About me", "skills": "Skills", "features": "Features", "project": "Projects", "contact": "Contact", "info": "Mateusz Kaproń I am a front-end developer and designer"
+    "home": "Home", "about": "About me", "skills": "Skills", "features": "Features", "project": "Projects", "contact": "Contact", "info": "Mateusz Kaproń I am a front-end developer"
   },
 
   "sectionOne": {
@@ -40,6 +40,13 @@
         "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
       },
       {
+        "id": 19, "name": "Programming blog", "desc": "Blog about programming in JavaScript and more",
+        "description": "An application designed to broaden the knowledge of backend and interaction with the Mongodb database. The implemented backend allows you to log in, register, add new articles, delete your articles, add comments to articles, add 'Like!' to the article and comments, user name and password change, and a token is generated for each user and a session with the user is maintained on this basis.",
+        "technologies": "Node,React,Express,Redux,SASS,MongoDB,Moment,Axios,JavaScript,Styled-Components,JSX,HTML",
+        "github": "https://github.com/szkapec/programming-blog",
+        "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot"
+      },
+      {
         "id": 0, "name": "Firebase application", "desc": "Application for adding articles saved in the firebase database.",
         "description": "Application for adding articles saved in the firebase database. Ability to add your own notes that are saved in the database. To add, please register.",
         "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,JSX,CSS,HTML",
@@ -75,6 +82,13 @@
         "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
       },
       {
+        "id": 20, "name": "Application for adding posts", "desc": "Application for adding posts stored in the mongodb database",
+        "description": "An application designed to learn backend. The functionality of adding a post, editing, liking, and removing from the MongoDB database has been implemented.",
+        "technologies": "Node,React,Express,Redux,MongoDB,Axios,JavaScript,Styled-Components,JSX,HTML,CSS",
+        "github": "https://github.com/szkapec",
+        "live": "https://add-posts.netlify.app/", "route": "app-post", "next": "app-firebase", "previous": "app-robot"
+      },
+      {
         "id": 6, "name": "Application for adding Notes cz.1", "desc": "Application for adding notes, articles and twitters",
         "description": "Application (from React course 1) for adding twitter notes and articles, part 1",
         "technologies": "React,JavaScript,SASS,Styled-Components,JSX,HTML",
@@ -99,7 +113,7 @@
       {
         "id": 9, "name": "Weather application", "desc": "Weather application part 1",
         "description": "The Weather Application, downloads data from an external server and displays it accordingly",
-        "technologies": "React,JavaScript,SASS,API,JSX,HTML",
+        "technologies": "React,SASS,JavaScript,API,JSX,HTML",
         "github": "https://github.com/szkapec/Aplikacja_pogodowa",
         "live": "https://szkapec.github.io/Aplikacja_pogodowa/", "route": "app-weatcher-cz1", "next": "app-hotel", "previous": "app-weatcher"
       },
@@ -113,14 +127,14 @@
       {
         "id": 11, "name": "Generating users", "desc": "Application to generate random user, exchange rate and weather",
         "description": "Application to generate a random user, display the current exchange rate and weather based on his origin, and display historical data based on his date of birth. The application uses 4 different external APIs. I created it for educational purposes, to expand my knowledge of API and Fetch.",
-        "technologies": "React,JavaScript,SASS,API,JSX,HTML",
+        "technologies": "React,SASS,JavaScript,API,JSX,HTML",
         "github": "https://github.com/szkapec/pobieranieDanychzAPI",
         "live": "https://szkapec.github.io/pobieranieDanychzAPI/", "route": "app-generate", "next": "app-todo", "previous": "app-hotel"
       },
       {
         "id": 12, "name": "To-Do", "desc": "Application with tasks",
         "description": "Application with tasks to be performed",
-        "technologies": "React,JavaScript,SASS,JSX,HTML",
+        "technologies": "React,SASS,JavaScript,JSX,HTML",
         "github": "https://github.com/szkapec/Lista-zadan-do-zrobienia",
         "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
       },
@@ -131,13 +145,7 @@
         "github": "https://github.com/szkapec/meme-generator",
         "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
       },
-      {
-        "id": 13, "name": "Playing Snake", "desc": "Playing Snake",
-        "description": "Snake game written in React",
-        "technologies": "React,JavaScript,CSS,HTML",
-        "github": "https://github.com/szkapec/Snake",
-        "live": "https://szkapec.github.io/Snake/", "route": "app-snake", "next": "app-robot", "previous": "app-todo"
-      },
+ 
       {
         "id": 17, "name": "Encryption application", "desc": "Message encryption and decryption application",
         "description": "An application for encrypting and decrypting messages, and for generating a random password with a certain criteria.",
@@ -145,13 +153,7 @@
         "github": "https://github.com/szkapec/generating",
         "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
       },
-      {
-        "id": 14, "name": "Roboto Project", "desc": "Robot Animations",
-        "description": "Roboto Project",
-        "technologies": "JavaScript,Timeline,SASS,GSAP,HTML",
-      "github": "https://github.com/szkapec/Roboto",
-      "live": "https://szkapec.github.io/Roboto", "route": "app-robot", "next": "app-bowling", "previous": "app-snake"
-      },
+   
       {
         "id": 15, "name": "Project Bowling", "desc": "Bowling game",
         "description": "Bowling Game Project",

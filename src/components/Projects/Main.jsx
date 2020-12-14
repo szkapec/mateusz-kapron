@@ -5,17 +5,17 @@ import github from '../../assets/home/github.svg';
 export default function Main({ignite,git}) {
     return (
             <section className="none">
-                <StyledDiv>
+                <StyledContainerMain>
                     <h2>{ignite}</h2>
                     <p>{git}</p>
                     <a href="https://github.com/szkapec"><img  className="container__github" src={github} alt="github"/></a>
-                </StyledDiv>
+                </StyledContainerMain>
             </section>
     )
 }
 
 
-const StyledDiv = styled.div`
+const StyledContainerMain = styled.div`
 	font-family: 'Hind Siliguri', sans-serif;
     text-align: center;
     color: white;

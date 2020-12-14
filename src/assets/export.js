@@ -28,7 +28,8 @@ import snakes from './projects/snake2.PNG';
 import moviess from './projects/movies.png';
 import memes from './projects/memegenerator.PNG';
 import encripts from './projects/encrypt-decrypt.PNG';
-
+import appPosts from './projects/appposts.png';
+import fullStacks from './projects/fullstack2.png';
 
 export const github = githubs;
 export const course = courses;
@@ -52,3 +53,5 @@ export const snake = snakes;
 export const movies = moviess;
 export const meme = memes;
 export const encript = encripts;
+export const appPost = appPosts;
+export const fullStack = fullStacks;

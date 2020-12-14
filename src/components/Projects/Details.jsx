@@ -2,12 +2,12 @@ import React, {useState,useEffect,useContext} from 'react'
 import animations from '../../assets/home/animate.svg';
 import styled from 'styled-components';
 import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies
-    ,meme, encript} from '../../assets/export';
+    ,meme, encript, appPost, fullStack} from '../../assets/export';
 import { CartContext } from "../Context/Context";
 const Details = (props) => {
 
     const context = useContext(CartContext);
-    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies]
+    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies,fullStack, appPost]
     
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
