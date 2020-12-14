@@ -1,26 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
-// import course from '../../assets/projects/course.PNG';
-// import firebase from '../../assets/projects/firebase.png';
-// import weather from '../../assets/projects/weather-aplication.PNG';
-// import baflix from '../../assets/projects/baflix.png'
-// import bowling from '../../assets/projects/bowling.PNG'
-// import fullstack from '../../assets/projects/React-node-express2.PNG';
-// import corona from '../../assets/projects/react-corona.PNG';
-// import todoapp from '../../assets/projects/to-do-app.PNG';
-// import reactArticle from '../../assets/projects/react-articles.PNG';
-// import hotel from '../../assets/projects/react-hotel.PNG';
-// import twitters from '../../assets/projects/twitters.PNG';
-// import weatherReact from '../../assets/projects/weather-aplication-react.PNG';
-// import ecommers from '../../assets/projects/ecommers2.PNG';
-// import generate from '../../assets/projects/generate.PNG';
-// import roboto from '../../assets/projects/Roboto.png';
-// import snake from '../../assets/projects/snake2.PNG';
-// import movies from '../../assets/projects/movies.png';
-// import meme from '../../assets/projects/memegenerator.PNG';
-// import encript from '../../assets/projects/encrypt-decrypt.PNG';
-// import fullStack2 from '../../assets/projects/fullstack2.png';
-// import appPost from '../../assets/projects/appposts.png';
 import { NavLink } from 'react-router-dom';
 import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies
     ,meme, encript, appPost, fullStack} from '../../assets/export';
@@ -74,8 +52,6 @@ export default function Projects({ db }) {
                                 <div className="grid__application" key={item.name}>
                                     <h2 className="description-aplication">{item.name}</h2>
                                     <div className="single-project">
-                                        {console.log(item.id)}
-                                        {console.log(application[item.id])}
                                         <img className="project-img" src={application[item.id]} alt={`${item.name}`} />
                                         <div className="project-info">
                                             <div className="slide">
