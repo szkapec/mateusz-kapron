@@ -31,6 +31,7 @@ export default function Projects({ db }) {
     return (
         <>
             <Main ignite={ignite} git={github} />
+            
             <section className="projects" id="projects">
                 <div className="categories">
                     <button onClick={() => setCategories('')}>{all}</button>

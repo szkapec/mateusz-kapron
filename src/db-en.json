@@ -6,7 +6,7 @@
   "sectionOne": {
     "hello": "Welcome to my portfolio!", "home": "About me",
     "description": "My name is Mateusz Kaproń, I come from the Lublin area and I am a Front-End Developer.",
-    "experience": "I have a higher IT education and over 3 years of experience in working as a JavaScript programmer.",
+    "experience": "I have a higher IT education and over 2 years of experience in working as a JavaScript programmer.",
     "programming": "I am a Front End developer specializing in creating web applications. I'm looking for a job as a front-end developer. Currently I am focusing on learning TypeScript and Node.js",
     "ignite": "Please see my projects and on Github :)", "cv": "Download CV", "info": "More info about me"
   },
@@ -167,10 +167,10 @@
     ],
     "skills": [
       {
-        "id": 0, "fade": "fade-right", "src": "html-5.svg", "description": "HTML", "experience": "3 years of experience"
+        "id": 0, "fade": "fade-right", "src": "html-5.svg", "description": "HTML", "experience": "2 years of experience"
       },
       {
-        "id": 1, "fade": "fade-left", "description": "CSS", "experience": "3 years of experience"
+        "id": 1, "fade": "fade-left", "description": "CSS", "experience": "2 years of experience"
       },
       {
         "id": 2, "fade": "fade-right", "description": "SASS", "experience": "2 years of experience"
@@ -185,7 +185,7 @@
         "id": 5, "fade": "fade-left", "description": "REACT", "experience": "2 years of experience"
       },
       {
-        "id": 6, "fade": "fade-right", "description": "RWD", "experience": "3 years of experience"
+        "id": 6, "fade": "fade-right", "description": "RWD", "experience": "2 years of experience"
       },
       {
         "id": 7, "fade": "fade-right", "description": "AJAX", "experience": "2 years of experience"

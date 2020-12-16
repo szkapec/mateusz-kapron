@@ -6,7 +6,7 @@
   "sectionOne": {
     "hello": "Witam na moim portfolio!", "home": "O mnie", 
     "description": "Nazywam się Mateusz Kaproń, pochodzę z okolic Lublina i jestem Front-End Developerem.",
-    "experience": "Posiadam wyższe wykształcenie informatyczne i ponad 3-letnie doświadczenie w pracy jako programista JavaScript.",
+    "experience": "Posiadam wyższe wykształcenie informatyczne i ponad 2-letnie doświadczenie w pracy jako programista JavaScript.",
     "programing": "Jestem programistą specjalizującym się w tworzeniu aplikacji internetowych. Szukam pracy jako front-end Developer. Aktualnie skupiam się na nauce TypeScript oraz Node.js",
     "ignite": "Zapraszam do obejrzenia moich projektów oraz na Github :)", "cv": "Pobierz CV", "info": "Wiecej informacji o mnie"
   },
@@ -171,10 +171,10 @@
 
 "skills": [
   {
-    "id":0, "fade": "fade-right", "src":"html-5.svg", "description":"HTML", "experience":"3 lata doświadczenia"
+    "id":0, "fade": "fade-right", "src":"html-5.svg", "description":"HTML", "experience":"2 lata doświadczenia"
   },
   {
-    "id":1, "fade": "fade-left", "description": "CSS", "experience": "3 lata doświadczenia"
+    "id":1, "fade": "fade-left", "description": "CSS", "experience": "2 lata doświadczenia"
   },
   {
     "id":2, "fade": "fade-right", "description": "SASS", "experience": "2 lata doświadczenia"
@@ -189,7 +189,7 @@
     "id":5, "fade": "fade-left", "description": "REACT", "experience": "2 lata doświadczenia"
   },
   {
-    "id":6, "fade": "fade-right", "description": "RWD", "experience": "3 lata doświadczenia"
+    "id":6, "fade": "fade-right", "description": "RWD", "experience": "2 lata doświadczenia"
   },
   {
     "id":7, "fade": "fade-right", "description": "AJAX", "experience": "2 lata doświadczenia"
