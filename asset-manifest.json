@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mateusz-kapron/static/css/main.a6587368.chunk.css",
-    "main.js": "/mateusz-kapron/static/js/main.29840b4b.chunk.js",
-    "main.js.map": "/mateusz-kapron/static/js/main.29840b4b.chunk.js.map",
+    "main.js": "/mateusz-kapron/static/js/main.0bcec6e5.chunk.js",
+    "main.js.map": "/mateusz-kapron/static/js/main.0bcec6e5.chunk.js.map",
     "runtime-main.js": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js",
     "runtime-main.js.map": "/mateusz-kapron/static/js/runtime-main.ae3f294a.js.map",
     "static/js/2.d2cb0657.chunk.js": "/mateusz-kapron/static/js/2.d2cb0657.chunk.js",
     "static/js/2.d2cb0657.chunk.js.map": "/mateusz-kapron/static/js/2.d2cb0657.chunk.js.map",
     "index.html": "/mateusz-kapron/index.html",
-    "precache-manifest.70abc6afcd8f73e928d463e657c8dc90.js": "/mateusz-kapron/precache-manifest.70abc6afcd8f73e928d463e657c8dc90.js",
+    "precache-manifest.37e7eea70884780a0f1494854e467526.js": "/mateusz-kapron/precache-manifest.37e7eea70884780a0f1494854e467526.js",
     "service-worker.js": "/mateusz-kapron/service-worker.js",
     "static/css/main.a6587368.chunk.css.map": "/mateusz-kapron/static/css/main.a6587368.chunk.css.map",
     "static/js/2.d2cb0657.chunk.js.LICENSE.txt": "/mateusz-kapron/static/js/2.d2cb0657.chunk.js.LICENSE.txt",
@@ -18,7 +18,7 @@
     "static/media/Roboto.png": "/mateusz-kapron/static/media/Roboto.6f65452a.png",
     "static/media/ajax-icon-7.jpg": "/mateusz-kapron/static/media/ajax-icon-7.bd187668.jpg",
     "static/media/animate.svg": "/mateusz-kapron/static/media/animate.6320efd3.svg",
-    "static/media/appposts.png": "/mateusz-kapron/static/media/appposts.5f09ec8b.png",
+    "static/media/appposts.png": "/mateusz-kapron/static/media/appposts.bea8fe22.png",
     "static/media/style.scss": "/mateusz-kapron/static/media/mountains-mobile.318a5920.jpg",
     "static/media/baflix.png": "/mateusz-kapron/static/media/baflix.eef73b00.png",
     "static/media/bootstrap-4.svg": "/mateusz-kapron/static/media/bootstrap-4.d40d337e.svg",
@@ -26,7 +26,7 @@
     "static/media/course.PNG": "/mateusz-kapron/static/media/course.a26a87ef.PNG",
     "static/media/cpp.svg": "/mateusz-kapron/static/media/cpp.2c00067a.svg",
     "static/media/css-3.svg": "/mateusz-kapron/static/media/css-3.cc56234f.svg",
-    "static/media/ecommers2.PNG": "/mateusz-kapron/static/media/ecommers2.9575d416.PNG",
+    "static/media/ecommers2.PNG": "/mateusz-kapron/static/media/ecommers2.d8dbb56e.PNG",
     "static/media/encrypt-decrypt.PNG": "/mateusz-kapron/static/media/encrypt-decrypt.59128601.PNG",
     "static/media/english.svg": "/mateusz-kapron/static/media/english.cc7bbbbe.svg",
     "static/media/express.png": "/mateusz-kapron/static/media/express.d5f66342.png",
@@ -64,6 +64,6 @@
     "static/js/runtime-main.ae3f294a.js",
     "static/js/2.d2cb0657.chunk.js",
     "static/css/main.a6587368.chunk.css",
-    "static/js/main.29840b4b.chunk.js"
+    "static/js/main.0bcec6e5.chunk.js"
   ]
 }

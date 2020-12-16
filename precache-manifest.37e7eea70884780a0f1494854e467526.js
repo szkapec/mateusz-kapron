@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54fcf2fc2ac51cb533c9ea443c430ccf",
+    "revision": "09e2453e7165fe276949864231f10536",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "341efe1c2e7f8926471f",
+    "revision": "686811d6487c66fb2577",
     "url": "/mateusz-kapron/static/css/main.a6587368.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.d2cb0657.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "341efe1c2e7f8926471f",
-    "url": "/mateusz-kapron/static/js/main.29840b4b.chunk.js"
+    "revision": "686811d6487c66fb2577",
+    "url": "/mateusz-kapron/static/js/main.0bcec6e5.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/animate.6320efd3.svg"
   },
   {
-    "revision": "5f09ec8b9076fd51d55094a508070f5d",
-    "url": "/mateusz-kapron/static/media/appposts.5f09ec8b.png"
+    "revision": "bea8fe22333a530fd89cc2b638ede39a",
+    "url": "/mateusz-kapron/static/media/appposts.bea8fe22.png"
   },
   {
     "revision": "e9ee74fb80d6987433ce245a5023b4e2",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/css-3.cc56234f.svg"
   },
   {
-    "revision": "9575d416a946fd2f3a46fc59cc6cff92",
-    "url": "/mateusz-kapron/static/media/ecommers2.9575d416.PNG"
+    "revision": "d8dbb56e8909ef19a59ee7acfec895c8",
+    "url": "/mateusz-kapron/static/media/ecommers2.d8dbb56e.PNG"
   },
   {
     "revision": "5912860130400d430266debbc3b89b07",
