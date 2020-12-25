@@ -2,11 +2,19 @@ import i18n from 'i18next';
 import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-
+import translationEN from './locales/en/translation.json'
+import translationNL from './locales/ko/translation.json'
 const fallbackLng = ['en'];
 const availableLanguages = ['en', 'ko', 'chi'];
 
-
+const resources = {
+  en: {
+    translation: translationEN,
+  },
+  ko: {
+    translation: translationNL,
+  },
+ };
 const options = {
   // order and from where user language should be detected
   order: [ 'navigator', 'htmlTag', 'path', 'subdomain'],
@@ -45,7 +53,7 @@ i18n
     debug: true,
     whitelist: availableLanguages,
     detection: options,
-
+    resources,
     interpolation: {
       escapeValue: false
     },
