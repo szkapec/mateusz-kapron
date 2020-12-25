@@ -7,8 +7,15 @@ import menuImgClick from '../../assets/home/menuimg.png';
 import poland from '../../assets/home/poland.svg';
 import english from '../../assets/home/english.svg';
 import { NavLink, useHistory } from 'react-router-dom'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+
+
+
 export default function Nav(props) {
+
+    const { t } = useTranslation();
     const ctx = useContext(CartContext);
     const [data, setData] = useState(db)
     const { home, about, skills, project, contact, info } = data.navigate;
@@ -34,6 +41,11 @@ export default function Nav(props) {
     useEffect(() => {
         ctx.changeMenu(menu)
     }, [menu])
+
+
+    const handleClickLang = (lang) => {
+        i18next.changeLanguage(lang)
+      }
 
     const handleClick = () => {
         setMenu(!menu)
@@ -63,16 +75,20 @@ export default function Nav(props) {
                 <button onClick={() => {
                     setData(db);
                     ctx.changeLeanguage(db)
+                    handleClickLang('en')
                 }}>
                     <figure>
                         <img className="nav-img" src={poland} alt="język Polski" />
                     </figure>
-                    
+                    <div>
+                        {t('about.hello')}
+                    </div>
                 </button>
 
                 <button onClick={() => {
                     setData(dbeng)
                     ctx.changeLeanguage(dbeng)
+                    handleClickLang('ko')
                 }}>
                 <figure>
                     <img className="nav-img" src={english} alt="język Angielski" />
