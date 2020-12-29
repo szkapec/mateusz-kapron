@@ -1,6 +1,6 @@
 # My Portfolio Website Mateusz Kaproń
 
-This is my portfolio website. It contains information about me, my education, skill sets, hobbies. It also contains information about all the projects which I have done and my contact information.
+This is my portfolio website. It contains information about me, my education, skill sets. It also contains information about all the projects which I have done and my contact information.
 
 ## Website link of my portfolio website
 
