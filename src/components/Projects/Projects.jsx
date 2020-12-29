@@ -1,40 +1,36 @@
-import React, { useState, useEffect } from 'react'
+import React, {useContext, useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
-import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies
-    ,meme, encript, appPost, fullStack} from '../../assets/export';
+import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies,meme, encript, appPost, fullStack} from '../../assets/export';
 import Main from './Main';
-
-export default function Projects({ db }) {
-
+import { useTranslation } from 'react-i18next';
+import { CartContext } from '../Context/Context';
+export default function Projects() {
+    const { t } = useTranslation();
+    const ctx = useContext(CartContext);
     const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact,
         weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies, fullStack, appPost ]
-
-
     const [categorie, setCategories] = useState('')
     const [projects, setProjects] = useState([]);
 
-    const { ignite, github, all, allproject, game, details, live, category } = db.projectDesc;
-
     useEffect(() => {
         setProjects([]);
-        db.project.map(item => {
+        t('project', { returnObjects: true }).map(item => {
             if (categorie === "Games") {
                 if (item.id ===17 || item.id === 15) {
-                    setProjects(prevState => [...prevState, item])
+                   return setProjects(prevState => [...prevState, item])
                 }
             }
             if (item.technologies.indexOf(categorie) >= 0) {
-                setProjects(prevState => [...prevState, item])
+                return setProjects(prevState => [...prevState, item])
             }
         })
-    }, [categorie, db])
+    }, [categorie, ctx.language])
     return (
         <>
-            <Main ignite={ignite} git={github} />
-            
+            <Main/>
             <section className="projects" id="projects">
                 <div className="categories">
-                    <button onClick={() => setCategories('')}>{all}</button>
+                    <button onClick={() => setCategories('')}>{t('projectDescription.all')}</button>
                     <button onClick={() => setCategories('React')}>React</button>
                     <button onClick={() => setCategories('Redux')}>Redux</button>
                     <button onClick={() => setCategories('Node')}>Node</button>
@@ -42,11 +38,10 @@ export default function Projects({ db }) {
                     <button onClick={() => setCategories('Context')}>Context</button>
                     <button className="opacity" onClick={() => setCategories('JavaScript')}>JavaScript</button>
                     <button className="opacity" onClick={() => setCategories('Styled-Components')}>Styled</button>
-                    <button className="opacity" onClick={() => setCategories('Games')}>{game}</button>
+                    <button className="opacity" onClick={() => setCategories('Games')}>{t('projectDescription.game')}</button>
                 </div>
                 <div className="container">
-
-                    <div className="description-categorie">{categorie === "" ? allproject : categorie ? (<div>{category} <b>{categorie}</b></div>) : 'Error'}</div>
+                    <div className="description-categorie">{categorie === "" ? t('projectDescription.allproject') : categorie ? (<div>{t('projectDescription.category')} <b>{categorie}</b></div>) : 'Error'}</div>
                     <div className="grid">
                         {projects.map(item => {
                             return (
@@ -58,8 +53,8 @@ export default function Projects({ db }) {
                                             <div className="slide">
                                                 <div className="info-text">{item.desc}</div>
                                                 <div className="info-button">
-                                                    <NavLink to={`/project/${item.route}`}> <button className="button-left" type="button">{details}</button></NavLink>
-                                                    <a href={item.live}> <button className="button-right" type="button">{live}</button></a>
+                                                    <NavLink to={`/project/${item.route}`}> <button className="button-left" type="button">{t('projectDescription.details')}</button></NavLink>
+                                                    <a href={item.live}> <button className="button-right" type="button">{t('projectDescription.live')}</button></a>
                                                 </div>
                                             </div>
                                             <div className="anime-image-top"></div>

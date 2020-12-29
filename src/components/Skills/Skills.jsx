@@ -20,24 +20,20 @@ import node from '../../assets/skills/nodejs-icon.svg';
 import express from '../../assets/skills/express.png';
 import ajax from '../../assets/skills/ajax-icon-7.jpg';
 import typescript from '../../assets/skills/typescript.svg';
-
-const Skills = ({ db }) => {
-
+import { useTranslation } from 'react-i18next';
+const Skills = () => {
     const tab = [html, css, sass, bootstrap, javascript, react, rwd, ajax, cpp, git, npm, mongo, sql, express, java, node, typescript, vue]
-
-    const { skills, stos, advanced, good, basic } = db.stos;
-
-
+    const { t } = useTranslation();
 
     return (
         <section className="skills" id="skills">
             <div className="container">
-                <h2>{skills}</h2>
+                <h2>{t('stos.skills')}</h2>
                 <img src={portfolio} className="skills-portfolio" alt="portfolio" />
-                <div className="technologies">{stos}</div>
-                <h3 className="advanced-skills">{advanced}</h3>
+                <div className="technologies">{t('stos.stos')}</div>
+                <h3 className="advanced-skills">{t('stos.advanced')}</h3>
                 <article className="article-advanced-skills">
-                    {db.skills && db.skills.map((item) => {
+                    {t('skills', { returnObjects: true }) && t('skills', { returnObjects: true }).map((item) => {
                         if (item.id > 6) return;
                         return (
                             <div key={item.id} data-aos="fade-right">
@@ -49,9 +45,9 @@ const Skills = ({ db }) => {
                     })}
                 </article>
 
-                <h3 className="good-skills">{good}</h3>
+                <h3 className="good-skills">{t('stos.good')}</h3>
                 <article className="article-good-skills">
-                    {db.skills.map((item) => {
+                    {t('skills', { returnObjects: true }) && t('skills', { returnObjects: true }).map((item) => {
                         if (item.id < 7 || item.id >= 13) return;
                         return (
                             <div key={item.id} data-aos="fade-right">
@@ -62,11 +58,9 @@ const Skills = ({ db }) => {
                         )
                     })}
                 </article>
-
-
-                <h3 className="basic-skills">{basic}</h3>
+                <h3 className="basic-skills">{t('stos.basic')}</h3>
                 <article className="acticle-basic-skills">
-                    {db.skills.map((item) => {
+                    {t('skills', { returnObjects: true }) && t('skills', { returnObjects: true }).map((item) => {
                         if (item.id < 13) return;
                         return (
                             <div key={item.id} data-aos="fade-right">

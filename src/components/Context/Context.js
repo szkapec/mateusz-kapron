@@ -1,23 +1,26 @@
 import React, { useState, createContext } from "react";
-import db from '../../db.json';
 export const CartContext = createContext(null);
 
 export default function CartProvider({ children }) {
-    const [data, setData] = useState(db)
+    const [data, setData] = useState('')
     const [menu,setMenu] = useState(true)
-
+    const [, setLeanguage] = useState('')
     
   function changeMenu(item) {
     setMenu(item)
   }
-  function changeLeanguage(item) {
+  function changeLanguage(item) {
           setData(item)
+    } 
+  function language(item) {
+          setLeanguage(item)
     } 
   return (
     <CartContext.Provider
       value={{
-        changeLeanguage: changeLeanguage,
+        changeLanguage: changeLanguage,
         changeMenu: changeMenu,
+        language: language,
         menu,
         data,
       }}

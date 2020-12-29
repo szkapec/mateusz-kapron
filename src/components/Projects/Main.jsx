@@ -1,20 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
 import github from '../../assets/home/github.svg';
-
-export default function Main({ignite,git}) {
+import { useTranslation } from 'react-i18next';
+export default function Main() {
+    const { t } = useTranslation();
     return (
             <section className="none">
                 <StyledContainerMain>
-                    <h2>{ignite}</h2>
-                    <p>{git}</p>
+                    <h2>{t('projectDescription.ignite')}</h2>
+                    <p>{t('projectDescription.github')}</p>
                     <a href="https://github.com/szkapec"><img  className="container__github" src={github} alt="github"/></a>
                 </StyledContainerMain>
             </section>
     )
 }
-
-
 const StyledContainerMain = styled.div`
 	font-family: 'Hind Siliguri', sans-serif;
     text-align: center;
@@ -23,7 +22,6 @@ const StyledContainerMain = styled.div`
         width: 40px;
         transition: 1s ease-in-out;
     }
-
     img:hover {
     }
     h2 {

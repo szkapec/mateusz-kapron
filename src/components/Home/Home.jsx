@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 const Home = () => {
-
     const [astronomy, setAstronomy] = useState(false)
-
     useEffect(() => {
         const timer = setTimeout(() => {
             setAstronomy(true)
@@ -21,8 +19,6 @@ const Home = () => {
             });
         }
     }
-
-
 
     return (
         <header id="home">
@@ -53,7 +49,7 @@ const Home = () => {
                         </figure>
                     </a>
                 </div>
-                <div className="imagetwo" data-aos="fade-right" data-aos="fade-up" data-aos-delay="500" >
+                <div className="imagetwo" data-aos="fade-up" data-aos-delay="500" >
                     <a className="onepicture" href="tel:+48661360889">
                         <i className="fas fa-phone-alt imagetwo-image onepicture"></i>
                     </a>

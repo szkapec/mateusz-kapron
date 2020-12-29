@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { CartContext } from '../Context/Context';
-import db from '../../db.json';
-import dbeng from '../../db-en.json';
 import menuImg from '../../assets/home/menu.png';
 import menuImgClick from '../../assets/home/menuimg.png';
 import poland from '../../assets/home/poland.svg';
@@ -12,13 +10,10 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
 
-
-export default function Nav(props) {
+export default function Nav() {
 
     const { t } = useTranslation();
     const ctx = useContext(CartContext);
-    const [data, setData] = useState(db)
-    const { home, about, skills, project, contact, info } = data.navigate;
     const [menu, setMenu] = useState(true)
     const [navbar, setNavbar] = useState(false)
     const [box, setBox] = useState(false)
@@ -37,19 +32,18 @@ export default function Nav(props) {
             history.goBack();
         }
     }
-
     useEffect(() => {
         ctx.changeMenu(menu)
     }, [menu])
 
 
     const handleClickLang = (lang) => {
+        ctx.language(lang)
         i18next.changeLanguage(lang)
       }
 
     const handleClick = () => {
         setMenu(!menu)
-
     }
     const handleOff = () => {
         setMenu(true)
@@ -65,29 +59,20 @@ export default function Nav(props) {
             setNavbar(false);
         }
     }
-
     window.addEventListener('scroll', changeBackground)
-
     return (
         <nav className={`${!navbar ? "nav active" : "nav"}`}>
             <>
                 <NavLink to={"/#home"} ><i className="fab fa-resolving homes"></i></NavLink>
                 <button onClick={() => {
-                    setData(db);
-                    ctx.changeLeanguage(db)
                     handleClickLang('en')
                 }}>
                     <figure>
                         <img className="nav-img" src={poland} alt="język Polski" />
                     </figure>
-                    <div>
-                        {t('about.hello')}
-                    </div>
                 </button>
 
                 <button onClick={() => {
-                    setData(dbeng)
-                    ctx.changeLeanguage(dbeng)
                     handleClickLang('ko')
                 }}>
                 <figure>
@@ -113,30 +98,30 @@ export default function Nav(props) {
                         handleOff()
                         scrolling('home');
                     }}>
-                        {home}
+                        {t('navigate.home')}
                     </li>
                     <li onClick={() => {
                         handleOff()
                         scrolling('about');
-                    }}>{about}</li>
+                    }}>{t('navigate.about')}</li>
 
                     <li onClick={() => {
                         handleOff()
                         scrolling('skills');
-                    }}> {skills} </li>
+                    }}> {t('navigate.skills')} </li>
 
                     <li onClick={() => {
                         handleOff()
                         scrolling('projects');
-                    }}>  {project} </li>
+                    }}>  {t('navigate.project')} </li>
 
                     <li onClick={() => {
                         handleOff()
                         scrolling('contact');
-                    }}> {contact}</li>
+                    }}> {t('navigate.contact')}</li>
                 </ul>
                 <div className="box-description">
-                    {info}
+                    {t('navigate.info')}
                 </div>
                 <div className="box-link">
                     <a rel="noreferrer" href="https://github.com/szkapec"><i className="fab fa-github"></i></a>

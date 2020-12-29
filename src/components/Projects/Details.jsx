@@ -1,106 +1,123 @@
-import React, {useState,useEffect,useContext} from 'react'
+import React, { useState, useEffect} from 'react'
 import animations from '../../assets/home/animate.svg';
 import styled from 'styled-components';
-import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies
-    ,meme, encript, appPost, fullStack} from '../../assets/export';
-import { CartContext } from "../Context/Context";
-const Details = (props) => {
+import { course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies, meme, encript, appPost, fullStack } from '../../assets/export';
+import { useTranslation } from 'react-i18next';
 
-    const context = useContext(CartContext);
-    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies,fullStack, appPost]
-    
+const Details = (props) => {
+    const { t } = useTranslation();
+    const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact, weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies, fullStack, appPost]
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0);
         setTimeout(() => setLoading(), 1500);
-        context.data.project.map(item => {
-            if(item.route===props.match.params.id){
-                 return setProject(item)
+        t('project', { returnObjects: true }).map(item => {
+            if (item.route === props.match.params.id) {
+               return setProject(item)
             }
-           
         }, [])
-    }, [project, context])
+    }, [t('projectDescription.technologies')])
 
-    const {description, github, live, name, technologies, id} = project;
+    const { description, github, live, name, technologies, id } = project;
     const loaded = (
-       <div className="context">
+        <div className="context">
             <div className="loaded">
                 <div className="loaded__name">{name}</div>
                 <div className="loaded__description">{description}</div>
                 <figure>
-                    <img className="loaded__img" src={application[id]} alt={name}/>
+                    <img className="loaded__img" src={application[id]} alt={name} />
                 </figure>
                 <div className="loaded__button">
                     <a href={github}><button className="loaded__button__left " >GitHub</button></a>
                     <a href={live}><button className="loaded__button__right">Demo</button></a>
                 </div>
                 <div className="description-technologies">
-                <div>{context.data.stos.technology}</div>
-                <div>{technologies&&technologies.split(',').map(item=> (
-                    <Button key={item} item={item}>{item}</Button>
-                ))}</div>
+                    <div>{t('projectDescription.technologies')}</div>
+                    <div>{technologies && technologies.split(',').map(item => (
+                        <Button key={item} item={item}>{item}</Button>
+                    ))}</div>
+                </div>
             </div>
         </div>
-       </div>
     )
-   
     const details = (
         <div className="loader">
-        <figure>
-            <img className="animations" src={animations} alt="animations"/>
-        </figure>
-		<div className="cover">
-			<div className="cover-line">
-				<div className="line">
-					<div className="progress-line color">
-						<div className="belt"/>
-					</div>
-				</div>
-			</div>
-		</div>
-        <div className="description">{context.data.stos.build}</div>
-	</div>
+            <figure>
+                <img className="animations" src={animations} alt="animations" />
+            </figure>
+            <div className="cover">
+                <div className="cover-line">
+                    <div className="line">
+                        <div className="progress-line color">
+                            <div className="belt" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="description">{t('stos.build')}</div>
+        </div>
     )
-
-
     return (
         <section className="details">
-            {loading?details:loaded}
+            {loading ? details : loaded}
         </section>
     )
 }
 
 
-
-
 export default Details;
 
-
 const Button = styled.button`
-    background-color: ${({item}) => item === "Redux" || item==="React" || item === "React-Redux" || item === "SASS" || item === "Node" || item ==="Stripe" || item === "Express"
-    ? 'rgb(130, 6, 6)' : item === "Moment" || item === "Swiper Slide" || item === "MongoDB" || item === "Passport" || item==="Storybook"
-     ? "red" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" || item === "React-Hook" || item === "React-Tabs" || item==="React-Hook" ||
-      item ==="JSX" || item === "JavaScript" || item === "LocalStorage" || item === "CreateContext" || item === "PropTypes" || item === "PageContext" || item === "Contentfull"
-     ? "orange" : "green"};
+    background-color: ${({ item }) => switchBackground(item)};
 	border: none;
 	margin:10px;
     padding: 5px 16px;
     transition: .4s ease-in-out;
     :hover {
-        background-color: ${({item}) => item === "Redux" || item==="React" || item === "React-Redux" || item === "SASS" || item === "Node" || item ==="Stripe" || item === "Express"
-    ? 'rgb(101, 0, 0)' : item === "Moment" || item === "Swiper Slide" || item === "MongoDB" || item === "Passport" || item==="Storybook"
-     ? "rgb(150, 7, 7)" : item === "Firebase" || item === "React Context" || item === "Styled-Components" || item === "Axios" || item === "Context API" || item === "React-Hook" || item === "React-Tabs" || item==="React-Hook" ||
-      item ==="JSX" || item === "JavaScript" || item === "LocalStorage" || item === "CreateContext" || item === "PropTypes" || item === "PageContext" || item === "Contentfull"
-     ? "rgb(148, 98, 4)" : "rgb(1, 84, 1)"};
+        background-color: ${({ item }) => switchBackground(item, 'hover')}
     }
-    
     @media(min-width: 600px) {
         font-size: 16px;
         padding: 7px 18px;
         letter-spacing: 2px;
     }
 `
+
+const switchBackground = (item, hover = null) => {
+    switch (item) {
+        case "Redux": case "React":
+        case "SASS": case "Node":
+        case "Stripe": case "Express":
+        case "React-Redux": {
+            if (hover) return 'rgb(101, 0, 0)'
+            else return 'rgb(130, 6, 6)'
+        }
+        case "Moment": case "Swiper Slide":
+        case "MongoDB": case "Passport":
+        case "Storybook": case "Moment":
+        case "Moment": {
+            if(hover) return 'rgb(150, 7, 7)'
+            else return 'red'
+        }
+        case "Firebase": case "React Context":
+        case "Styled-Components": case "Axios":
+        case "Context API": case "JSX": case "API":
+        case "JavaScript": case "LocalStorage":
+        case "CreateContext": case "PropTypes":  
+        case "PageContext": case "React-Hook":
+        case "Contentfull": {
+            if(hover) return 'rgb(148, 98, 4)' 
+            else return 'orange'
+        }
+        default: {
+            if(hover) return "rgb(1, 84, 1)"
+            else return "green"
+        }
+
+    }
+}
+
 
 

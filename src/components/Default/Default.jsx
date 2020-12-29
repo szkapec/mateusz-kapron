@@ -1,20 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import { useTranslation } from 'react-i18next';
 export default function Default() {
+    const { t } = useTranslation();
     return (
         <section id="error">
-           <StyledError>
-           <div>ERROR 404 </div>
-           <div>Nie ma takiej strony </div>
-           </StyledError>
+            <StyledError>
+                <div>ERROR 404 </div>
+                <div>{t('projectDescription.page')}</div>
+            </StyledError>
         </section>
     )
 }
 
 const StyledError = styled.div`
-
-
     div:first-child {
         position: absolute;
         top: 45%;
@@ -41,8 +40,5 @@ const StyledError = styled.div`
         margin: 0 auto;
         text-align: center;
     }
-
-    
-
 
 `

@@ -2,17 +2,17 @@ import i18n from 'i18next';
 import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+import translationPL from './locales/pl/translation.json'
 import translationEN from './locales/en/translation.json'
-import translationNL from './locales/ko/translation.json'
 const fallbackLng = ['en'];
-const availableLanguages = ['en', 'ko', 'chi'];
+const availableLanguages = ['en', 'ko'];
 
 const resources = {
   en: {
-    translation: translationEN,
+    translation: translationPL,
   },
   ko: {
-    translation: translationNL,
+    translation: translationEN,
   },
  };
 const options = {
