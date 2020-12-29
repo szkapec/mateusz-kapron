@@ -7,14 +7,14 @@ This is my portfolio website. It contains information about me, my education, sk
 [https://szkapec.github.io/mateusz-kapron/](https://szkapec.github.io/mateusz-kapron/)
 
 ## Technologies used in this project
-  -React
-  -React hook
-  -Context API
-  -JavaScript
-  -JSX
-  -SASS
-  -Styled-components
-  -i18next
+  - React
+  - React hook
+  - Context API
+  - JavaScript
+  - JSX
+  - SASS
+  - Styled-components
+  - i18next
   
   
  ## Website Preview
