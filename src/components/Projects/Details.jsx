@@ -96,7 +96,7 @@ const switchBackground = (item, hover = null) => {
         }
         case "Moment": case "Swiper Slide":
         case "MongoDB": case "Passport":
-        case "Storybook": case "Moment":
+        case "Storybook": case "Moment": 
         case "Moment": {
             if(hover) return 'rgb(150, 7, 7)'
             else return 'red'
@@ -106,7 +106,7 @@ const switchBackground = (item, hover = null) => {
         case "Context API": case "JSX": case "API":
         case "JavaScript": case "LocalStorage":
         case "CreateContext": case "PropTypes":  
-        case "PageContext": case "React-Hook":
+        case "PageContext": case "React-Hook": case 'React-Tabs':
         case "Contentfull": {
             if(hover) return 'rgb(148, 98, 4)' 
             else return 'orange'
