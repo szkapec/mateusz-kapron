@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29e830011aa12b69e957330bc19fdae6",
+    "revision": "4022ac15bc6cd52bb072e9512ef59c1e",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "2c5209cd17a26ac16296",
-    "url": "/mateusz-kapron/static/css/main.a6587368.chunk.css"
+    "revision": "418855029e72de792b27",
+    "url": "/mateusz-kapron/static/css/main.3906224a.chunk.css"
   },
   {
     "revision": "30d6b96b7c355e8b70b2",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/js/2.566e1234.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c5209cd17a26ac16296",
-    "url": "/mateusz-kapron/static/js/main.dc1ae273.chunk.js"
+    "revision": "418855029e72de792b27",
+    "url": "/mateusz-kapron/static/js/main.51d177db.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
@@ -128,20 +128,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mateusz-kapron/static/media/memegenerator.5065f87a.PNG"
   },
   {
-    "revision": "f58f6e5865f7ab649dd2ab66c500b48e",
-    "url": "/mateusz-kapron/static/media/mountains-desktop.f58f6e58.jpg"
-  },
-  {
-    "revision": "318a5920f562fd55f928661d3bc53412",
-    "url": "/mateusz-kapron/static/media/mountains-mobile.318a5920.jpg"
-  },
-  {
     "revision": "692b22662252b65e9644e0352a4240d0",
     "url": "/mateusz-kapron/static/media/movies.692b2266.png"
   },
   {
     "revision": "23c47370eac545f6ee56afa1293a412e",
     "url": "/mateusz-kapron/static/media/mysql-5.23c47370.svg"
+  },
+  {
+    "revision": "c9743a72ee4be17bcc67dae63c031d02",
+    "url": "/mateusz-kapron/static/media/new.c9743a72.jpg"
   },
   {
     "revision": "776738141c96ae63ba34dcf7e3973fbc",
