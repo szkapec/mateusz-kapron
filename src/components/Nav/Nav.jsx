@@ -63,7 +63,7 @@ export default function Nav() {
     return (
         <nav className={`${!navbar ? "nav active" : "nav"}`}>
             <>
-                <NavLink to={"/#home"} ><i className="fab fa-resolving homes"></i></NavLink>
+                <NavLink className="home-m" to={"/#home"} >M</NavLink>
                 <button onClick={() => {
                     handleClickLang('en')
                 }}>

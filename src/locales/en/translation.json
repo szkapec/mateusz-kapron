@@ -1,10 +1,5 @@
 {
-  "Thanks": {
-      "1": "고마워요"
-  },
-  "Why": {
-      "1": "이 영상을 봐주셔서"
-  },
+
     "navigate": {
     "home": "Home", "about": "About me", "skills": "Skills", "features": "Features", "project": "Projects", "contact": "Contact", "info": "Mateusz Kaproń I am a front-end developer"
   },
@@ -35,40 +30,99 @@
       "description": "An application for selling courses via the Internet, extended with the possibility of paying by credit card (stripe)",
       "technologies": "React,Stripe,React Context,React-Hook,LocalStorage,Styled-Components,JSX,HTML",
       "github": "https://github.com/szkapec/kurs-online",
-      "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase"
+      "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase",
+      "functions": "Functionalities:",
+      "functionality": [
+        {"id":"Adding courses to the store cart;"},
+        {"id":"Removing courses from the store cart;"},
+        {"id":"Clearing the shopping cart;"},
+        {"id":"All courses added and removed from localStorage;"},
+        {"id":"Possibility to handle payment by credit card;"},
+        {"id":"React Context has been implemented to store the application state;"}
+      ]
     },
     {
       "id": 2, "name": "Baflix application", "desc": "The Baflix application is a movie viewing service, it is modeled on a popular site.",
       "description": "The Baflix application is a movie viewing service, it is modeled on a popular site. Photos and movies are stored in the Mongodb database. This is a test application. There are no movies due to copyright.",
       "technologies": "React,Express,Node,Swiper Slide,MongoDB,Axios,React-Hook,React-Tabs,Context API,Styled-Components,JSX,HTML",
       "github": "https://github.com/szkapec/Baflix",
-      "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
+      "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
+      "functions": "Functionalities:",
+      "functionality": [
+        {"id":"Movie search engine by category;"},
+        {"id":"Adding movies to favorites;"},
+        {"id":"Ability to like movies;"},
+        {"id":"Ability to add movies and series to watch to your own list;"},
+        {"id":"Removing movies from favorites;"},
+        {"id":"Removing movie likes;"},
+        {"id":"Removing movies from favorites;"},
+        {"id":"Three different sliders with movies;"},
+        {"id":"API implemented in Express.js;"},
+        {"id":"All movies (links, descriptions) downloaded from MongoDB database;"}
+      ]
     },
     {
-      "id": 19, "name": "Programming blog", "desc": "Blog about programming in JavaScript and more",
+      "id": 19, "name": "Programming blog", "desc": "Full-Stack Application. Blog about programming in JavaScript and more",
       "description": "An application designed to broaden the knowledge of backend and interaction with the Mongodb database. The implemented backend allows you to log in, register, add new articles, delete your articles, add comments to articles, add 'Like!' to the article and comments, user name and password change, and a token is generated for each user and a session with the user is maintained on this basis.",
       "technologies": "Node,React,Express,Redux,SASS,MongoDB,Moment,Axios,JavaScript,Styled-Components,JSX,HTML",
       "github": "https://github.com/szkapec/programming-blog",
-      "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot"
+      "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot",
+      "functions": "Functionalities:",
+      "functionality": [
+        {"id": "All data written / updated to the mongoDb database;"},
+        {"id": "User registration possible;"},
+        {"id": "Login to the blog;"},
+        {"id": "Search engine for users by name;"},
+        {"id": "User name and login changed;"},
+        {"id": "Change your account password;"},
+        {"id": "Ability to add posts;"},
+        {"id": "Ability to delete your posts;"},
+        {"id": "Possibility to comment on posts;"},
+        {"id": "Ability to like the post;"},
+        {"id": "You can like the comment;"},
+        {"id": "Ability to remove your likes from posts and comments;"},
+        {"id": "Generated token for user;"},
+        {"id": "Redux has been implemented to store the application state;"}
+      ]
     },
     {
       "id": 0, "name": "Firebase application", "desc": "Application for adding articles saved in the firebase database.",
       "description": "Application for adding articles saved in the firebase database. Ability to add your own notes that are saved in the database. To add, please register.",
       "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,JSX,CSS,HTML",
       "github": "https://github.com/szkapec/firebase",
-      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
+      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling",
+      "functions": "Functionalities:",
+      "functionality": [
+        {"id": "All data written / updated to firebase;"},
+        {"id": "User registration possible;"},
+        {"id": "User login possible;"},
+        {"id": "Ability to add your own posts;"},
+        {"id": "To store the application state implanted redux;"}
+      ]
     },
     {
-      "id": 3, "name": "Full-stack application", "desc": "Full-Stack application. Adding notes, twitters and private messages.",
-      "description": "Full-Stack application. Adding notes, twitters, private notes. Read and write everything from mongoDB database. Premium option - watching movies",
+      "id": 3, "name": "Application for adding notes and articles.", "desc": "Application for adding private notes. Also implemented is adding public twitter and chat, and watching movies for premium.",
+      "description": "Full-Stack Application. Adding notes, twitters, private notes, logging in, registering and maintaining sessions with the user. Read and write everything from mongoDB database. Premium option - watching movies",
       "technologies": "Node,React,Express,Passport,Axios,JavaScript,LocalStorage,SASS,Styled-Components,JSX,HTML",
     "github": "https://github.com/szkapec/express-react-node-mongodb",
-    "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix"
+    "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix",
+    "functions": "Functionalities:",
+    "functionality": [
+      {"id": "All data written / updated to the mongoDb database;"},
+      {"id": "User registration possible;"},
+      {"id": "Ability to log into the application;"},
+      {"id": "Chat for 20 messages between users;"},
+      {"id": "Ability to add private notes"},
+      {"id": "Possibility to edit or delete private note"},
+      {"id": "Private to-do lists"},
+      {"id": "Ability to add posts;"},
+      {"id": "Ability to edit or delete your post;"}
+    ]
     },
     {
       "id": 4, "name": "E-Commerce Application", "desc": "E-Commerce Application, online store",
       "description": "E-Commerce Application. Online store written in React. The application allows you to add new items for sale such as phones, computers and gadgets. A basket has also been implemented that lists all products and the total cost of payment for purchases.",
-      "technologies": "React,JavaScript,CreateContext,PropTypes,Styled-Components,API,JSX,HTML",
+      "technologies": "React,JavaScript,React Context,PropTypes,Styled-Components,API,JSX,HTML",
       "github": "https://github.com/szkapec/ecommerce",
       "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
     },
@@ -129,26 +183,14 @@
       "github": "https://github.com/szkapec/React-hotel",
       "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-generate", "previous": "app-weatcher-cz1"
     },
-    {
-      "id": 11, "name": "Generating users", "desc": "Application to generate random user, exchange rate and weather",
-      "description": "Application to generate a random user, display the current exchange rate and weather based on his origin, and display historical data based on his date of birth. The application uses 4 different external APIs. I created it for educational purposes, to expand my knowledge of API and Fetch.",
-      "technologies": "React,SASS,JavaScript,API,JSX,HTML",
-      "github": "https://github.com/szkapec/pobieranieDanychzAPI",
-      "live": "https://szkapec.github.io/pobieranieDanychzAPI/", "route": "app-generate", "next": "app-todo", "previous": "app-hotel"
-    },
-    {
-      "id": 12, "name": "To-Do", "desc": "Application with tasks",
-      "description": "Application with tasks to be performed",
-      "technologies": "React,SASS,JavaScript,JSX,HTML",
-      "github": "https://github.com/szkapec/Lista-zadan-do-zrobienia",
-      "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
-    },
+  
+ 
     {
       "id": 16, "name": "Meme Generator", "desc": "The application downloads data from an external API and generates about 100 photos.",
       "description": "The application downloads data from an external API and generates about 100 photos that can be modified by adding your own text.",
       "technologies": "React,JavaScript,API,JSX,CSS,HTML",
       "github": "https://github.com/szkapec/meme-generator",
-      "live": "https://szkapec.github.io/meme-generator/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
+      "live": "https://szkapec.github.io/meme-generator/", "route": "app-meme", "next": "app-firebase", "previous": "app-robot"
     },
 
     {
@@ -160,8 +202,8 @@
     },
  
     {
-      "id": 15, "name": "Project Bowling", "desc": "Bowling game",
-      "description": "Bowling Game Project",
+      "id": 15, "name": "Game Bowling", "desc": "Bowling game",
+      "description": "Game Project",
       "technologies": "JavaScript,CSS,HTML,",
       "github": "https://github.com/szkapec/bowling",
       "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"

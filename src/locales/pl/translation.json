@@ -32,41 +32,100 @@
         "description": "Aplikacja do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia kartą płatniczą (stripe) ",
         "technologies": "React,Stripe,React Context,React-Hook,LocalStorage,Styled-Components,JSX,HTML",
         "github": "https://github.com/szkapec/kurs-online",
-        "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase"
+        "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Dodawanie kursów do koszyka;"},
+          {"id":"Usuwanie kursów z koszyka;"},
+          {"id":"Czyszczenie koszyka;"},
+          {"id":"Wszystkie kursy dodawane i usuwane z localStorage;"},
+          {"id":"Możliwość obsługi płatności kartą płatniczą;"},
+          {"id":"Do przechowywania stanu aplikacji zaimplementowany został React Context;"}
+        ]
       },
       {
         "id": 2, "name": "Aplikacja Baflix",  "desc": "Aplikacja Baflix jest serwisem do przeglądania filmów jest on wzorowany z popularnego serwisu.",
         "description": "Aplikacja Baflix jest serwisem do oglądania filmów, jest on wzorowany z popularnego serwisu. Zdjęcia jak i filmy są zapisane w bazie danych Mongodb. Jest to aplikacja testowa. Nie ma filmów ze względu na prawa autorskie. ",
         "technologies": "React,Express,Node,Swiper Slide,MongoDB,Axios,React-Hook,React-Tabs,Context API,Styled-Components,JSX,HTML",
         "github": "https://github.com/szkapec/appbaflix",
-        "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course"
+        "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Wyszukiwarka filmów po kategorii;"},
+          {"id":"Dodawanie flmów do ulubionych;"},
+          {"id":"Możliwość polubienia filmów;"},
+          {"id":"Możliwość dodawania do własnej listy filmy i seriale do obejrzenia;"},
+          {"id":"Usunięcie filmów z ulubionych;"},
+          {"id":"Usunięcie polubień filmów;"},
+          {"id":"Usunięcie filmów z ulubionych;"},
+          {"id":"Trzy różne slidery z filmami;"},
+          {"id":"API zaimplementowane w Express.js;"},
+          {"id":"Wszystkie filmy (linki, opisy) pobierane z bazy danych MongoDB;"}
+        ]
       },
       {
-        "id": 19, "name": "Blog o programowaniu", "desc": "Blog o programowaniu w JavaScript i nie tylko",
+        "id": 19, "name": "Blog o programowaniu", "desc": "Aplikacja typu Full-Stack. Blog o programowaniu w JavaScript i nie tylko",
         "description": "Aplikacja stworzona z myślą o poszerzeniu wiedzy na temat backendu i interakcji z bazą danych Mongodb. Zaimplementowany backend pozwala na logowanie, rejestracje, dodawanie nowych artykułów, usuwanie swoich artykułów, dodawanie komentarzy do artykułów, możliwość dodania „Lubię to!” do artykułu i komentarzy, zmiana nazw użytkownika i hasła oraz generowany jest token dla każdego użytkownika i na tej podstawie utrzymywana jest sesja z użytkownikiem. ",
         "technologies": "Node,React,Express,Redux,SASS,MongoDB,Moment,Axios,JavaScript,Styled-Components,JSX,HTML",
         "github": "https://github.com/szkapec/programming-blog",
-        "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot"
+        "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Wszystkie dane zapisywane/aktualizowane do bazy danych mongoDb;"},
+          {"id":"Możliwość rejestracji użytkowników;"},
+          {"id":"Możliwość logowania na blog;"},
+          {"id":"Wyszukiwarka użytkowników po imieniu;"},
+          {"id":"Zmiana nazwy i loginu użytkownika;"},
+          {"id":"Zmiana hasła swojego konta;"},
+          {"id":"Możliwość dodawania postów;"},
+          {"id":"Możliwość usuwania swoich postów;"},
+          {"id":"Możliwośc komentowania postów;"},
+          {"id":"Możliwość polubienia postu;"},
+          {"id":"Mozliwość polubienia komentarza;"},
+          {"id":"Możliwość usunięcia swoich polubień z postów oraz z komentarzy;"},
+          {"id":"Generowany token dla użytkownika;"},
+          {"id":"Do przechowywania stanu aplikacji zaimplementowany został redux;"}
+        ]
       },
       {
         "id": 0, "name": "Aplikacja do dodawania artykułów", "desc": "Aplikacja do dodawania artykułów zapisywana w bazie firebase.",
         "description": "Aplikacja do dodawania artykułów zapisywana w bazie firebase. Możliwość dodawania własnych notatek które zapisują się w bazie danych. Aby dodać prosze się zarejestrować. ",
         "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,JSX,CSS,HTML",
         "github": "https://github.com/szkapec/firebase",
-        "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling"
+        "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Wszystkie dane zapisywane/aktualizowane do firebase;"},
+          {"id":"Możliwość rejestracji użytkowników;"},
+          {"id":"Możliwość logowania użytkowników;"},
+          {"id":"Możliwość dodawania własnych postów;"},
+          {"id":"Do przechowywania stanu aplikacji zaimplentowany redux;"}
+        ]
       },
      
       {
-        "id": 3, "name": "Aplikacja full-stack", "desc": "Aplikacja Full-Stack. Dodawanie notatek, twitterów i prywatnych wiadomości.",
-        "description": "Aplikacja Full-Stack. Dodawanie notatek, twitterów, prywatnych notatek. Odczyt i zapis wszystkiego z bazy danych mongoDB. Możliwość premium - ogladanie filmów",
+        "id": 3, "name": "Aplikacja do dodawania notatek i artykułów.", "desc": "Aplikacja do dodawania prywatnych notatek. Zaimplementowane również dodawanie publicznych twitterów oraz chat, a dla premium oglądanie filmów",
+        "description": "Aplikacja typu Full-Stack. Dodawanie notatek, twitterów, prywatnych notatek, logowanie, rejestracja i utrzymywanie sesji z użytkownikiem. Odczyt i zapis wszystkiego z bazy danych mongoDB. Możliwość premium - ogladanie filmów",
         "technologies": "Node,React,Express,SASS,Passport,Axios,JavaScript,LocalStorage,Styled-Components,JSX,HTML",
         "github": "https://github.com/szkapec/express-react-node-mongodb",
-        "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix"
+        "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Wszystkie dane zapisywane/aktualizowane do bazy danych mongoDb;"},
+          {"id":"Możliwość rejestracji użytkowników;"},
+          {"id":"Możliwość logowania do aplikacji;"},
+          {"id":"Czat na 20 wiadomości między uzytkownikami;"},
+          {"id":"Możliwość dodawania prywatnych notatek"},
+          {"id":"Możliwość edycji lub usunięcia prywatnej notatki"},
+          {"id":"Prywatne listy zadań"},
+          {"id":"Możliwość dodawania postów;"},
+          {"id":"Możliwość edycji lub usunięcie swojego postu;"}
+        ]
       },
       {
         "id": 4, "name": "Aplikacja E-Commerce", "desc": "Aplikacja E-Commerce, sklep internetowy",
         "description": "Aplikacja E-Commerce. Sklep internetowy napisany w React. Aplikacja pozwala na dodawanie nowych przedmiotów na sprzedaż takich jak telefony, komputery i gadzety. Zaimplementowany został również koszyk zliczający wszystkie produkty i całkowity koszt zapłaty za zakupy.",
-        "technologies": "React,JavaScript,CreateContext,PropTypes,Styled-Components,API,JSX,HTML",
+        "technologies": "React,JavaScript,React Context,PropTypes,Styled-Components,API,JSX,HTML",
         "github": "https://github.com/szkapec/ecommerce",
         "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
       },
@@ -126,20 +185,8 @@
         "github": "https://github.com/szkapec/React-hotel",
         "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-generate", "previous": "app-weatcher-cz1"
       },
-      {
-        "id": 11, "name": "Generowanie użytkowników", "desc": "Aplikacja do generowania losowego użytkownika, kursu walut i pogody",
-        "description": "Aplikacja do generowania losowego użytkownika, wyświetlenia aktualnego kursu walut i pogody na podstawie jego pochodzenia oraz wyświetlenie danych historycznych na podstawie daty jego urodzenia. Aplikacja korzysta z 4 różnych zewnętrznych API. Stworzyłem ją, w celach edukacyjnych, aby poszerzyć swoją wiedzę z API oraz z Fetch",
-        "technologies": "React,SASS,JavaScript,API,JSX,HTML",
-        "github": "https://github.com/szkapec/pobieranieDanychzAPI",
-        "live": "https://szkapec.github.io/pobieranieDanychzAPI/", "route": "app-generate", "next": "app-todo", "previous": "app-hotel"
-      },
-      {
-        "id": 12, "name": "Zadania do wykonania", "desc": "Aplikacja z zadaniami",
-        "description": "Aplikacja z zadaniami do wykonania",
-        "technologies": "React,SASS,JavaScript,JSX,HTML",
-        "github": "https://github.com/szkapec/Lista-zadan-do-zrobienia",
-        "live": "https://szkapec.github.io/Lista-zadan-do-zrobienia/", "route": "app-todo", "next": "app-snake", "previous": "app-generate"
-      },
+    
+   
       {
         "id": 16, "name": "Generator memów", "desc": "Aplikacja pobiera dane z zewnętrznego API oraz generuje około 100 zdjęć.",
         "description": "Aplikacja pobiera dane z zewnętrznego API oraz generuje około 100 zdjęć, które można przerobić dodając własny tekst. ",
@@ -157,8 +204,8 @@
       },
   
       {
-        "id": 15, "name": "Projekt Gra w kręgle", "desc": "Gra w kręgle",
-        "description": "Projekt Gra w kręgle",
+        "id": 15, "name": "Gra w kręgle", "desc": "Gra w kręgle",
+        "description": "Gra w kręgle",
         "technologies": "JavaScript,CSS,HTML",
         "github": "https://github.com/szkapec/bowling",
         "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"

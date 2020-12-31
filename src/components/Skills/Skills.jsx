@@ -33,7 +33,7 @@ const Skills = () => {
                 <div className="technologies">{t('stos.stos')}</div>
                 <h3 className="advanced-skills">{t('stos.advanced')}</h3>
                 <article className="article-advanced-skills">
-                    {t('skills', { returnObjects: true }) && t('skills', { returnObjects: true }).map((item) => {
+                     {t('skills', { returnObjects: true }) && t('skills', { returnObjects: true }).map((item) => {
                         if (item.id > 6) return;
                         return (
                             <div key={item.id} data-aos="fade-right">

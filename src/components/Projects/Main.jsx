@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 export default function Main() {
     const { t } = useTranslation();
     return (
-            <section className="none">
+            <section id="card" className="card">
                 <StyledContainerMain>
                     <h2>{t('projectDescription.ignite')}</h2>
                     <p>{t('projectDescription.github')}</p>

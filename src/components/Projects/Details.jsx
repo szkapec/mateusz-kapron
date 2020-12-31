@@ -20,9 +20,9 @@ const Details = (props) => {
         }, [])
     }, [t('projectDescription.technologies')])
 
-    const { description, github, live, name, technologies, id } = project;
+    const { description, github, live, name, technologies, id, functions, functionality } = project;
     const loaded = (
-        <div className="context">
+        <header className="context">
             <div className="loaded">
                 <div className="loaded__name">{name}</div>
                 <div className="loaded__description">{description}</div>
@@ -33,6 +33,16 @@ const Details = (props) => {
                     <a href={github}><button className="loaded__button__left " >GitHub</button></a>
                     <a href={live}><button className="loaded__button__right">Demo</button></a>
                 </div>
+               
+                <div className="loaded__functionality">
+                <div className="loaded__functions">{functions}</div>
+                <ul>
+                    {functionality&&functionality.map(item => {
+                       return <li key={item.id}>{item.id}</li>
+                       
+                    })}
+                </ul>
+                </div>
                 <div className="description-technologies">
                     <div>{t('projectDescription.technologies')}</div>
                     <div>{technologies && technologies.split(',').map(item => (
@@ -40,10 +50,10 @@ const Details = (props) => {
                     ))}</div>
                 </div>
             </div>
-        </div>
+        </header>
     )
     const details = (
-        <div className="loader">
+        <header className="loader">
             <figure>
                 <img className="animations" src={animations} alt="animations" />
             </figure>
@@ -57,7 +67,7 @@ const Details = (props) => {
                 </div>
             </div>
             <div className="description">{t('stos.build')}</div>
-        </div>
+        </header>
     )
     return (
         <section className="details">
@@ -71,6 +81,7 @@ export default Details;
 
 const Button = styled.button`
     background-color: ${({ item }) => switchBackground(item)};
+    color: rgb(5, 90, 150);;
 	border: none;
 	margin:10px;
     padding: 5px 16px;

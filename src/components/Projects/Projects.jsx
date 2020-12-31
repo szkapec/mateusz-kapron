@@ -29,7 +29,8 @@ export default function Projects() {
         <>
             <Main/>
             <section className="projects" id="projects">
-                <div className="categories">
+            
+                <header className="categories">
                     <button onClick={() => setCategories('')}>{t('projectDescription.all')}</button>
                     <button onClick={() => setCategories('React')}>React</button>
                     <button onClick={() => setCategories('Redux')}>Redux</button>
@@ -39,8 +40,8 @@ export default function Projects() {
                     <button className="opacity" onClick={() => setCategories('JavaScript')}>JavaScript</button>
                     <button className="opacity" onClick={() => setCategories('Styled-Components')}>Styled</button>
                     <button className="opacity" onClick={() => setCategories('Games')}>{t('projectDescription.game')}</button>
-                </div>
-                <div className="container">
+                </header>
+                <article className="container">
                     <div className="description-categorie">{categorie === "" ? t('projectDescription.allproject') : categorie ? (<div>{t('projectDescription.category')} <b>{categorie}</b></div>) : 'Error'}</div>
                     <div className="grid">
                         {projects.map(item => {
@@ -67,7 +68,7 @@ export default function Projects() {
                             )
                         })}
                     </div>
-                </div>
+                </article>
             </section>
         </>
     )

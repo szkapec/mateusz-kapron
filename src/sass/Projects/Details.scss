@@ -22,6 +22,8 @@
 		text-align: center;	
 		font-size: 30px;
 		letter-spacing: 3px;
+
+		
 	}
 	&__description {
 		
@@ -43,7 +45,6 @@
 	}
 	&__technologies {
 		padding-top: 100px;
-	
 	}
 
 	&__img {
@@ -56,6 +57,53 @@
 		padding-top: 20px;
 		padding: 5px;
 	}
+	&__functions {
+		color:rgb(5, 90, 150);
+		display: inline;
+		font-size: 18px;
+		border-bottom: 1px solid rgb(5, 90, 150);
+		letter-spacing: 2px;
+		@media(min-width:600px){
+			font-size: 20px;
+		}
+		@media(min-width:1000px){
+			font-size: 24px;
+		}
+	}
+
+	&__functionality {
+		margin-top: 30px;
+		max-width: 1000px;
+		margin: 10px auto 20px;
+		line-height: 25px;
+		font-size: 18px;
+		line-height: 28px;
+		padding: 0 30px 10px;
+		line-height: 30px;
+		
+		ul li::before {
+			content: "\2023"; 
+			font-size: 20px; 
+			color: rgb(5, 90, 150); 
+			font-weight: bold; 
+			display: inline-block; 
+			width: 18px; 
+			margin-left: -16px; 
+			@media(min-width:1000px){
+				font-size: 30px; 
+			}
+		  }
+		ul {
+			list-style: none;
+			margin-top: 20px;
+			@media(min-width:1000px){
+				line-height: 40px;
+				font-size: 20px;
+			}
+		}
+	}
+
+
 	&__button {
 	
 		display: flex;
@@ -65,10 +113,10 @@
 	
 		button {
 			border-radius: 10px;
-			color: white;
+			color: rgb(5, 90, 150);
 			font-family: bold;
 			background-color: #AFD5ED;
-			border:2px solid white;
+			border: 1px solid #055a96;
 			width: 120px;
 			font-size: 16px;
 			padding: 5px 10px;
@@ -76,11 +124,10 @@
 			margin: 5px 25px;
 			outline: none;
 		  }
-	  
 		  button:hover {
-			color: #AFD5ED;
-			background-color: white;
-			border: 2px solid #9DC4DE;
+			color: white;
+			background-color:rgb(26, 90, 135);
+			border: 1px solid rgb(26, 90, 135);
 		  }
 		@media(min-width: 700px) {
 			button {
@@ -97,12 +144,8 @@
 
 
 .description-technologies {
-	max-width: 1000px;
-	width: 90%;
-	margin: 30px auto;
-	background:  var(--container);
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
-	border-radius: 20px;
+	background-color: #9dc4de;
+	margin: 30px auto 0px;
 	padding: 10px 0;
 	text-align: center;
 	
@@ -127,19 +170,22 @@
 		}
 	}
 	div:nth-child(2) {
-		margin: 10px;
+		
+		max-width: 1100px;
+		margin: 10px auto;
 		line-height: 50px;
 		outline: none;
+	
 		button {
 		outline: none;
 		color: black;
 		border-radius: 15px;
+		font-size: 16px;
 		}
 		@media(min-width: 600px) {
-			margin: 20px;
+			margin: 20px auto;
 		}
 		@media(min-width:1100px){
-			margin-left: 30px;
 			text-align: center;
 		}
 	}

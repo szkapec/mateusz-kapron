@@ -26,7 +26,24 @@
         height: 50px;
     }
 
+    .home-m {
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+        margin-left: 5px;
+        font-family: 'Dancing Script', cursive;
+    }
+  // font-family: 'Chilanka', cursive;
+// font-family: 'Dancing Script', cursive;
 
+// font-family: 'Hind Siliguri', sans-serif;
+
+// font-family: 'Open Sans Condensed', sans-serif;
+
+// font-family: 'Peddana', serif;
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
     button {
         border: none;
         background-color: transparent;
@@ -59,6 +76,7 @@
     }
 }
 .menu-s {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
@@ -66,6 +84,10 @@
     color: white;
     font-weight: 300;
     letter-spacing: 1px;
+    
+    @media(min-width: 290px){
+        display: block;
+    }
     @media(min-width: 1500px){
         right: 80px;
         font-size: 20px;
