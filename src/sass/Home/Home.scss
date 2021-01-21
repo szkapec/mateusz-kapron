@@ -1,4 +1,5 @@
-  $color: #294d65;
+  $color: #2980b9;
+  $color-hover: #0b2a3d;
   
   .transition {
     background-color: rgba(144, 135, 125,0.9);
@@ -31,7 +32,7 @@
     padding-bottom: 20px;
   }
     .pictures { 
-      filter: brightness(0.6);
+      filter: brightness(0.5);
       background-image: url("../../assets/home/new.jpg");
       height: 100vh;
       width: 100%;
@@ -57,7 +58,7 @@
     z-index:99;
     transform: translate(-50%);
     border-radius: 50%;
-    background-color: #205c8b;
+    background-color: $color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +77,7 @@
     }
   }
   .scrolldown:hover {
-      background-color: $color;
+      background-color: $color-hover;
   }
   
 
@@ -88,6 +89,7 @@
     transform: translate(-30%, -30%);
     min-width: 230px;
     h1 {
+       
         width: 100%;
         min-width: 260px;
         color: white;
@@ -101,11 +103,13 @@
         line-height: 20px;
         letter-spacing: 1px;
         margin-bottom: 30px;
+        text-shadow: 1px 1px 1px rgba(0,8,15,.5);
         span {
-          color: #205c8b;
+          color: $color;
         }
     }
     h2 {
+      text-shadow: 1px 1px 1px rgba(0,8,15,.5);
       padding-top: 25px;
       min-width: 230px;
       color: white;
@@ -120,7 +124,7 @@
         animation-timing-function: ease-out;
         margin-left: 18px;
         .color {
-          color: #205c8b;
+          color: $color;
         }
         .display {
           display: block;
@@ -160,11 +164,11 @@
       width: 30px;
       height: 30px;
       font-size: 30px;
-      color: #205c8b;
+      color: $color;
       transition: 0.4s ease-in-out;
     }
     i:hover {
-      color: $color;
+      color: $color-hover;
     }
 
 
@@ -185,14 +189,14 @@
     text-align: center;
     animation-name: szerokosc;
     font-size: 30px;
-    color: #205c8b;;
+    color: $color;
     font-weight: 600;
     transition: 2s;
     cursor: pointer;
   }
    .imagetwo-image:hover {
     // transform: rotate(10deg);
-    color: $color;
+    color: $color-hover;
     transition-duration: 0.5s;
    
   }
@@ -259,7 +263,6 @@
   .imagetwo-image {
     height: 40px;
     font-size: 30px;
-    
   }
 
   .twopicture:hover ~ .response:before {
@@ -418,6 +421,38 @@
   .image, .imagetwo {
     i {
       font-size: 38px;
+    }
+  }
+
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
+  .community {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-30%, -30%);
+    min-width: 230px;
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+      padding-top: 20px;
+        font-size: 30px;
+        margin: 10px 0 5px;
+        line-height: 35px;
+        animation-name: h2;
+        animation-duration: 3s;
+        letter-spacing: 1px;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        margin-left: 18px;
+
+    }
+  }
+  .image, .imagetwo {
+    i {
+      font-size: 42px;
     }
   }
 

@@ -28,19 +28,43 @@
 },
     "project": [
       {
-        "id": 1, "name": "Kursy internetowe",  "desc": "Aplikacja testowa do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia karta płatniczą",
-        "description": "Aplikacja do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia kartą płatniczą (stripe) ",
-        "technologies": "React,Stripe,React Context,React-Hook,LocalStorage,Styled-Components,JSX,HTML",
-        "github": "https://github.com/szkapec/kurs-online",
-        "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase",
+        "id": 21, "name": "Aplikacja Hotelowa",  "desc": "Aplikacja hotelowa",
+        "description": "Aplikacja hotelowa ",
+        "technologies": "React,Express,Node,Swiper Slide,MongoDB,Axios,React-Hook,Redux,Styled-Components,JSX,HTML",
+        "github": "https://github.com/szkapec/hotel-application",
+        "live": "https://hotel-application.netlify.app/", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
         "functions": "Funkcjonalności:",
         "functionality": [
-          {"id":"Dodawanie kursów do koszyka;"},
-          {"id":"Usuwanie kursów z koszyka;"},
-          {"id":"Czyszczenie koszyka;"},
-          {"id":"Wszystkie kursy dodawane i usuwane z localStorage;"},
-          {"id":"Możliwość obsługi płatności kartą płatniczą;"},
-          {"id":"Do przechowywania stanu aplikacji zaimplementowany został React Context;"}
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"}
+        ]
+      },
+      {
+        "id": 22, "name": "Strona CMD-Stalowa wola",  "desc": "Strona CMD-Stalowa wola",
+        "description": "Strona CMD-Stalowa wola",
+        "technologies": "Joomla,JSX,HTML",
+        "github": "/#",
+        "live": "http://www.cmdstalowa.pl", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"},
+          {"id":";"}
         ]
       },
       {
@@ -61,6 +85,22 @@
           {"id":"Trzy różne slidery z filmami;"},
           {"id":"API zaimplementowane w Express.js;"},
           {"id":"Wszystkie filmy (linki, opisy) pobierane z bazy danych MongoDB;"}
+        ]
+      },
+      {
+        "id": 1, "name": "Kursy internetowe",  "desc": "Aplikacja testowa do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia karta płatniczą",
+        "description": "Aplikacja do sprzedawania kursów przez internet, rozszerzona o możliwość płacenia kartą płatniczą (stripe) ",
+        "technologies": "React,Stripe,React Context,React-Hook,LocalStorage,Styled-Components,JSX,HTML",
+        "github": "https://github.com/szkapec/kurs-online",
+        "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase",
+        "functions": "Funkcjonalności:",
+        "functionality": [
+          {"id":"Dodawanie kursów do koszyka;"},
+          {"id":"Usuwanie kursów z koszyka;"},
+          {"id":"Czyszczenie koszyka;"},
+          {"id":"Wszystkie kursy dodawane i usuwane z localStorage;"},
+          {"id":"Możliwość obsługi płatności kartą płatniczą;"},
+          {"id":"Do przechowywania stanu aplikacji zaimplementowany został React Context;"}
         ]
       },
       {

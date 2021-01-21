@@ -30,6 +30,9 @@ import memes from './projects/memegenerator.PNG';
 import encripts from './projects/encrypt-decrypt.PNG';
 import appPosts from './projects/appposts.png';
 import fullStacks from './projects/fullstack2.png';
+import appHotels from './projects/app-hotel.png';
+import cmdStalowas from './projects/cmdstalowa.png';
+
 
 export const github = githubs;
 export const course = courses;
@@ -55,3 +58,6 @@ export const meme = memes;
 export const encript = encripts;
 export const appPost = appPosts;
 export const fullStack = fullStacks;
+export const appHotel = appHotels;
+export const cmdStalowa = cmdStalowas; 
+

@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
-import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies,meme, encript, appPost, fullStack} from '../../assets/export';
+import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, reactArticle, hotel, twitters, weatherReact, ecommers, generate, roboto, snake, movies,meme, encript, appPost, fullStack, appHotel, cmdStalowa} from '../../assets/export';
 import Main from './Main';
 import { useTranslation } from 'react-i18next';
 import { CartContext } from '../Context/Context';
@@ -8,7 +8,7 @@ export default function Projects() {
     const { t } = useTranslation();
     const ctx = useContext(CartContext);
     const application = [firebase, course, baflix, fullstack, ecommers, corona, twitters, reactArticle, weatherReact,
-        weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies, fullStack, appPost ]
+        weather, hotel, generate, todoapp, snake, roboto, bowling, meme, encript, movies, fullStack, appPost, appHotel, cmdStalowa ]
     const [categorie, setCategories] = useState('')
     const [projects, setProjects] = useState([]);
 

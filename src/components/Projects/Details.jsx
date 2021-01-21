@@ -80,7 +80,7 @@ const Details = (props) => {
 export default Details;
 
 const Button = styled.button`
-    background-color: ${({ item }) => switchBackground(item)};
+    background: ${({ item }) => switchBackground(item)};
     color: rgb(5, 90, 150);;
 	border: none;
 	margin:10px;
@@ -103,14 +103,14 @@ const switchBackground = (item, hover = null) => {
         case "Stripe": case "Express":
         case "React-Redux": {
             if (hover) return 'rgb(101, 0, 0)'
-            else return 'rgb(130, 6, 6)'
+            else return 'linear-gradient(#d0664c, #d04624 )'
         }
         case "Moment": case "Swiper Slide":
         case "MongoDB": case "Passport":
         case "Storybook": case "Moment": 
         case "Moment": {
             if(hover) return 'rgb(150, 7, 7)'
-            else return 'red'
+            else return '#dcca46'
         }
         case "Firebase": case "React Context":
         case "Styled-Components": case "Axios":
@@ -120,11 +120,11 @@ const switchBackground = (item, hover = null) => {
         case "PageContext": case "React-Hook": case 'React-Tabs':
         case "Contentfull": {
             if(hover) return 'rgb(148, 98, 4)' 
-            else return 'orange'
+            else return "#77C0EF"
         }
         default: {
             if(hover) return "rgb(1, 84, 1)"
-            else return "green"
+            else return '#53ac5d'
         }
 
     }
