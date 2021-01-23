@@ -18,7 +18,7 @@ This is my portfolio website. It contains information about me, my education, sk
   
   
  ## Website Preview
- ![Home Page](https://i.ibb.co/bJdGWvy/Przechwytywanie.png)
+ ![Home Page](https://ibb.co/bssxtCc)
 
   
   
