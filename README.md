@@ -18,7 +18,7 @@ This is my portfolio website. It contains information about me, my education, sk
   
   
  ## Website Preview
- ![Home Page](https://i.ibb.co/bssxtCc/home.png)
+ ![Home Page](https://i.ibb.co/ByymkQ0/home.png)
 
   
   
