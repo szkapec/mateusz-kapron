@@ -1,20 +1,20 @@
 
 .details {
-	background-color: #9dc4de;
 	min-height: 100vh;
 	overflow: hidden;
+	background-color: #f5f5f5;
 }
 .context {
 	padding-top: 20px;
-	background: #9DC4DE;
 	margin: 0 auto;
 	height: 100%;
+	background-color: #f5f5f5;
 }
 .loaded {
 	margin: 0 auto;
-	background: #9DC4DE;
 	width: 100%;
 	height: 100%;
+	background-color: #f5f5f5;
 	font-family: 'Hind Siliguri', sans-serif;
 
 	&__name {
@@ -26,17 +26,17 @@
 		
 	}
 	&__description {
-		
 		font-size: 18px;
 		text-align: center;
 		line-height: 28px;
 		padding: 0 20px 10px;
 		letter-spacing: 2px;
-		line-height: 30px;
 		max-width: 900px;
 		margin: 0px auto 15px;
+		letter-spacing: 1px;
 		@media(min-width: 700px) {
 			margin: 0px auto 20px;
+			letter-spacing: 2px;
 		}
 		@media(min-width: 1500px) {
 			font-size: 22px;
@@ -73,14 +73,13 @@
 
 	&__functionality {
 		margin-top: 30px;
-		max-width: 1000px;
+		max-width: 800px;
 		margin: 10px auto 20px;
 		line-height: 25px;
 		font-size: 18px;
 		line-height: 28px;
 		padding: 0 30px 10px;
 		line-height: 30px;
-		
 		ul li::before {
 			content: "\2023"; 
 			font-size: 20px; 
@@ -115,14 +114,14 @@
 			border-radius: 10px;
 			color: rgb(5, 90, 150);
 			font-family: bold;
-			background-color: #AFD5ED;
 			border: 1px solid #055a96;
 			width: 120px;
 			font-size: 16px;
-			padding: 5px 10px;
+			padding: 8px 10px;
 			transition: .4s ease-in-out;
 			margin: 5px 25px;
 			outline: none;
+			background-color: #f5f5f5;
 		  }
 		  button:hover {
 			color: white;
@@ -142,15 +141,18 @@
 	}
 }
 
-
+.loaded__name {
+	padding-top: 40px;
+}
 .description-technologies {
-	background-color: #9dc4de;
+	background-color: #f5f5f5;
 	margin: 30px auto 0px;
 	padding: 10px 0;
 	text-align: center;
+	max-width: 900px;
 	
-	div:nth-child(1) {
-	
+
+	.project-desc {
 		color:rgb(5, 90, 150);
 		display: inline;
 		font-size: 18px;
@@ -169,26 +171,61 @@
 			text-align: center;
 		}
 	}
-	div:nth-child(2) {
-		
-		max-width: 1100px;
-		margin: 10px auto;
-		line-height: 50px;
-		outline: none;
-	
-		button {
-		outline: none;
-		color: black;
-		border-radius: 15px;
-		font-size: 16px;
+	.link {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		a {
+			border-radius: 10px;
+			color: rgb(5, 90, 150);
+			font-family: bold;
+			border: 1px solid #055a96;
+			width: 120px;
+			font-size: 16px;
+			padding: 8px 10px;
+			transition: .4s ease-in-out;
+			margin: 5px 25px;
+			outline: none;
+			background-color: #f5f5f5;
+			text-decoration: none;
 		}
-		@media(min-width: 600px) {
-			margin: 20px auto;
+		a:hover {
+			color: white;
+			background-color: #1a5a87;
+			border: 1px solid #1a5a87;
 		}
-		@media(min-width:1100px){
-			text-align: center;
+		@media(min-width: 700px) {
+			a {
+				width: 140px;
+				padding: 8px 25px;
+				font-size: 18px;
+				letter-spacing: 2px;
+				margin: 10px 70px;
+			}
+			padding-bottom: 40px;
 		}
 	}
+	// div:nth-child(2) {
+		
+	// 	max-width: 1100px;
+	// 	margin: 10px auto;
+	// 	line-height: 50px;
+	// 	outline: none;
+	
+	// 	button {
+	// 	outline: none;
+	// 	color: black;
+	// 	border-radius: 15px;
+	// 	font-size: 16px;
+	// 	}
+	// 	@media(min-width: 600px) {
+	// 		margin: 20px auto;
+	// 	}
+	// 	@media(min-width:1100px){
+	// 		text-align: center;
+	// 	}
+	// }
 	@media(min-width: 1100px){
 		text-align: center;
 	}
@@ -204,7 +241,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #9DC4DE;
+	background: #f5f5f5;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -250,12 +287,10 @@
 .line .belt::before {
 	background: transparent;
 	height: 100%;
-	box-shadow: 0 0 10px #9DC4DE, 0 0 10px #9DC4DE;
 	z-index: -5;
 }
 
 .line .belt::after {
-	background: linear-gradient(to right, #9DC4DE 0%, transparent 100%);
 	height: calc(100% + 20px);
 	width: calc(100% + 10px);
 	top: -10px;
@@ -266,7 +301,6 @@
     width: 100px;
 }
 .description {
-    text-shadow: 0 0 2px #9DC4DE;
     margin: 20px 0 10px;
 	font-size: 16px;
 	text-align: center;

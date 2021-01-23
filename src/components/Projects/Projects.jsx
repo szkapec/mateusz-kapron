@@ -4,6 +4,8 @@ import {course, firebase, weather, baflix, bowling, fullstack, corona, todoapp, 
 import Main from './Main';
 import { useTranslation } from 'react-i18next';
 import { CartContext } from '../Context/Context';
+import styled from 'styled-components';
+
 export default function Projects() {
     const { t } = useTranslation();
     const ctx = useContext(CartContext);
@@ -31,15 +33,15 @@ export default function Projects() {
             <section className="projects" id="projects">
             
                 <header className="categories">
-                    <button onClick={() => setCategories('')}>{t('projectDescription.all')}</button>
-                    <button onClick={() => setCategories('React')}>React</button>
-                    <button onClick={() => setCategories('Redux')}>Redux</button>
-                    <button onClick={() => setCategories('Node')}>Node</button>
-                    <button onClick={() => setCategories('SASS')}>SASS</button>
-                    <button onClick={() => setCategories('Context')}>Context</button>
-                    <button className="opacity" onClick={() => setCategories('JavaScript')}>JavaScript</button>
-                    <button className="opacity" onClick={() => setCategories('Styled-Components')}>Styled</button>
-                    <button className="opacity" onClick={() => setCategories('Games')}>{t('projectDescription.game')}</button>
+                    <StyledButton categorie={categorie} item={''} onClick={() => setCategories('')}>{t('projectDescription.all')}</StyledButton>
+                    <StyledButton categorie={categorie} item={'React'} onClick={() => setCategories('React')}>React</StyledButton>
+                    <StyledButton categorie={categorie} item={'Redux'}  onClick={() => setCategories('Redux')}>Redux</StyledButton>
+                    <StyledButton categorie={categorie} item={'Node'}  onClick={() => setCategories('Node')}>Node</StyledButton>
+                    <StyledButton categorie={categorie} item={'SASS'}  onClick={() => setCategories('SASS')}>SASS</StyledButton>
+                    <StyledButton categorie={categorie} item={'Context'}  onClick={() => setCategories('Context')}>Context</StyledButton>
+                    <StyledButton categorie={categorie} item={'JavaScript'}  className="opacity" onClick={() => setCategories('JavaScript')}>JavaScript</StyledButton>
+                    <StyledButton categorie={categorie} item={'Axios'}  className="opacity" onClick={() => setCategories('Axios')}>Axios</StyledButton>
+                    <StyledButton categorie={categorie} item={'Games'}  className="opacity" onClick={() => setCategories('Games')}>{t('projectDescription.game')}</StyledButton>
                 </header>
                 <article className="container">
                     <div className="description-categorie">{categorie === "" ? t('projectDescription.allproject') : categorie ? (<div>{t('projectDescription.category')} <b>{categorie}</b></div>) : 'Error'}</div>
@@ -73,3 +75,10 @@ export default function Projects() {
         </>
     )
 }
+
+
+const StyledButton = styled.button`
+    background-color: ${({categorie, item}) => categorie === item ? 'white' : '#AFD5ED'}; 
+    color: ${({categorie, item}) => categorie !== item ? 'white' : '#AFD5ED'}; 
+
+`

@@ -31,7 +31,7 @@ const Home = () => {
             </figure>
             <section className="community">
                 <h1>Mateusz Kaproń </h1>
-                <h2 data-aos="flip-up"> <span  className='color'>Web Developer,</span> <span className="display"> Programmer <span className='color'>&</span> Designer </span></h2>
+                <h2 data-aos="flip-up"> <span className='color'>Web Developer,</span> <span className="display"> Programmer <span className='color'>&</span> Designer </span></h2>
                 <div className="image">
                     <a rel="noreferrer" href="https://www.facebook.com/mateusz.kapron.50">
                         <figure className="image__container" data-aos="fade-right" data-aos-delay="500">

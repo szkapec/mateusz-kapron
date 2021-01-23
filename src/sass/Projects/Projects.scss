@@ -15,9 +15,6 @@
     }
 }
 
-
-
-
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -89,16 +86,14 @@
     }
     button {
       outline: none;
-      color: white;
       font-family: bold;
-      background-color: #AFD5ED;
+      // background-color: #AFD5ED;
       border:2px solid white;
-      width: 90px;
+      width: 100px;
       font-size: 16px;
       padding: 5px 10px;
       margin: 10px 5px;
       transition: .4s ease-in-out;
-      
     }
 
     button:hover {
@@ -174,10 +169,12 @@
     padding: 22px;
     line-height: 18px;
     border-bottom: 3px solid #9DC4DE;
+    letter-spacing: 2px;
+    line-height: 20px;
     @media(min-width:400px){
       font-size: 16px;
     padding: 30px;
-    line-height: 22px;
+    line-height: 28px;
     }
   }
  

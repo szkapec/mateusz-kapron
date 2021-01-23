@@ -19,7 +19,7 @@ const App = () => {
   return (
     <CreateProvider>
       <HashRouter basename='/'>
-        <Nav />
+        
         <Switch>
           <Route exact path="/" component={Root} />
           <Route exact path="/project/:id" component={Details} />

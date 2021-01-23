@@ -132,6 +132,7 @@ font-family: 'Lato', sans-serif; */
   line-height: 20px;
   letter-spacing: 1px;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 8, 15, 0.5);
 }
 
 .community h1 span {
@@ -139,6 +140,7 @@ font-family: 'Lato', sans-serif; */
 }
 
 .community h2 {
+  text-shadow: 1px 1px 1px rgba(0, 8, 15, 0.5);
   padding-top: 25px;
   min-width: 230px;
   color: white;
@@ -1281,11 +1283,9 @@ font-family: 'Lato', sans-serif; */
 
 .categories button {
   outline: none;
-  color: white;
   font-family: bold;
-  background-color: #AFD5ED;
   border: 2px solid white;
-  width: 90px;
+  width: 100px;
   font-size: 16px;
   padding: 5px 10px;
   margin: 10px 5px;
@@ -1369,7 +1369,8 @@ font-family: 'Lato', sans-serif; */
   .info-text {
     font-size: 16px;
     padding: 30px;
-    line-height: 22px;
+    line-height: 28px;
+    letter-spacing: 1px;
   }
 }
 

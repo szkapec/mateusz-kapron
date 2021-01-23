@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
 
-export default function Nav() {
+export default function Nav({show}) {
 
     const { t } = useTranslation();
     const ctx = useContext(CartContext);
@@ -61,7 +61,7 @@ export default function Nav() {
     }
     window.addEventListener('scroll', changeBackground)
     return (
-        <nav className={`${!navbar ? "nav active" : "nav"}`}>
+        <nav className={`${!navbar ? !show?"nav active": "nav" : "nav"}`}>
             <>
                 <NavLink className="home-m" to={"/#home"} >M</NavLink>
                 <button onClick={() => {
