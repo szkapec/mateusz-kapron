@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mateusz-kapron/precache-manifest.7de91efa10b0c56b47fc6e9356e468d1.js"
+  "/mateusz-kapron/precache-manifest.b2e27a2fda22210dca23c66ae5b80a92.js"
 );
 
 self.addEventListener('message', (event) => {
