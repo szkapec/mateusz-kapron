@@ -1,35 +1,6 @@
 import React from 'react'
 import portfolio from '../../assets/home/portfolio.png';
-
 import { html, css, sass, bootstrap, javascript, react, rwd, sql, git, java, cpp, npm, vue, mongo, node, express, ajax, typescript, rest, redux, axios, joomla, wordpress } from '../../assets/exportSkills';
-
-// import html from '../../assets/skills/html-5.svg';
-// import css from '../../assets/skills/css-3.svg';
-// import sass from '../../assets/skills/sass.svg';
-// import bootstrap from '../../assets/skills/bootstrap-4.svg';
-// import javascript from '../../assets/skills/javascript-4.svg';
-// import react from '../../assets/skills/react.svg';
-// import rwd from '../../assets/skills/rwd.png';
-
-// import sql from '../../assets/skills/mysql.jpg';
-// import git from '../../assets/skills/Git_icon.svg';
-// import java from '../../assets/skills/java.png';
-// import cpp from '../../assets/skills/cpp.svg';
-// import npm from '../../assets/skills/npmlogo.png';
-// import vue from '../../assets/skills/vue.png';
-// import mongo from '../../assets/skills/mongo.png';
-// import node from '../../assets/skills/nodejs-icon.svg';
-// import express from '../../assets/skills/express.png';
-// import ajax from '../../assets/skills/ajax-icon-7.jpg';
-// import typescript from '../../assets/skills/typescript.svg';
-
-// import rest from '../../assets/details/rest.png';
-// import redux from '../../assets/details/logo-redux.png';
-// import axios from '../../assets/details/axios.jpg';
-// import joomlaimg from '../../assets/details/joomla.png';
-// import wordpressimg from '../../assets/details/wordpress.png';
-
-
 import { useTranslation } from 'react-i18next';
 
 const Skills = () => {

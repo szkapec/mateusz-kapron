@@ -26,31 +26,33 @@
   },
   "project": [
     {
-      "id": 21, "name": "Aplikacja Hotelowa",  "desc": "Aplikacja hotelowa",
-      "description": "Aplikacja hotelowa ",
-      "technologies": "React,Express,Node,Swiper Slide,MongoDB,Axios,React-Hook,Redux,SASS,Styled-Components,JSX,HTML",
-      "github": "https://github.com/szkapec/hotel-application",
-      "live": "https://hotel-application.netlify.app/", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
-      "functions": "Funkcjonalności:",
+      "id": 21, "name": "Hotel Application",  "desc": "The application for the hotel allows you to book a hotel room. Possibility to pay for the room by credit card.",
+      "description": "Application for the hotel. All data taken from the own API implemented in Node.js. The application allows you to book a given room. After booking a room on a given day for a given room, the application prevents other users from booking the same room on that day. After entering the data to reserve a room, the application validates the data, then reserves and generates a unique code for a given user and sends the code with the information to the e-mail provided by the user. The user with this code comes to the reception desk and receives the room key / card. After booking the room, you can choose to pay either by credit card (stripe) now or in cash at the reception.",
+      "technologies": "React,Redux,Express,Node,MongoDB,Axios,Stripe,Netlify,Heroku,API,SASS,JavaScript,HTML,CSS",
+        "library":"React-Redux,React-Hook,Moment,Swiper Slide,Cors,Styled-Components",
+        "github": "https://github.com/szkapec/hotel-application",
+        "live": "https://hotel-application.netlify.app/", "route": "hotel-app", "next": "programming-blog", "previous": "app-baflix",
+      "functions": "Functionalities:",
       "functionality": [
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"}
+        {"id": "Room search engine by: price, number of people, room type;"},
+        {"id": "Showing the room availability to the user on a given day;"},
+        {"id": "Booking a hotel room on a free day;"},
+        {"id": "A unique code generated for the user;"},
+        {"id": "Sending the generated code with information to the e-mail address provided;"},
+        {"id": "User visit can be deleted;"},
+        {"id": "Administration panel;"},
+        {"id": "Viewing rooms for staff (free room, occupied room, future visits, archive visits);"},
+        {"id": "Sales indicators;"},
+        {"id": "You can pay with a credit card;"}
       ]
     },
     {
       "id": 19, "name": "Programming blog", "desc": "Full-Stack Application. Blog about programming in JavaScript and more",
       "description": "An application designed to broaden the knowledge of backend and interaction with the Mongodb database. The implemented backend allows you to log in, register, add new articles, delete your articles, add comments to articles, add 'Like!' to the article and comments, user name and password change, and a token is generated for each user and a session with the user is maintained on this basis.",
-      "technologies": "Node,React,Express,Redux,SASS,MongoDB,Moment,Axios,JavaScript,Styled-Components,JSX,HTML",
+      "technologies": "React,Redux,Express,Node,MongoDB,Axios,Netlify,Heroku,API,SASS,JavaScript,HTML,CSS",
+      "library":"React-Redux,React-Hook,Moment,Cors,Styled-Components,React-loader-spinner,React-file-base64",
       "github": "https://github.com/szkapec/programming-blog",
-      "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "app-firebase", "previous": "app-robot",
+      "live": "https://programming-blog.netlify.app/", "route": "programming-blog", "next": "cmd", "previous": "hotel-app",
       "functions": "Functionalities:",
       "functionality": [
         {"id": "All data written / updated to the mongoDb database;"},
@@ -70,31 +72,20 @@
       ]
     },
     {
-      "id": 22, "name": "Strona CMD-Stalowa wola",  "desc": "Strona CMD-Stalowa wola",
-      "description": "Strona CMD-Stalowa wola",
-      "technologies": "Joomla,JSX,HTML",
-      "github": "/#",
-      "live": "http://www.cmdstalowa.pl", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
-      "functions": "Funkcjonalności:",
-      "functionality": [
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"},
-        {"id":";"}
-      ]
+      "id": 22, "name": "CMD website - Stalowa Wola",  "desc": "Website for the Medical and Diagnostic Center in Stalowa Wola",
+      "description": "Website for the Medical and Diagnostic Center in Stalowa Wola. Website created in CMS Joomla. Uploaded on Home.pl servers",
+      "technologies": "Joomla,JavaScript,HTML,CSS",
+      "library":"",
+      "github": "/mateusz-kapron#/project/cmd",
+      "live": "http://www.cmdstalowa.pl", "route": "cmd", "next": "app-baflix", "previous": "programming-blog"
     },
     {
       "id": 2, "name": "Baflix application", "desc": "The Baflix application is a movie viewing service, it is modeled on a popular site.",
       "description": "The Baflix application is a movie viewing service, it is modeled on a popular site. Photos and movies are stored in the Mongodb database. This is a test application. There are no movies due to copyright.",
-      "technologies": "React,Express,Node,Swiper Slide,MongoDB,Axios,React-Hook,React-Tabs,React Context,Styled-Components,JSX,HTML",
-      "github": "https://github.com/szkapec/Baflix",
-      "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-fullStack", "previous": "app-course",
+      "technologies": "React,Express,Node,MongoDB,Axios,Heroku,API,JavaScript,HTML,CSS",
+        "library":"Swiper Slide,React-Hook,React-Tabs,React Context,React-player,Json-server,Jwt-decode,Styled-Components,styled-media-query",
+        "github": "https://github.com/szkapec/appbaflix",
+        "live": "https://szkapec.github.io/appbaflix/#/browse", "route": "app-baflix", "next": "app-course", "previous": "cmd",
       "functions": "Functionalities:",
       "functionality": [
         {"id":"Movie search engine by category;"},
@@ -112,9 +103,10 @@
     {
       "id": 1, "name": "Online courses", "desc": "Test application for selling courses via the Internet, extended with the option of paying by credit card",
       "description": "An application for selling courses via the Internet, extended with the possibility of paying by credit card (stripe)",
-      "technologies": "React,Stripe,React Context,React-Hook,LocalStorage,Styled-Components,JSX,HTML",
+      "technologies": "React,Stripe,JavaScript,HTML,CSS",
+      "library":"React-Hook,React Context,Styled-Components,LocalStorage",
       "github": "https://github.com/szkapec/kurs-online",
-      "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-baflix", "previous": "app-firebase",
+      "live": "https://szkapec.github.io/kurs-online/#/", "route": "app-course", "next": "app-ecommerce", "previous": "app-baflix",
       "functions": "Functionalities:",
       "functionality": [
         {"id":"Adding courses to the store cart;"},
@@ -128,37 +120,42 @@
     {
       "id": 4, "name": "E-Commerce Application", "desc": "E-Commerce Application, online store",
       "description": "E-Commerce Application. Online store written in React. The application allows you to add new items for sale such as phones, computers and gadgets. A basket has also been implemented that lists all products and the total cost of payment for purchases.",
-      "technologies": "React,JavaScript,React Context,PropTypes,Styled-Components,API,JSX,HTML",
+      "technologies": "React,JavaScript,HTML,CSS",
+      "library":"React-Hook,React Context,PropTypes,Styled-Components",
       "github": "https://github.com/szkapec/ecommerce",
-      "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-fullStack"
+      "live": "https://szkapec.github.io/ecommerce/#/", "route": "app-ecommerce", "next": "app-covid", "previous": "app-course"
     },
     {
       "id": 20, "name": "Application for adding posts", "desc": "Application for adding posts stored in the mongodb database",
       "description": "An application designed to learn backend. The functionality of adding a post, editing, liking, and removing from the MongoDB database has been implemented.",
-      "technologies": "Node,React,Express,Redux,MongoDB,Axios,JavaScript,Styled-Components,JSX,HTML,CSS",
-      "github": "https://github.com/szkapec",
-      "live": "https://add-posts.netlify.app/", "route": "app-post", "next": "app-firebase", "previous": "app-robot"
+      "technologies": "React,Redux,Express,Node,MongoDB,Axios,API,Netlify,Heroku,SASS,JavaScript,HTML",
+        "library":"React-Hook,React-Redux,Moment,React-file-base64,Cors,Sass-loader,Styled-Components",
+        "github": "https://github.com/szkapec/AppAddingPost",
+        "live": "https://add-posts.netlify.app/", "route": "app-post", "next": "app-firebase", "previous": "app-ecommerce"
     },
     {
       "id": 5, "name": "Covid-19 application", "desc": "Application with the latest information about corona virus infections in the world",
       "description": "Application with the latest information about corona virus infections in the world. The ability to view all countries and their daily increment - new, all or active covid-19 cases has been implemented. The possibility of viewing detailed information on covid-19 in all voivodships in Poland has been implemented and all cases of covid-19 around the world and graphs of relationships between these data have been displayed.",
-      "technologies": "React,JavaScript,Styled-Components,JSX,API,HTML,",
-      "github": "https://github.com/szkapec/CoronavirusApi",
-      "live": "https://koronavirus-19.netlify.app/", "route": "app-covid", "next": "app-note", "previous": "app-ecommerce"
+      "technologies": "React,JavaScript,API,HTML,CSS",
+      "library":"React-Hook,Styled-Components,Chart.js,Dotenv,Lodash,Mediaquery",
+      "github": "https://github.com/szkapec/covid",
+      "live": "https://szkapec.github.io/covid/", "route": "app-covid", "next": "app-movies", "previous": "app-post"
     },
     {
       "id": 18, "name": "Movie search application", "desc": "Application for browsing and searching for selected movies.",
       "description": "Application for browsing and searching for selected movies. The possibility of viewing the description of the film and its average opinion has been implemented. The movie database is downloaded from an external API.",
-      "technologies": "React,JavaScript,Styled-Components,API,JSX,HTML",
+      "technologies": "React,API,JavaScript,HTML,CSS",
+      "library":"React-Hook,Dotenv,Styled-Components",
       "github": "https://github.com/szkapec/movie-search",
-      "live": "https://szkapec.github.io/movie-search/", "route": "app-movies"
+      "live": "https://szkapec.github.io/movie-search/", "route": "app-movies", "next": "app-firebase", "previous": "app-covid"
     },
     {
       "id": 0, "name": "Firebase application", "desc": "Application for adding articles saved in the firebase database.",
       "description": "Application for adding articles saved in the firebase database. Ability to add your own notes that are saved in the database. To add, please register.",
-      "technologies": "React,Redux,React-Redux,Moment,Firebase,Styled-Components,JSX,CSS,HTML",
+      "technologies": "React,Redux,Firebase,CSS,HTML",
+      "library":"React-Hook, React-Redux,Redux-firestore,Moment,Styled-Components",
       "github": "https://github.com/szkapec/firebase",
-      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-course", "previous": "app-bowling",
+      "live": "https://app-react-redux-firebase.firebaseapp.com/signin", "route": "app-firebase", "next": "app-weatcher", "previous": "app-movies",
       "functions": "Functionalities:",
       "functionality": [
         {"id": "All data written / updated to firebase;"},
@@ -171,16 +168,18 @@
     {
       "id": 8, "name": "Weather application project", "desc": "Weather application part 2, extended with new functionalities",
       "description": "An application for viewing the current weather (temperature, pressure, wind strength, precipitation possibilities) in Poland and around the world. The application gets data from every major city. The possibility of checking hourly or 5-day weather has also been implemented. Charts (line and bar) have been implemented to show the average temperature in a given locality.",
-      "technologies": "React,JavaScript,Styled-Components,JSX,API,HTML",
+      "technologies": "React,JavaScript,SASS,API,HTML",
+      "library":"Chart.js,React-media-hook,Styled-Components",
       "github": "https://github.com/szkapec/react-router-weather",
-      "live": "https://szkapec.github.io/react-router-weather/", "route": "app-weatcher", "next": "app-weatcher-cz1", "previous": "app-notes"
+      "live": "https://szkapec.github.io/react-router-weather/", "route": "app-weatcher", "next": "app-fullStack", "previous": "app-firebase"
     },
     {
       "id": 3, "name": "Application for adding notes and articles.", "desc": "Application for adding private notes. Also implemented is adding public twitter and chat, and watching movies for premium.",
       "description": "Full-Stack Application. Adding notes, twitters, private notes, logging in, registering and maintaining sessions with the user. Read and write everything from mongoDB database. Premium option - watching movies",
-      "technologies": "Node,React,Express,Passport,Axios,JavaScript,LocalStorage,SASS,Styled-Components,JSX,HTML",
-    "github": "https://github.com/szkapec/express-react-node-mongodb",
-    "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-ecommerce", "previous": "app-baflix",
+      "technologies": "React,Node,Express,MongoDB,SASS,Passport,Axios,Heroku,API,JavaScript,HTML",
+      "library":"LocalStorage,Body-parser,Nodemon,Uuid,Cors,Styled-Components",
+      "github": "https://github.com/szkapec/express-react-node-mongodb",
+      "live": "https://fierce-sands-71271.herokuapp.com/login", "route": "app-fullStack", "next": "app-notes", "previous": "app-weatcher",
     "functions": "Functionalities:",
     "functionality": [
       {"id": "All data written / updated to the mongoDb database;"},
@@ -197,53 +196,60 @@
     {
       "id": 7, "name": "Application for adding Notes", "desc": "Application for adding notes, articles and twitters part 2",
       "description": "Application (from React course 2) for adding twitter notes and articles. Thanks to this course, I expanded my knowledge of React and learned some interesting tools in it, such as PageContext, Styled-Components, Storybook and Axios",
-      "technologies": "React,JavaScript,Storybook,PageContext,Styled-Components,JSX,HTML",
-      "github": "https://github.com/szkapec/react",
-      "live": "https://szkapec.github.io/react/", "route": "app-notes", "next": "app-weatcher", "previous": "app-note"
+      "technologies": "React,Redux,JavaScript,HTML,CSS",
+        "library":"React-hook,React-Redux,Storybook,formik,Styled-Components",
+        "github": "https://github.com/szkapec/react",
+        "live": "https://szkapec.github.io/react/", "route": "app-notes", "next": "app-note", "previous": "app-fullStack"
     },
     {
       "id": 6, "name": "Application for adding Notes cz.1", "desc": "Application for adding notes, articles and twitters",
       "description": "Application (from React course 1) for adding twitter notes and articles, part 1",
-      "technologies": "React,JavaScript,SASS,Styled-Components,JSX,HTML",
-      "github": "https://github.com/szkapec/React-router-articles",
-      "live": "https://szkapec.github.io/React-router-articles/#/", "route": "app-note", "next": "app-notes", "previous": "app-covid"
+      "technologies": "React,JavaScript,SASS,HTML",
+        "library":"Node-sass,Styled-Components",
+        "github": "https://github.com/szkapec/React-router-articles",
+        "live": "https://szkapec.github.io/React-router-articles/#/", "route": "app-note", "next": "app-weatcher-cz1", "previous": "app-notes"
     },
     {
       "id": 9, "name": "Weather application", "desc": "Weather application part 1",
       "description": "The Weather Application, downloads data from an external server and displays it accordingly",
-      "technologies": "React,SASS,JavaScript,API,JSX,HTML",
+      "technologies": "React,JavaScript,API,HTML,CSS",
+      "library":"",
       "github": "https://github.com/szkapec/Aplikacja_pogodowa",
-      "live": "https://szkapec.github.io/Aplikacja_pogodowa/", "route": "app-weatcher-cz1", "next": "app-hotel", "previous": "app-weatcher"
+      "live": "https://szkapec.github.io/Aplikacja_pogodowa/", "route": "app-weatcher-cz1", "next": "app-hotel", "previous": "app-note"
     },
     {
       "id": 10, "name": "Hotel application", "desc": "Hotel application data downloaded from Contentfull",
       "description": "Application for hotels. Room data retrieved from Contentfull. Advanced room search engine implemented. Possibility to search for a free room at: price, type of room, number of people, whether with breakfast or with pets. Descriptions and photos of all rooms as well as additions that are in it have also been implemented.",
-      "technologies": "React,Contentfull,JavaScript,React Context,Styled-Components,JSX,HTML",
-      "github": "https://github.com/szkapec/React-hotel",
-      "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-generate", "previous": "app-weatcher-cz1"
+      "technologies": "React,Contentfull,JavaScript,HTML,CSS",
+        "library":"React Context,React-icons,Styled-Components",
+        "github": "https://github.com/szkapec/React-hotel",
+        "live": "https://hotel-aplication-react.netlify.app/rooms/", "route": "app-hotel", "next": "app-meme", "previous": "app-weatcher-cz1"
     },
     {
       "id": 16, "name": "Meme Generator", "desc": "The application downloads data from an external API and generates about 100 photos.",
       "description": "The application downloads data from an external API and generates about 100 photos that can be modified by adding your own text.",
-      "technologies": "React,JavaScript,API,JSX,CSS,HTML",
+      "technologies": "React,JavaScript,API,CSS,HTML",
+      "library":"",
       "github": "https://github.com/szkapec/meme-generator",
-      "live": "https://szkapec.github.io/meme-generator/", "route": "app-meme", "next": "app-firebase", "previous": "app-robot"
+      "live": "https://szkapec.github.io/meme-generator/", "route": "app-meme", "next": "app-encrypt-decrypt", "previous": "app-hotel"
     },
 
     {
       "id": 17, "name": "Encryption application", "desc": "Message encryption and decryption application",
       "description": "An application for encrypting and decrypting messages, and for generating a random password with a certain criteria.",
       "technologies": "React,JavaScript,CSS,HTML",
-      "github": "https://github.com/szkapec/generating",
-      "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt"
+        "library":"Bcrypt,Styled-components",
+        "github": "https://github.com/szkapec/generating",
+        "live": "https://szkapec.github.io/generating/", "route": "app-encrypt-decrypt", "next": "app-bowling", "previous": "app-meme"
     },
  
     {
       "id": 15, "name": "Game Bowling", "desc": "Bowling game",
       "description": "Game Project",
-      "technologies": "JavaScript,CSS,HTML,",
+      "technologies": "JavaScript,CSS,HTML",
+      "library":"",
       "github": "https://github.com/szkapec/bowling",
-      "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "app-firebase", "previous": "app-robot"
+      "live": "https://szkapec.github.io/bowling/", "route": "app-bowling", "next": "hotel-app", "previous": "app-encrypt-decrypt"
     }
   
     
@@ -271,39 +277,59 @@
       {
         "id": 6, "fade": "fade-right", "description": "RWD", "experience": "2 years of experience"
       },
+
+
       {
-        "id": 7, "fade": "fade-right", "description": "AJAX", "experience": "2 years of experience"
+        "id":7, "fade": "fade-right", "description": "AJAX", "experience": "2 years of experience"
       },
       {
-        "id": 8, "fade": "fade-right", "description": "C ++", "experience": "One year of experience"
+        "id":8, "fade": "fade-right", "description": "AXIOS", "experience": "One year of experience"
       },
       {
-        "id": 9, "fade": "fade-right", "description": "GIT", "experience": "2 years of experience"
+        "id":9, "fade": "fade-right", "description": "C++", "experience": "One year of experience"
       },
       {
-        "id": 10, "fade": "fade-right", "description": "MONGO", "experience": "One year of experience"
+        "id":10, "fade": "fade-right", "description": "GIT", "experience": "2 years of experience"
       },
       {
-        "id": 11, "fade": "fade-right", "description": "MYSQL", "experience": "One year of experience"
+        "id":11, "fade": "fade-right", "description": "JOOMLA", "experience": "One year of experience"
       },
       {
-        "id": 12, "fade": "fade-right", "description": "NPM", "experience": "2 years of experience"
+        "id":12, "fade": "fade-right", "description": "MONGO", "experience": "One year of experience"
       },
       {
-        "id": 13, "fade": "fade-right", "description": "EXPRESS", "experience": "Half a year of experience"
+        "id":13, "fade": "fade-right", "description": "NPM", "experience": "2 years of experience"
       },
       {
-        "id": 14, "fade": "fade-right", "description": "JAVA", "experience": "Year of experience"
+        "id":14, "fade": "fade-right", "description": "REDUX", "experience": "One year of experience"
       },
       {
-        "id": 15, "fade": "fade-right", "description": "NODE", "experience": "Year of experience"
+        "id":15, "fade": "fade-right", "description": "REST", "experience": "One year of experience"
       },
       {
-        "id": 16, "fade": "fade-right", "description": "TYPESCRIPT", "experience": "Half a year of experience"
+        "id":16, "fade": "fade-right", "description": "WORDPRESS", "experience": "One year of experience"
+      },
+      
+      
+      {
+        "id":17, "fade": "fade-right", "description": "MYSQL", "experience": "One year of experience"
       },
       {
-        "id": 17, "fade": "fade-right", "description": "VUE", "experience": "Half a year of experience"
+        "id":18, "fade": "fade-right", "description": "EXPRESS", "experience": "Half a year of experience"
+      },
+      {
+        "id":19, "fade": "fade-right", "description": "JAVA", "experience": "One year of experience"
+      },
+      {
+        "id":20, "fade": "fade-right", "description": "NODE", "experience": "One year of experience"
+      },
+      {
+        "id":21, "fade": "fade-right", "description": "TYPESCRIPT", "experience": "Half a year of experience"
+      },
+      {
+        "id":22, "fade": "fade-right", "description": "VUE", "experience": "Half a year of experience"
       }
-  
-    ]
+      
+      ]
+
 }

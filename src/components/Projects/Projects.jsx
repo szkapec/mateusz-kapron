@@ -38,8 +38,8 @@ export default function Projects() {
                     <StyledButton categorie={categorie} item={'Redux'}  onClick={() => setCategories('Redux')}>Redux</StyledButton>
                     <StyledButton categorie={categorie} item={'Node'}  onClick={() => setCategories('Node')}>Node</StyledButton>
                     <StyledButton categorie={categorie} item={'SASS'}  onClick={() => setCategories('SASS')}>SASS</StyledButton>
-                    <StyledButton categorie={categorie} item={'Context'}  onClick={() => setCategories('Context')}>Context</StyledButton>
-                    <StyledButton categorie={categorie} item={'JavaScript'}  className="opacity" onClick={() => setCategories('JavaScript')}>JavaScript</StyledButton>
+                    <StyledButton categorie={categorie} item={'Stripe'}  onClick={() => setCategories('Stripe')}>Stripe</StyledButton>
+                    <StyledButton categorie={categorie} item={'Rest'}  className="opacity" onClick={() => setCategories('API')}>Rest API</StyledButton>
                     <StyledButton categorie={categorie} item={'Axios'}  className="opacity" onClick={() => setCategories('Axios')}>Axios</StyledButton>
                     <StyledButton categorie={categorie} item={'Games'}  className="opacity" onClick={() => setCategories('Games')}>{t('projectDescription.game')}</StyledButton>
                 </header>
