@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 const Skills = () => {
     const tab = [html, css, sass, bootstrap, javascript, react, rwd, ajax, axios, cpp, git, joomla, mongo, npm, redux, rest, wordpress, sql, express, java, node, typescript, vue]
     const { t } = useTranslation();
-    console.log(html, sass)
     return (
         <section className="skills" id="skills">
             <div className="container">
