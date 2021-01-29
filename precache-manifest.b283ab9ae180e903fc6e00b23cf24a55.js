@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c53b0f6a85651e7eed8fcf4aba936558",
+    "revision": "a5cdcff7c13851b0d4bc2c7b047cf21e",
     "url": "/mateusz-kapron/index.html"
   },
   {
-    "revision": "448bae69f34f61fa5584",
+    "revision": "5056af0f5f352c94e24b",
     "url": "/mateusz-kapron/static/css/main.1a0a1f6a.chunk.css"
   },
   {
-    "revision": "dd13f856d39efb77d19e",
-    "url": "/mateusz-kapron/static/js/2.6aab7b8a.chunk.js"
+    "revision": "444531b59bd4e957fc60",
+    "url": "/mateusz-kapron/static/js/2.53c95653.chunk.js"
   },
   {
     "revision": "28d36cae8db7790f6fc02920470bed26",
-    "url": "/mateusz-kapron/static/js/2.6aab7b8a.chunk.js.LICENSE.txt"
+    "url": "/mateusz-kapron/static/js/2.53c95653.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "448bae69f34f61fa5584",
-    "url": "/mateusz-kapron/static/js/main.79041da4.chunk.js"
+    "revision": "5056af0f5f352c94e24b",
+    "url": "/mateusz-kapron/static/js/main.ec556f9d.chunk.js"
   },
   {
     "revision": "f0c3d7a31f74bd90fb6e",
