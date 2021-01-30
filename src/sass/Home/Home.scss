@@ -103,13 +103,13 @@
         line-height: 20px;
         letter-spacing: 1px;
         margin-bottom: 30px;
-        text-shadow: 1px 1px 1px rgba(0,8,15,.5);
+        text-shadow: 3px 1px 1px rgba(0,8,15,.5);
         span {
           color: $color;
         }
     }
     h2 {
-      text-shadow: 1px 1px 1px rgba(0,8,15,.5);
+      text-shadow: 2px 1px 1px rgba(0,8,15,.5);
       padding-top: 25px;
       min-width: 230px;
       color: white;

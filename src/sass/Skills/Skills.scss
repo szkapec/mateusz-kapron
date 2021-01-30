@@ -59,13 +59,41 @@
         border-bottom: 1px dotted black;
         margin: 0px 30px;
     }
+    .invitation-github {
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 25px;
+        .smile {
+            font-size: 22px;
+        }
+        a {
+            color: black;
+            font-size: 35px;
+        }
+        i {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 
     @media(min-width: 600px) {
+        .invitation-github {
+            font-size: 20px;
+            margin: 10px;
+        }
         .skills-portfolio {
             padding-left: 15%;
         }
     }
     @media(min-width: 1000px) {
+        .invitation-github {
+            font-size: 22px;
+            margin: 30px 20px;
+            i {
+                margin-top: 20px;
+                font-size: 40px;
+            }
+        }
         h2 {
             font-size: 30px;
         }
@@ -180,12 +208,8 @@
                 margin-top: 30px;
             }
 
-        }
-
-       
-       
+        }  
     }
-
 
 
 

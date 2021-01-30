@@ -6,11 +6,11 @@
   "home": "Home", "about": "O mnie", "skills": "Umiejętności", "features": "Cechy", "project": "Projekty", "contact": "Kontakt", "info": "Mateusz Kaproń jestem Front-End Developerem."
   },
   "about": {
-      "hello": "Witam na moim portfolio!", "home": "O mnie", 
+      "hello": "O MNIE", "home": "O mnie", 
       "description": "Nazywam się Mateusz Kaproń, pochodzę z okolic Lublina i jestem Front-End Developerem.",
       "experience": "Posiadam wyższe wykształcenie informatyczne i ponad 2-letnie doświadczenie w pracy jako programista JavaScript.",
-      "programing": "Jestem programistą specjalizującym się w tworzeniu aplikacji internetowych. Szukam pracy jako front-end Developer. Aktualnie skupiam się na nauce TypeScript oraz Node.js",
-      "ignite": "Zapraszam do obejrzenia moich projektów oraz na Github :)", "cv": "Pobierz CV", "info": "Wiecej informacji o mnie"
+      "programing": "Aktualnie pracuje w NZOZ-Zdrowie w Janowie Lubelskim, jako informatyk-programista moim zadaniem jest stworzenie nowej strony internetowej i jej administrowanie. Po pracy uczę się i pisze aplikacje w bibliotece React.js. Nie jestem zamknięty na nowe technologie, ostatnio uczyłem się frameworka Express.js przykłady w moich projektach. Aktualnie wykupiłem dostęp do platformy Eduweb, na której uczę się języka TypeScript. Szukam pracy, w której mógłbym się dalej rozwijać i uczyć nowych technologii.",
+      "ignite": "Zapraszam do obejrzenia moich projektów oraz na Github", "cv": "Pobierz CV", "info": "Wiecej informacji o mnie:"
     },
 
     "projectDescription": {
@@ -49,6 +49,14 @@
         ]
       },
       {
+        "id": 22, "name": "Strona CMD - Stalowa Wola",  "desc": "Strona dla Centrum Medyczno - Diagnostyczne w Stalowej Woli",
+        "description": "Strona dla Centrum Medyczno - Diagnostyczne w Stalowej Woli. Strona stworzona w CMS Joomla. Wrzucona na serwery Home.pl",
+        "technologies": "Joomla,JavaScript,HTML,CSS",
+        "library":"",
+        "github": "/mateusz-kapron#/project/cmd",
+        "live": "http://www.cmdstalowa.pl", "route": "cmd", "next": "app-baflix", "previous": "programming-blog"
+      },
+      {
         "id": 19, "name": "Blog o programowaniu", "desc": "Aplikacja typu Full-Stack. Blog o programowaniu w JavaScript i nie tylko",
         "description": "Aplikacja stworzona z myślą o poszerzeniu wiedzy na temat backendu i interakcji z bazą danych Mongodb. Zaimplementowany backend pozwala na logowanie, rejestracje, dodawanie nowych artykułów, usuwanie swoich artykułów, dodawanie komentarzy do artykułów, możliwość dodania „Lubię to!” do artykułu i komentarzy, zmiana nazw użytkownika i hasła oraz generowany jest token dla każdego użytkownika i na tej podstawie utrzymywana jest sesja z użytkownikiem. ",
         "technologies": "React,Redux,Express,Node,MongoDB,Axios,Netlify,Heroku,API,SASS,JavaScript,HTML,CSS",
@@ -73,14 +81,7 @@
           {"id":"Do przechowywania stanu aplikacji zaimplementowany został redux;"}
         ]
       },
-      {
-        "id": 22, "name": "Strona CMD - Stalowa Wola",  "desc": "Strona dla Centrum Medyczno - Diagnostyczne w Stalowej Woli",
-        "description": "Strona dla Centrum Medyczno - Diagnostyczne w Stalowej Woli. Strona stworzona w CMS Joomla. Wrzucona na serwery Home.pl",
-        "technologies": "Joomla,JavaScript,HTML,CSS",
-        "library":"",
-        "github": "/mateusz-kapron#/project/cmd",
-        "live": "http://www.cmdstalowa.pl", "route": "cmd", "next": "app-baflix", "previous": "programming-blog"
-      },
+     
       {
         "id": 2, "name": "Aplikacja Baflix",  "desc": "Aplikacja Baflix jest serwisem do przeglądania filmów jest on wzorowany z popularnego serwisu.",
         "description": "Aplikacja Baflix jest serwisem do oglądania filmów, jest on wzorowany z popularnego serwisu. Zdjęcia jak i filmy są zapisane w bazie danych Mongodb. Jest to aplikacja testowa. Nie ma filmów ze względu na prawa autorskie. ",

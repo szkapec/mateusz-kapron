@@ -10,43 +10,39 @@ const About = () => {
     const { t } = useTranslation();
     return (
         <main className="about-my" id="about">
-            <figure className="portfolio-container">
-                <img className="portfolio" src={poeplecoding} alt="analitic" />
-            </figure>
+            {/* <figure className="portfolio-container"> */}
+            {/* <img className="portfolio" src={poeplecoding} alt="analitic" /> */}
+            {/* </figure> */}
             <section className="about" >
                 <h2 className="about-my__hello">{t('about.hello')}</h2>
                 <div className="about__description">
-                    <div className="about__description__portfolio">
-                        <figure>
-                            <img data-aos="fade-left" src={people} alt="people" />
-                        </figure>
-                        <h2>{t('about.home')}</h2>
-                        <figure>
-                            <img data-aos="fade-right" src={analitics} alt="analitics" />
-                        </figure>
-                    </div>
-                    <div>
-                        {t('about.description')}
-                    </div>
-                    <div>
+                    {/* <div className="about__description__portfolio"> */}
+                    {/* <figure> */}
+                    {/* <img data-aos="fade-left" src={people} alt="people" /> */}
+                    {/* </figure> */}
+                    {/* <h2>{t('about.home')}</h2> */}
+                    {/* <figure> */}
+                    {/* <img data-aos="fade-right" src={analitics} alt="analitics" /> */}
+                    {/* </figure> */}
+                    {/* </div> */}
+                    <div className="about__description-left" data-aos="fade-right">
+                        {t('about.description')}{" "}
                         {t('about.experience')}
                     </div>
-                    <figure>
-                        <img className="search" src={cvs} alt="cvs" />
-                    </figure>
-                    <div>
-                        {t('about.programing')}
+                    {/* <figure> */}
+                    {/* <img className="search" src={cvs} alt="cvs" /> */}
+                    {/* </figure> */}
+                    <div className="about__description-right" data-aos="fade-left">
+                        <div>
+                            {t('about.programing')}
+                        </div>
+                        <div >
+                            {t('about.info')}<a className="cv" href={cvp}><button>{t('about.cv')}</button></a>
+                        </div>
                     </div>
-                    <div >
-                        {t('about.info')}<a className="cv" href={cvp}><button>{t('about.cv')}</button></a>
-                    </div>
-                    <div>{t('about.ignite')}</div>
-                    <a className="about__link" href="https://github.com/">
-                        <figure>
-                            <i data-aos="flip-up" style={{ fontSize: "40px", color: 'black', padding: '20px 0 30px' }} className="fab fa-github"></i>
-                        </figure>
-                    </a>
                 </div>
+            
+
             </section>
         </main>
     )

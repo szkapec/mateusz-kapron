@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
 
-export default function Nav({show}) {
+export default function Nav({ show }) {
 
     const { t } = useTranslation();
     const ctx = useContext(CartContext);
@@ -40,7 +40,7 @@ export default function Nav({show}) {
     const handleClickLang = (lang) => {
         ctx.language(lang)
         i18next.changeLanguage(lang)
-      }
+    }
 
     const handleClick = () => {
         setMenu(!menu)
@@ -61,7 +61,7 @@ export default function Nav({show}) {
     }
     window.addEventListener('scroll', changeBackground)
     return (
-        <nav className={`${!navbar ? !show?"nav active": "nav" : "nav"}`}>
+        <nav className={`${!navbar ? !show ? "nav active" : "nav" : "nav"}`}>
             <>
                 <NavLink className="home-m" to={"/#home"} >M</NavLink>
                 <button onClick={() => {
@@ -75,10 +75,10 @@ export default function Nav({show}) {
                 <button onClick={() => {
                     handleClickLang('ko')
                 }}>
-                <figure>
-                    <img className="nav-img" src={english} alt="język Angielski" />
-                </figure>
-                
+                    <figure>
+                        <img className="nav-img" src={english} alt="język Angielski" />
+                    </figure>
+
                 </button>
                 <h3 className="menu-s">
                     MENU
@@ -92,8 +92,19 @@ export default function Nav({show}) {
                     </StyledBox>
                 </div>
             </>
+
             <section className={`box ${!ctx.menu && "trans"} ${!navbar && " active"}`}>
+
+                <div className="line-y"></div>
+                <div className="line">
+                    <div className="line-x"></div>
+                    <div className="line-y"></div>
+                    <div className="line-z"></div>
+                    <div className="line-l"></div>
+
+                </div>
                 <ul className="navbar-box">
+
                     <li onClick={() => {
                         handleOff()
                         scrolling('home');
@@ -120,7 +131,15 @@ export default function Nav({show}) {
                         scrolling('contact');
                     }}> {t('navigate.contact')}</li>
                 </ul>
-                <div className="box-description">
+                <div className="box-contact-github">
+                    <a href="https://github.com/szkapec"><i className="fab fa-github"></i></a>
+                </div>
+                <div className="box-contact-phone">
+                    <a href="tel:+48661360889">
+                    <i className="fas fa-phone-square-alt"></i>
+                    </a>
+                </div>
+                {/* <div className="box-description">
                     {t('navigate.info')}
                 </div>
                 <div className="box-link">
@@ -132,7 +151,7 @@ export default function Nav({show}) {
                 <div className="box-contact">
                     <a href="mailto:mateusz.kapron24@gmail.com">mateusz.kapron24@gmai.com</a>
                     <a href="tel:+48661360889">661-360-889</a>
-                </div>
+                </div> */}
             </section>
         </nav>
     )

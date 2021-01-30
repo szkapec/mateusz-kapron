@@ -4,11 +4,11 @@
     "home": "Home", "about": "About me", "skills": "Skills", "features": "Features", "project": "Projects", "contact": "Contact", "info": "Mateusz Kaproń I am a front-end developer"
   },
   "about": {
-    "hello": "Welcome to my portfolio!", "home": "About me",
+    "hello": "About me", "home": "About me",
     "description": "My name is Mateusz Kaproń, I come from the Lublin area and I am a Front-End Developer.",
     "experience": "I have a higher IT education and over 2 years of experience in working as a JavaScript programmer.",
-    "programming": "I am a Front End developer specializing in creating web applications. I'm looking for a job as a front-end developer. Currently I am focusing on learning TypeScript and Node.js",
-    "ignite": "Please see my projects and on Github :)", "cv": "Download CV", "info": "More info about me"
+    "programing": "Caurrently working at NZOZ-Zdrowie in Janów Lubelski, as an IT specialist and programmer, my task is to create a new website and its administration. After work, I learn and write applications in the React.js library. I am not closed to new technologies, recently I learned Express.js examples in my projects. Currently, I have purchased access to the Eduweb platform, on which I am learning TypeScript. I am looking for a job where I could develop further and learn new technologies. ",
+    "ignite": "Please see my projects and Github", "cv": "Download CV", "info": "More info about me"
   },
 
   "projectDescription": {
@@ -47,6 +47,14 @@
       ]
     },
     {
+      "id": 22, "name": "CMD website - Stalowa Wola",  "desc": "Website for the Medical and Diagnostic Center in Stalowa Wola",
+      "description": "Website for the Medical and Diagnostic Center in Stalowa Wola. Website created in CMS Joomla. Uploaded on Home.pl servers",
+      "technologies": "Joomla,JavaScript,HTML,CSS",
+      "library":"",
+      "github": "/mateusz-kapron#/project/cmd",
+      "live": "http://www.cmdstalowa.pl", "route": "cmd", "next": "app-baflix", "previous": "programming-blog"
+    },
+    {
       "id": 19, "name": "Programming blog", "desc": "Full-Stack Application. Blog about programming in JavaScript and more",
       "description": "An application designed to broaden the knowledge of backend and interaction with the Mongodb database. The implemented backend allows you to log in, register, add new articles, delete your articles, add comments to articles, add 'Like!' to the article and comments, user name and password change, and a token is generated for each user and a session with the user is maintained on this basis.",
       "technologies": "React,Redux,Express,Node,MongoDB,Axios,Netlify,Heroku,API,SASS,JavaScript,HTML,CSS",
@@ -71,14 +79,7 @@
         {"id": "Redux has been implemented to store the application state;"}
       ]
     },
-    {
-      "id": 22, "name": "CMD website - Stalowa Wola",  "desc": "Website for the Medical and Diagnostic Center in Stalowa Wola",
-      "description": "Website for the Medical and Diagnostic Center in Stalowa Wola. Website created in CMS Joomla. Uploaded on Home.pl servers",
-      "technologies": "Joomla,JavaScript,HTML,CSS",
-      "library":"",
-      "github": "/mateusz-kapron#/project/cmd",
-      "live": "http://www.cmdstalowa.pl", "route": "cmd", "next": "app-baflix", "previous": "programming-blog"
-    },
+ 
     {
       "id": 2, "name": "Baflix application", "desc": "The Baflix application is a movie viewing service, it is modeled on a popular site.",
       "description": "The Baflix application is a movie viewing service, it is modeled on a popular site. Photos and movies are stored in the Mongodb database. This is a test application. There are no movies due to copyright.",

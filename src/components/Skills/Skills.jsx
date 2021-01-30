@@ -1,5 +1,5 @@
 import React from 'react'
-import portfolio from '../../assets/home/portfolio.png';
+import portfolio from '../../assets/home/portfolio2.png';
 import { html, css, sass, bootstrap, javascript, react, rwd, sql, git, java, cpp, npm, vue, mongo, node, express, ajax, typescript, rest, redux, axios, joomla, wordpress } from '../../assets/exportSkills';
 import { useTranslation } from 'react-i18next';
 
@@ -9,6 +9,9 @@ const Skills = () => {
     return (
         <section className="skills" id="skills">
             <div className="container">
+                <div className="invitation-github">{t('about.ignite')} <i className="far fa-smile-wink smile"></i> <br/>
+                    <a className="about__link"  href="https://github.com/"> <i className="fab fa-github"  data-aos="flip-up" ></i></a>
+                </div>
                 <h2>{t('stos.skills')}</h2>
                 <img src={portfolio} className="skills-portfolio" alt="portfolio" />
                 <div className="technologies">{t('stos.stos')}</div>
