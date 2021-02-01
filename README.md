@@ -4,7 +4,7 @@ This is my portfolio website. It contains information about me, my education, sk
 
 ## Website link of my portfolio website
 
-[https://szkapec.github.io/mateusz-kapron/](https://szkapec.github.io/mateusz-kapron/)
+[https://mateuszkapron.netlify.app/](https://mateuszkapron.netlify.app)
 
 ## Technologies used in this project
   - React
