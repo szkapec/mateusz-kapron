@@ -19,7 +19,6 @@ const App = () => {
   return (
     <CreateProvider>
       <HashRouter basename='/'>
-        
         <Switch>
           <Route exact path="/" component={Root} />
           <Route exact path="/project/:id" component={Details} />

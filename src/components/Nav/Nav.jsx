@@ -8,7 +8,7 @@ import { NavLink, useHistory } from 'react-router-dom'
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-
+import coders from '../../assets/home/coders.png';
 
 export default function Nav({ show }) {
 
@@ -63,7 +63,8 @@ export default function Nav({ show }) {
     return (
         <nav className={`${!navbar ? !show ? "nav active" : "nav" : "nav"}`}>
             <>
-                <NavLink className="home-m" to={"/#home"} >M</NavLink>
+                {/* <NavLink className="home-m" to={"/#home"} >M</NavLink> */}
+                {/* <img className="coders" src={coders} alt="coders"/>; */}
                 <button onClick={() => {
                     handleClickLang('en')
                 }}>
